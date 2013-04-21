@@ -1,11 +1,14 @@
 package com.nomath4u.breakbrick;
 
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
 
 public class MainActivity extends Activity {
+	
+	private SensorManager mSensorManager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

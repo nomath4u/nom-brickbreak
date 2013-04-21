@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.hardware.SensorManager;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -20,7 +21,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		super(context);
 		getHolder().addCallback(this);
 		thread = new DrawThread(getHolder());
-		mainPaddle = new Paddle();
+		mainPaddle = new Paddle(context);
 		
 	}
 	
