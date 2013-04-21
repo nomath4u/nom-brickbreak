@@ -68,6 +68,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	            paint.setColor(Color.RED);
 	            paint.setStrokeWidth(1);
 	            paint.setTextSize(20);
+	            
+	            
 	 
 	            while (_run){
 	                if(isDrawing == true){
@@ -82,6 +84,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        c.drawCircle(80,80, 30, paint);
 	                        c.drawLine(80, 80, 80, 200, paint);
 	                        c.drawText(""+canvas.getWidth()+", "+canvas.getHeight(), 0, 200,paint);*/
+	                        
+	                        /*Clear Canvas*/
+	                        c.drawColor(Color.BLACK);
+	                        
 	                        
 	                        c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	 
