@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.hardware.SensorManager;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -15,6 +14,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public boolean isDrawing = true;
 	protected DrawThread thread;
 	public Paddle mainPaddle;
+	public Ball mainBall;
 	
 	
 	public SurfacePanel(Context context){
@@ -22,6 +22,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		getHolder().addCallback(this);
 		thread = new DrawThread(getHolder());
 		mainPaddle = new Paddle(context);
+		mainBall = new Ball(context);
 		
 	}
 	
@@ -91,6 +92,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        
 	                        
 	                        c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
+	                        c.drawRect(mainBall.image, mainBall.paint);
 	 
 	                        canvas.drawBitmap (mBitmap, 0,  0,null);
 	                    } finally {
