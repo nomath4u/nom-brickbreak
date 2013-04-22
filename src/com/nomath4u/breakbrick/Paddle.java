@@ -13,6 +13,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Handler;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 
@@ -34,7 +36,7 @@ public class Paddle {
 	Paddle(Context context){
 		this.selfimage = new RectF(0,0, 100, 100); //set coordinates to upper left
 		
-		paddlewidth = 30;
+		paddlewidth = 60;
 		paddleheight = 10;
 		
 		/*Set Paint Style*/
@@ -64,11 +66,49 @@ public class Paddle {
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
 		      wm.getDefaultDisplay().getSize(size);
 		      screenwidth = size.x;
-		      screenheight = size.y; 
-		    }else{
+		      DisplayMetrics metrics = new DisplayMetrics();
+		      wm.getDefaultDisplay().getMetrics(metrics);
+		      
+
+		      switch (metrics.densityDpi) {
+		          case DisplayMetrics.DENSITY_HIGH:
+		              Log.i("display", "high");
+		              screenheight = size.y - 48;
+		              break;
+		          case DisplayMetrics.DENSITY_MEDIUM:
+		              Log.i("display", "medium/default");
+		              screenheight = size.y - 32;
+		              break;
+		          case DisplayMetrics.DENSITY_LOW:
+		              Log.i("display", "low");
+		              screenheight = size.y - 24;
+		              break;
+		          default:
+		              Log.i("display", "Unknown density"); 
+		      }
+		    
+		      }else{
 		      Display d = wm.getDefaultDisplay(); 
-		      screenwidth = d.getWidth(); 
-		      screenheight = d.getHeight(); 
+		      DisplayMetrics metrics = new DisplayMetrics();
+		      wm.getDefaultDisplay().getMetrics(metrics);
+		   
+
+		      switch (metrics.densityDpi) {
+		          case DisplayMetrics.DENSITY_HIGH:
+		              Log.i("display", "high");
+		              screenheight = d.getHeight() - 48;
+		              break;
+		          case DisplayMetrics.DENSITY_MEDIUM:
+		              Log.i("display", "medium/default");
+		              screenheight = d.getHeight() - 32;
+		              break;
+		          case DisplayMetrics.DENSITY_LOW:
+		              Log.i("display", "low");
+		              screenheight = d.getHeight() - 24;
+		              break;
+		          default:
+		              Log.i("display", "Unknown density");
+		      }
 		    }
 		
 		setUnit();
