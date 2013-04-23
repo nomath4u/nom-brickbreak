@@ -18,6 +18,8 @@ public class Ball {
 	private int screenheight;
 	private int ballwidth;
 	private int ballheight;
+	public float xspeed;
+	public float yspeed;
 	
 	Ball(Context context){
 		setBallCharacteristics();
@@ -30,12 +32,17 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
+			xspeed = 7;
+			yspeed = 7; //Just to start moving
 	}
 	
 	private void spawnAtStart(){
 		image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2)); //Spawn center of ball at center of screen
 	}
 
+	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
+	/*Cases are for subtracting the notification bar height*/
+	@SuppressWarnings("deprecation")
 	private void getDisplay(Context context){
 		Point size = new Point();
 		WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -86,5 +93,9 @@ public class Ball {
 		              Log.i("display", "Unknown density");
 		      }
 		    }
+	}
+	
+	public void tick(){
+		image.offset(xspeed, yspeed);
 	}
 }

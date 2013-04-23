@@ -93,6 +93,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        
 	                        c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        c.drawRect(mainBall.image, mainBall.paint);
+	                        mainBall.tick(); //Tell the ball it needs to move again
 	 
 	                        canvas.drawBitmap (mBitmap, 0,  0,null);
 	                    } finally {
