@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
 import android.view.Menu;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
 
 
 public class MainActivity extends Activity {
@@ -24,6 +26,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		createSensorManager();
+		//WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
+		getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON); //Get active wakelock
 		setContentView(new SurfacePanel(this));
 		lives = 5;
 		score = 0;
