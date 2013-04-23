@@ -7,12 +7,16 @@ import android.view.Menu;
 
 
 public class MainActivity extends Activity {
-	
+	public int lives;
+	public int score;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(new SurfacePanel(this));
+		lives = 5;
+		score = 0;
+		
 		
 	}
 
@@ -22,5 +26,13 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-
+	
+	public void addScore(int add){
+		score = score + add;
+		
+	}
+	
+	public void addLife(int add){
+		lives = lives + add;
+	}
 }

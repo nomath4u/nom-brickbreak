@@ -15,6 +15,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	protected DrawThread thread;
 	public Paddle mainPaddle;
 	public Ball mainBall;
+	public MainActivity parent;
 	
 	
 	public SurfacePanel(Context context){
@@ -23,6 +24,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		thread = new DrawThread(getHolder());
 		mainPaddle = new Paddle(context);
 		mainBall = new Ball(context);
+		parent = (MainActivity)context;
 		
 	}
 	
@@ -93,7 +95,11 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        
 	                        c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        c.drawRect(mainBall.image, mainBall.paint);
+	                        c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
 	                        mainBall.tick(); //Tell the ball it needs to move again
+	                        parent.addScore(1);
+	                        
+	                        
 	 
 	                        canvas.drawBitmap (mBitmap, 0,  0,null);
 	                    } finally {

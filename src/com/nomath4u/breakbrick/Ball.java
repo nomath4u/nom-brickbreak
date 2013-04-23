@@ -20,11 +20,14 @@ public class Ball {
 	private int ballheight;
 	public float xspeed;
 	public float yspeed;
+	private MainActivity parent;
 	
 	Ball(Context context){
+		parent = (MainActivity) context;
 		setBallCharacteristics();
 		getDisplay(context);
 		spawnAtStart();
+		
 	}
 	
 	private void setBallCharacteristics(){
@@ -97,5 +100,32 @@ public class Ball {
 	
 	public void tick(){
 		image.offset(xspeed, yspeed);
+		
+		/*Check against screen edges*/
+		
+		if((image.left < 0) || (image.right > screenwidth)){
+			flipXSpeed();
+		}
+		
+		if((image.top < 0)){
+			flipYSpeed();
+		}
+		
+		if(image.bottom > screenheight){
+			parent.addLife(-1);
+			flipYSpeed(); //Temporary as testing
+		}
+		
+
+	}
+	
+	private void flipXSpeed(){
+		image.offset(-2 * xspeed, 0); // Move the ball twice as far because it already moved once too far above
+		xspeed = -xspeed; //Flip direction
+	}
+	
+	private void flipYSpeed(){
+		image.offset(0, -2 * yspeed);
+		yspeed = -yspeed;
 	}
 }
