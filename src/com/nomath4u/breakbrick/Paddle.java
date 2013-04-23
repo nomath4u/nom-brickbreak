@@ -23,17 +23,17 @@ public class Paddle {
 	public Paint selfstyle;
 	private Handler timer;
 	private Runnable moveSelf;
-	private SensorManager mSensorManager;
-	private int adcval;
 	private float maxval;
 	private int screenwidth;
 	private int screenheight;
 	private float unit;
 	private int paddlewidth;
 	private int paddleheight;
+	private MainActivity mainA;
 	
 	Paddle(Context context){
 		this.selfimage = new RectF(0,0, 100, 100); //set coordinates to upper left
+		this.mainA = (MainActivity) context;
 		
 		paddlewidth = 60;
 		paddleheight = 10;
@@ -43,7 +43,7 @@ public class Paddle {
 		selfstyle.setColor(Color.BLUE);
 		
 		/*set Sensor manager*/
-		mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+		/*mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
 		Sensor adcsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 		SensorEventListener tmp = new SensorEventListener(){
 			@Override
@@ -57,7 +57,7 @@ public class Paddle {
 			}
 		};
 		mSensorManager.registerListener(tmp,adcsensor, 1000000000);
-		maxval = adcsensor.getMaximumRange();
+		maxval = adcsensor.getMaximumRange();*/
 		
 		/*Get Window dimensions*/
 		Point size = new Point();
@@ -130,8 +130,8 @@ public class Paddle {
 		
 		/*Get these values to be smoother and make it so screenheight is the bottom in manifest*/
 		float top = screenheight - paddleheight;
-		float left = (adcval  * unit * -1) + (screenwidth/2) - (paddlewidth/2);
-		float right = (adcval * unit * -1)+ (screenwidth/2) + (paddlewidth/2);
+		float left = (mainA.adcval  * unit * -1) + (screenwidth/2) - (paddlewidth/2);
+		float right = (mainA.adcval * unit * -1)+ (screenwidth/2) + (paddlewidth/2);
 		float bottom = screenheight;
 		selfimage.set(left, top, right , bottom); 
 	}
@@ -145,6 +145,6 @@ public class Paddle {
 	}
 	
 	private void setUnit(){
-		unit = screenwidth / maxval;
+		unit = screenwidth / mainA.maxval;
 	}
 }
