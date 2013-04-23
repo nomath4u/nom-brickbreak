@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
 	public SensorManager mSensorManager;
 	public float adcval;
 	public float maxval;
+	private SensorEventListener adcListener;
+	private Sensor adcsensor;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,20 +41,20 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume(){
     	super.onResume();
-    	
+    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
     
     @Override
     protected void onRestart(){
     	super.onRestart();
-
+    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
     
     private void createSensorManager(){
     	mSensorManager = (SensorManager) this.getSystemService(Context.SENSOR_SERVICE);
-		Sensor adcsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-		SensorEventListener tmp = new SensorEventListener(){
+		adcsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+		adcListener = new SensorEventListener(){
 			@Override
 			public void onSensorChanged(SensorEvent event){
 				adcval = event.values[0];
@@ -63,20 +65,20 @@ public class MainActivity extends Activity {
 			
 			}
 		};
-		mSensorManager.registerListener(tmp,adcsensor, 1000000000);
+		mSensorManager.registerListener(adcListener,adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
 		maxval = adcsensor.getMaximumRange();
     }
     
     @Override
     protected void onPause(){
     	super.onPause();
-
+    	mSensorManager.unregisterListener(adcListener);
     }
     
     @Override
     protected void onDestroy(){
     	super.onDestroy();
-
+    	mSensorManager.unregisterListener(adcListener);
     }
 	
 	public void addScore(int add){
