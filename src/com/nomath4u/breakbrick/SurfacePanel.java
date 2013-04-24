@@ -56,6 +56,14 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
             }
         }
     }
+    
+    public void reset(){
+    	mainBall.setBallCharacteristics();
+    	mainBall.spawn();
+    	parent.lives = 5;
+    	parent.score = 0;
+    	over = false;
+    }
 	
 	 class DrawThread extends  Thread {
 	        private SurfaceHolder mSurfaceHolder;

@@ -30,7 +30,7 @@ public class Ball {
 		
 	}
 	
-	private void setBallCharacteristics(){
+	public void setBallCharacteristics(){
 			paint = new Paint();
 			paint.setColor(Color.RED);
 			ballwidth = 5;
@@ -39,7 +39,7 @@ public class Ball {
 			yspeed = 7; //Just to start moving
 	}
 	
-	private void spawn(){
+	public void spawn(){
 		image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2)); //Spawn center of ball at center of screen
 	}
 

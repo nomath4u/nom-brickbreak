@@ -117,8 +117,22 @@ public class MainActivity extends Activity {
 		                    @Override
 		                    public void onClick(DialogInterface dialog,
 		                            int which) {
+		                    	panel.reset();
+		                		dialog.dismiss();
+		                        
+		                    }
+		                });
+		        builder.setNegativeButton("Exit",
+		                new DialogInterface.OnClickListener() {
+		                    @Override
+		                    public void onClick(DialogInterface dialog,
+		                            int which) {
 
 		                		dialog.dismiss();
+		                		Intent intent = new Intent(Intent.ACTION_MAIN);
+		                		intent.addCategory(Intent.CATEGORY_HOME);
+		                		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		                		startActivity(intent);
 		                        
 		                    }
 		                });
