@@ -121,6 +121,12 @@ public class Ball {
 			spawn();
 		}
 		
+		/*Check for brick collisions*/
+		if(image.intersect(parent.panel.testBrick.image)){
+			parent.panel.testBrick.destroySelf();
+			flipYSpeed();
+		}
+		
 		
 		
 

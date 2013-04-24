@@ -20,6 +20,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public Ball mainBall;
 	public MainActivity parent;
 	public boolean over = false;
+	public Brick testBrick;
 	
 	
 	public SurfacePanel(Context context){
@@ -29,6 +30,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		mainPaddle = new Paddle(context);
 		mainBall = new Ball(context);
 		parent = (MainActivity)context;
+		
+		
+		/*Create the bricks*/
+		testBrick = new Brick(1);
 		
 	}
 	
@@ -85,6 +90,11 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	            paint.setStrokeWidth(1);
 	            paint.setTextSize(20);
 	            
+	            Paint brickPaint = new Paint();
+	            brickPaint.setColor(Color.GREEN);
+	            brickPaint.setStrokeWidth(1);
+	            
+	            
 	            
 	 
 	            while (_run){
@@ -109,6 +119,9 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        
 	                        	c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        	c.drawRect(mainBall.image, mainBall.paint);
+	                        	/*Draw the Bricks*/
+	                        	c.drawRect(testBrick.image,brickPaint);
+	                        	
 	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
 	                        	mainBall.tick(); //Tell the ball it needs to move again
 	                        	parent.addScore(1);
