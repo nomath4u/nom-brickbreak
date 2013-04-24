@@ -1,13 +1,19 @@
 package com.nomath4u.breakbrick;
 
 
+
+
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
@@ -21,6 +27,8 @@ public class MainActivity extends Activity {
 	public float maxval;
 	private SensorEventListener adcListener;
 	private Sensor adcsensor;
+	public SurfacePanel panel;
+	public boolean over = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +36,8 @@ public class MainActivity extends Activity {
 		createSensorManager();
 		//WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
 		getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON); //Get active wakelock
-		setContentView(new SurfacePanel(this));
+		panel = new SurfacePanel(this);
+		setContentView(panel);
 		lives = 5;
 		score = 0;
 		
@@ -93,4 +102,34 @@ public class MainActivity extends Activity {
 	public void addLife(int add){
 		lives = lives + add;
 	}
+	
+	public void gameOver(final Context context){
+		runOnUiThread(new Runnable(){
+			public void run(){
+				AlertDialog.Builder builder = new AlertDialog.Builder(context);
+		        //builder.setView(checkBoxView);
+		        builder.setCancelable(true);
+		        builder.setInverseBackgroundForced(true);
+		        builder.setTitle(R.string.game_over_title);
+		        builder.setMessage(R.string.game_over_message);
+		        builder.setPositiveButton("OK",
+		                new DialogInterface.OnClickListener() {
+		                    @Override
+		                    public void onClick(DialogInterface dialog,
+		                            int which) {
+
+		                		dialog.dismiss();
+		                        
+		                    }
+		                });
+		        AlertDialog alert = builder.create();
+		        alert.show();
+			}
+		});   
+	}		
+		
+	     
+	        
+		
+	
 }

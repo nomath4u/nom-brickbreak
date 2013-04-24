@@ -2,6 +2,7 @@ package com.nomath4u.breakbrick;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
@@ -22,10 +23,11 @@ public class Paddle {
 	public RectF selfimage;
 	public Paint selfstyle;
 	private Handler timer;
+	private Handler timer2;
 	private Runnable moveSelf;
 	private float maxval;
-	private int screenwidth;
-	private int screenheight;
+	public int screenwidth;
+	public int screenheight;
 	private float unit;
 	private int paddlewidth;
 	private int paddleheight;
@@ -42,22 +44,7 @@ public class Paddle {
 		this.selfstyle = new Paint();
 		selfstyle.setColor(Color.BLUE);
 		
-		/*set Sensor manager*/
-		/*mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
-		Sensor adcsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-		SensorEventListener tmp = new SensorEventListener(){
-			@Override
-			public void onSensorChanged(SensorEvent event){
-				adcval = (int) event.values[0];
-				
-			}
-			@Override
-			public void onAccuracyChanged(Sensor sensor, int accuracy){
-			
-			}
-		};
-		mSensorManager.registerListener(tmp,adcsensor, 1000000000);
-		maxval = adcsensor.getMaximumRange();*/
+		
 		
 		/*Get Window dimensions*/
 		Point size = new Point();
@@ -128,7 +115,6 @@ public class Paddle {
 	
 	public void move(){
 		
-		/*Get these values to be smoother and make it so screenheight is the bottom in manifest*/
 		float top = screenheight - paddleheight;
 		float left = (mainA.adcval  * unit * -1) + (screenwidth/2) - (paddlewidth/2);
 		float right = (mainA.adcval * unit * -1)+ (screenwidth/2) + (paddlewidth/2);
@@ -147,4 +133,5 @@ public class Paddle {
 	private void setUnit(){
 		unit = screenwidth / mainA.maxval;
 	}
+	
 }

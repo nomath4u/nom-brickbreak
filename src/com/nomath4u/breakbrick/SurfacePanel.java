@@ -1,21 +1,25 @@
 package com.nomath4u.breakbrick;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback {
-	private boolean _run;
+	public boolean _run;
 	private Bitmap mBitmap;
 	public boolean isDrawing = true;
 	protected DrawThread thread;
 	public Paddle mainPaddle;
 	public Ball mainBall;
 	public MainActivity parent;
+	public boolean over = false;
 	
 	
 	public SurfacePanel(Context context){
@@ -92,12 +96,23 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        /*Clear Canvas*/
 	                        c.drawColor(Color.BLACK);
 	                        
+	                        if(parent.lives > 0){
 	                        
-	                        c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
-	                        c.drawRect(mainBall.image, mainBall.paint);
-	                        c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
-	                        mainBall.tick(); //Tell the ball it needs to move again
-	                        parent.addScore(1);
+	                        
+	                        	c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
+	                        	c.drawRect(mainBall.image, mainBall.paint);
+	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
+	                        	mainBall.tick(); //Tell the ball it needs to move again
+	                        	parent.addScore(1);
+	                        }
+	                        else{
+	                        	c.drawText("Game Over",mainPaddle.screenwidth/2 , mainPaddle.screenheight/2, paint);
+	                        	if(!over){
+	                        		parent.gameOver(parent);
+	                        		over = true;
+	                        	
+	                        	}
+	                        }
 	                        
 	                        
 	 

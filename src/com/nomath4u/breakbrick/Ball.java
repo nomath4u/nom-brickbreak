@@ -26,7 +26,7 @@ public class Ball {
 		parent = (MainActivity) context;
 		setBallCharacteristics();
 		getDisplay(context);
-		spawnAtStart();
+		spawn();
 		
 	}
 	
@@ -39,7 +39,7 @@ public class Ball {
 			yspeed = 7; //Just to start moving
 	}
 	
-	private void spawnAtStart(){
+	private void spawn(){
 		image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2)); //Spawn center of ball at center of screen
 	}
 
@@ -101,6 +101,11 @@ public class Ball {
 	public void tick(){
 		image.offset(xspeed, yspeed);
 		
+		/*Check for paddle collisions*/
+		if(image.intersect(parent.panel.mainPaddle.selfimage)){
+			flipYSpeed();
+		}
+		
 		/*Check against screen edges*/
 		
 		if((image.left < 0) || (image.right > screenwidth)){
@@ -113,8 +118,10 @@ public class Ball {
 		
 		if(image.bottom > screenheight){
 			parent.addLife(-1);
-			flipYSpeed(); //Temporary as testing
+			spawn();
 		}
+		
+		
 		
 
 	}
