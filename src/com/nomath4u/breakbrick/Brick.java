@@ -7,8 +7,11 @@ public class Brick {
 	private int brickHeight = 15;
 	public RectF image;
 	
-	Brick(int number){
-		image = new RectF(260, 340, 260 + brickWidth, 340 + brickHeight);
+	Brick(int number,int screenwidth, int screenheight){
+		/*six in a row with 10 on each side*/
+		int xoffset = 10 * (number % 7) ;
+		int yoffset = 30 + (30 * (number/7));
+		image = new RectF(xoffset + (((number % 7)-1) * (brickWidth)), yoffset, xoffset + (((number % 7) - 1) * (brickWidth)) + brickWidth, yoffset + brickHeight);
 		
 	}
 	

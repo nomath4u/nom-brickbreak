@@ -1,5 +1,8 @@
 package com.nomath4u.breakbrick;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +23,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public Ball mainBall;
 	public MainActivity parent;
 	public boolean over = false;
-	public Brick testBrick;
+	public List<Brick> bricks;
 	
 	
 	public SurfacePanel(Context context){
@@ -30,10 +33,15 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		mainPaddle = new Paddle(context);
 		mainBall = new Ball(context);
 		parent = (MainActivity)context;
+		bricks = new ArrayList<Brick>();
 		
 		
 		/*Create the bricks*/
-		testBrick = new Brick(1);
+		int rows = 4;
+		for(int i = 0; i < (rows * 7); i++ ){
+			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight);
+			bricks.add(tmpBrick);
+		}
 		
 	}
 	
@@ -120,7 +128,9 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        	c.drawRect(mainBall.image, mainBall.paint);
 	                        	/*Draw the Bricks*/
-	                        	c.drawRect(testBrick.image,brickPaint);
+	                        	for(Brick tmpBrick : bricks){
+	                        			c.drawRect(tmpBrick.image, brickPaint);
+	                        	}
 	                        	
 	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
 	                        	mainBall.tick(); //Tell the ball it needs to move again

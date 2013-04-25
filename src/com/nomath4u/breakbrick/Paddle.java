@@ -37,8 +37,8 @@ public class Paddle {
 		this.selfimage = new RectF(0,0, 100, 100); //set coordinates to upper left
 		this.mainA = (MainActivity) context;
 		
-		paddlewidth = 60;
-		paddleheight = 10;
+		paddlewidth = 80;
+		paddleheight = 15;
 		
 		/*Set Paint Style*/
 		this.selfstyle = new Paint();

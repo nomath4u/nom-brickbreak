@@ -35,8 +35,8 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			xspeed = 7;
-			yspeed = 7; //Just to start moving
+			xspeed = 4;
+			yspeed = 4; //Just to start moving
 	}
 	
 	public void spawn(){
@@ -122,11 +122,12 @@ public class Ball {
 		}
 		
 		/*Check for brick collisions*/
-		if(image.intersect(parent.panel.testBrick.image)){
-			parent.panel.testBrick.destroySelf();
-			flipYSpeed();
+		for(Brick tmpBrick : parent.panel.bricks){
+			if(image.intersect(tmpBrick.image)){
+				tmpBrick.destroySelf();
+				flipYSpeed();
+			}
 		}
-		
 		
 		
 
