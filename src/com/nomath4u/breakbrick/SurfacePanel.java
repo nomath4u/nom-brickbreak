@@ -39,7 +39,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		/*Create the bricks*/
 		int rows = 4;
 		for(int i = 0; i < (rows * 7); i++ ){
-			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight);
+			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
 			bricks.add(tmpBrick);
 		}
 		

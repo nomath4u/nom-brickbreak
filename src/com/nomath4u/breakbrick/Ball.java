@@ -1,5 +1,8 @@
 package com.nomath4u.breakbrick;
 
+import java.util.Iterator;
+import java.util.List;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -122,12 +125,27 @@ public class Ball {
 		}
 		
 		/*Check for brick collisions*/
-		for(Brick tmpBrick : parent.panel.bricks){
+		/*for(Brick tmpBrick : parent.panel.bricks){
 			if(image.intersect(tmpBrick.image)){
 				tmpBrick.destroySelf();
 				flipYSpeed();
 			}
-		}
+		}*/
+		
+		 List<Brick> bricks = parent.panel.bricks;
+		    Iterator<Brick> brickIterator = bricks.iterator();
+		    Brick brick = null;
+		    boolean intersected = false;
+		    while (! intersected && brickIterator.hasNext())
+		    {
+		      brick = brickIterator.next();
+		      intersected = image.intersect(brick.image);
+		    }
+		    if (intersected)
+		    {
+		      bricks.remove(brick);
+		      flipYSpeed();
+		    }
 		
 		
 
