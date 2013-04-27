@@ -29,7 +29,7 @@ public class Paddle {
 	public int screenwidth;
 	public int screenheight;
 	private float unit;
-	private int paddlewidth;
+	public int paddlewidth;
 	private int paddleheight;
 	private MainActivity mainA;
 	

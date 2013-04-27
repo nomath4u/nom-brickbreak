@@ -2,6 +2,7 @@ package com.nomath4u.breakbrick;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Vector;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -21,10 +22,9 @@ public class Ball {
 	private int screenheight;
 	private int ballwidth;
 	private int ballheight;
-	public float xspeed;
-	public float yspeed;
+	public PhysVector velocity;
 	private MainActivity parent;
-	
+	private static int maxAngle = 80;
 	Ball(Context context){
 		parent = (MainActivity) context;
 		setBallCharacteristics();
@@ -38,8 +38,7 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			xspeed = 4;
-			yspeed = 4; //Just to start moving
+			velocity = new PhysVector(4,135);
 	}
 	
 	public void spawn(){
@@ -102,11 +101,12 @@ public class Ball {
 	}
 	
 	public void tick(){
-		image.offset(xspeed, yspeed);
+		image.offset((float)velocity.speedX(),(float)velocity.speedY());
 		
 		/*Check for paddle collisions*/
 		if(image.intersect(parent.panel.mainPaddle.selfimage)){
 			flipYSpeed();
+			rotateToAngle(parent.panel.mainPaddle.selfimage.centerX(), parent.panel.mainPaddle.paddlewidth);
 		}
 		
 		/*Check against screen edges*/
@@ -125,12 +125,7 @@ public class Ball {
 		}
 		
 		/*Check for brick collisions*/
-		/*for(Brick tmpBrick : parent.panel.bricks){
-			if(image.intersect(tmpBrick.image)){
-				tmpBrick.destroySelf();
-				flipYSpeed();
-			}
-		}*/
+		
 		
 		 List<Brick> bricks = parent.panel.bricks;
 		    Iterator<Brick> brickIterator = bricks.iterator();
@@ -152,12 +147,21 @@ public class Ball {
 	}
 	
 	private void flipXSpeed(){
-		image.offset(-2 * xspeed, 0); // Move the ball twice as far because it already moved once too far above
-		xspeed = -xspeed; //Flip direction
+		image.offset(-2 * (float)velocity.speedX(), 0); // Move the ball twice as far because it already moved once too far above
+		  //Flip direction
+		velocity.flipX();
 	}
 	
 	private void flipYSpeed(){
-		image.offset(0, -2 * yspeed);
-		yspeed = -yspeed;
+		image.offset(0, -2 * (float)velocity.speedY());
+		velocity.flipY();
+	}
+	
+	private void rotateToAngle(float paddleCenter, int paddlewidth){
+		int distance = (int)paddleCenter - paddlewidth;
+		int multiplier = paddlewidth/distance;
+		velocity.direction = multiplier * maxAngle;
+		
+		
 	}
 }
