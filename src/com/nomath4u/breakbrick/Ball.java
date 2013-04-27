@@ -38,7 +38,7 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(4,135);
+			velocity = new PhysVector(5,135);
 	}
 	
 	public void spawn(){
@@ -101,11 +101,10 @@ public class Ball {
 	}
 	
 	public void tick(){
-		image.offset((float)velocity.speedX(),(float)velocity.speedY());
+		image.offset((float)velocity.speedX(),-(float)velocity.speedY());
 		
 		/*Check for paddle collisions*/
 		if(image.intersect(parent.panel.mainPaddle.selfimage)){
-			flipYSpeed();
 			rotateToAngle(parent.panel.mainPaddle.selfimage.centerX(), parent.panel.mainPaddle.paddlewidth);
 		}
 		
@@ -147,20 +146,26 @@ public class Ball {
 	}
 	
 	private void flipXSpeed(){
-		image.offset(-2 * (float)velocity.speedX(), 0); // Move the ball twice as far because it already moved once too far above
+		//image.offset(-2 * (float)velocity.speedX(), 0); // Move the ball twice as far because it already moved once too far above
 		  //Flip direction
 		velocity.flipX();
 	}
 	
 	private void flipYSpeed(){
-		image.offset(0, -2 * (float)velocity.speedY());
+		//image.offset(0, -2 * (float)velocity.speedY());
 		velocity.flipY();
 	}
 	
 	private void rotateToAngle(float paddleCenter, int paddlewidth){
-		int distance = (int)paddleCenter - paddlewidth;
-		int multiplier = paddlewidth/distance;
-		velocity.direction = multiplier * maxAngle;
+		float distance = (paddleCenter - this.image.right);
+		float multiplier = distance/paddlewidth;
+		if(distance >0 ){
+			velocity.direction = 90 + (multiplier * maxAngle);
+		}
+		else{
+			velocity.direction = 90 - (-1 * multiplier * maxAngle);
+		}
+		
 		
 		
 	}

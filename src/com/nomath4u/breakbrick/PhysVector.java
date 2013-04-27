@@ -13,22 +13,22 @@ public class PhysVector {
 	}
 	
 	public double speedX(){
-		double xspeed = mag * Math.cos(direction);
-		return xspeed;
+		return mag * Math.cos(Math.toRadians(direction));
 	}
 	
 	public double speedY(){
-		double yspeed = mag * Math.sin(direction);
-		return yspeed;
+		return Math.sin(Math.toRadians(direction))*mag;
 	}
 	
 	public void flipY(){
-		this.direction = this.direction * -1;
+		
+		this.direction = (-1 * this.direction); 
 	}
 	
 	public void flipX(){
-		this.direction = 180 - this.direction;
+		
 		flipY();
+		this.direction = (this.direction + 180);
 	}
 }
 
