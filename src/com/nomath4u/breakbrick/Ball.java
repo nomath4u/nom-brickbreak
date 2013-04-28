@@ -27,18 +27,18 @@ public class Ball {
 	private static int maxAngle = 80;
 	Ball(Context context){
 		parent = (MainActivity) context;
-		setBallCharacteristics();
+		setBallCharacteristics(1);
 		getDisplay(context);
 		spawn();
 		
 	}
 	
-	public void setBallCharacteristics(){
+	public void setBallCharacteristics(int speed){
 			paint = new Paint();
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(5,-135);
+			velocity = new PhysVector(speed + 5,-135);
 	}
 	
 	public void spawn(){

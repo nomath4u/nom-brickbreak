@@ -23,6 +23,7 @@ import android.view.WindowManager.LayoutParams;
 public class MainActivity extends Activity {
 	public int lives;
 	public int score;
+	public int level;
 	public SensorManager mSensorManager;
 	public float adcval;
 	public float maxval;
@@ -41,6 +42,7 @@ public class MainActivity extends Activity {
 		setContentView(panel);
 		lives = 5;
 		score = 0;
+		level = 1;
 		
 		
 	}

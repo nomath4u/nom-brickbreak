@@ -67,10 +67,11 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     }
     
     public void reset(){
-    	mainBall.setBallCharacteristics();
+    	mainBall.setBallCharacteristics(parent.level);
     	mainBall.spawn();
     	parent.lives = 5;
     	parent.score = 0;
+    	parent.level = 1;
     	over = false;
     	/*Remove and then re-add bricks*/
     	bricks.clear();
@@ -78,11 +79,18 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     }
     
     private void createBricks(){
-    	int rows = 4;
-		for(int i = 0; i < (rows * 7); i++ ){
+    	int rows = 1;
+		for(int i = 0; i < (rows * 6); i++ ){
 			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
 			bricks.add(tmpBrick);
 		}
+    }
+    
+    private void nextLevel(){
+    	parent.level = parent.level+1;
+    	mainBall.setBallCharacteristics(parent.level);
+    	mainBall.spawn();
+    	createBricks();
     }
 	
 	 class DrawThread extends  Thread {
@@ -135,11 +143,17 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        	c.drawRect(mainBall.image, mainBall.paint);
 	                        	/*Draw the Bricks*/
-	                        	for(Brick tmpBrick : bricks){
-	                        			c.drawRect(tmpBrick.image, brickPaint);
-	                        	}
+	                        	if(bricks.size() != 0){
+	                        		
 	                        	
-	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives, 0, 100, paint);
+	                        		for(Brick tmpBrick : bricks){
+	                        				c.drawRect(tmpBrick.image, brickPaint);
+	                        		}
+	                        	}
+	                        	else{
+	                        		nextLevel();
+	                        	}
+	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level + "   " + bricks.size(), 0, 100, paint);
 	                        	mainBall.tick(); //Tell the ball it needs to move again
 	                        	parent.addScore(1);
 	                        }
