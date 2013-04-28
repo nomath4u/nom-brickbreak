@@ -38,7 +38,7 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(speed + 5,-135);
+			velocity = new PhysVector(speed + 5,135);
 	}
 	
 	public void spawn(){
@@ -101,7 +101,21 @@ public class Ball {
 	}
 	
 	public void tick(){
-		image.offset((float)velocity.speedX(),-(float)velocity.speedY());
+		image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
+		
+		/*fix the size of the ball that sometimes gets messed up on collision*/ /*This is just a hack still need to find the real problem*/
+		if(image.bottom - image.top != 4){
+			float factor = (4 - (image.bottom - image.top))/2;
+			image.bottom = image.bottom + factor;
+			image.top = image.top - factor;
+		}
+		
+		if(image.right - image.left != 4){
+			float factor = (4 - (image.right - image.left))/2;
+			image.right = image.right + factor;
+			image.left = image.left - factor;
+		}
+		
 		
 		/*Check for paddle collisions*/
 		if(image.intersect(parent.panel.mainPaddle.selfimage)){

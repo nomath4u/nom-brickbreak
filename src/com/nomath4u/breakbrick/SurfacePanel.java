@@ -129,12 +129,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        }
 	                        final Canvas c = new Canvas (mBitmap);
 	 
-	                        /*c.drawColor(Color.WHITE);
-	                        c.drawCircle(80,80, 30, paint);
-	                        c.drawLine(80, 80, 80, 200, paint);
-	                        c.drawText(""+canvas.getWidth()+", "+canvas.getHeight(), 0, 200,paint);*/
-	                        
-	                        /*Clear Canvas*/
+	                     
 	                        c.drawColor(Color.BLACK);
 	                        
 	                        if(parent.lives > 0){
@@ -153,7 +148,9 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	else{
 	                        		nextLevel();
 	                        	}
-	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level + "   " + bricks.size(), 0, 100, paint);
+	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
+	                        	c.drawText("X: " + (mainBall.image.right - mainBall.image.left), 0, 200, paint);
+	                        	c.drawText("Y: " + (mainBall.image.top - mainBall.image.bottom), 0, 300, paint);
 	                        	mainBall.tick(); //Tell the ball it needs to move again
 	                        	parent.addScore(1);
 	                        }
