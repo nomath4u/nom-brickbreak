@@ -14,6 +14,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
@@ -104,14 +105,25 @@ public class MainActivity extends Activity {
 	}
 	
 	public void gameOver(final Context context){
+		final int highscore = getHighScore();
+		if(score > highscore){
+			SharedPreferences manager = getPreferences(MODE_PRIVATE);
+			SharedPreferences.Editor edit = manager.edit();
+			edit.putInt("highScore", score);
+			edit.commit();
+		}
 		runOnUiThread(new Runnable(){
 			public void run(){
 				AlertDialog.Builder builder = new AlertDialog.Builder(context);
-		        //builder.setView(checkBoxView);
 		        builder.setCancelable(true);
 		        builder.setInverseBackgroundForced(true);
 		        builder.setTitle(R.string.game_over_title);
-		        builder.setMessage(R.string.game_over_message);
+		        
+		        if(score > highscore){
+		        builder.setMessage("New High Score! Your score was: " + Integer.toString(score));
+		        }
+		        else
+		        	 builder.setMessage("Your score was: " + Integer.toString(score) + "\n Current High Score: " + Integer.toString(highscore));
 		        builder.setPositiveButton("OK",
 		                new DialogInterface.OnClickListener() {
 		                    @Override
@@ -144,7 +156,11 @@ public class MainActivity extends Activity {
 	}		
 		
 	     
-	        
+	 private int getHighScore(){
+		 SharedPreferences manager = getPreferences(MODE_PRIVATE);
+		 int highscore = manager.getInt("highScore", 0);
+		 return highscore;
+	 }
 		
 	
 }

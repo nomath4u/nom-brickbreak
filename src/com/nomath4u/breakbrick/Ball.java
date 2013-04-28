@@ -38,7 +38,7 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(5,135);
+			velocity = new PhysVector(5,-135);
 	}
 	
 	public void spawn(){
@@ -146,13 +146,10 @@ public class Ball {
 	}
 	
 	private void flipXSpeed(){
-		//image.offset(-2 * (float)velocity.speedX(), 0); // Move the ball twice as far because it already moved once too far above
-		  //Flip direction
 		velocity.flipX();
 	}
 	
 	private void flipYSpeed(){
-		//image.offset(0, -2 * (float)velocity.speedY());
 		velocity.flipY();
 	}
 	

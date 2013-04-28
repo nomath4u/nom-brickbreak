@@ -37,11 +37,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		
 		
 		/*Create the bricks*/
-		int rows = 4;
-		for(int i = 0; i < (rows * 7); i++ ){
-			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
-			bricks.add(tmpBrick);
-		}
+		createBricks();
 		
 	}
 	
@@ -76,6 +72,17 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	parent.lives = 5;
     	parent.score = 0;
     	over = false;
+    	/*Remove and then re-add bricks*/
+    	bricks.clear();
+    	createBricks();
+    }
+    
+    private void createBricks(){
+    	int rows = 4;
+		for(int i = 0; i < (rows * 7); i++ ){
+			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
+			bricks.add(tmpBrick);
+		}
     }
 	
 	 class DrawThread extends  Thread {
