@@ -33,6 +33,8 @@ public class Ball {
 		
 	}
 	
+	
+	
 	public void setBallCharacteristics(int speed){
 			paint = new Paint();
 			paint.setColor(Color.RED);

@@ -11,6 +11,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Handler;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -24,6 +25,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public MainActivity parent;
 	public boolean over = false;
 	public List<Brick> bricks;
+	public boolean paused;
 	
 	
 	public SurfacePanel(Context context){
@@ -39,6 +41,30 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		/*Create the bricks*/
 		createBricks();
 		
+	}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event){
+		/*We just care that there was one*/
+		if(paused){
+			unpause();
+		}
+		else{
+			pause();
+		}
+			
+			
+		
+		return super.onTouchEvent(event);
+	}
+	
+	private void pause(){
+		paused = true;
+		
+	}
+	
+	private void unpause(){
+		paused = false;
 	}
 	
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,  int height) {
@@ -134,25 +160,28 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        
 	                        if(parent.lives > 0){
 	                        
-	                        
-	                        	c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
-	                        	c.drawRect(mainBall.image, mainBall.paint);
-	                        	/*Draw the Bricks*/
-	                        	if(bricks.size() != 0){
+	                        	if(!paused){
+	                        		c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
+	                        		c.drawRect(mainBall.image, mainBall.paint);
+	                        		/*Draw the Bricks*/
+	                        		if(bricks.size() != 0){
 	                        		
 	                        	
-	                        		for(Brick tmpBrick : bricks){
-	                        				c.drawRect(tmpBrick.image, brickPaint);
+	                        			for(Brick tmpBrick : bricks){
+	                        					c.drawRect(tmpBrick.image, brickPaint);
+	                        			}
 	                        		}
+	                        		else{
+	                        			nextLevel();
+	                        		}
+	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
+	                        		c.drawText("X: " + (mainBall.image.right - mainBall.image.left), 0, 200, paint);
+	                        		c.drawText("Y: " + (mainBall.image.top - mainBall.image.bottom), 0, 300, paint);
+	                        		mainBall.tick(); //Tell the ball it needs to move again
 	                        	}
-	                        	else{
-	                        		nextLevel();
+	                        	if(paused){
+	                        		c.drawText("Game Paused (tap to unpause)", (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2), paint);
 	                        	}
-	                        	c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
-	                        	c.drawText("X: " + (mainBall.image.right - mainBall.image.left), 0, 200, paint);
-	                        	c.drawText("Y: " + (mainBall.image.top - mainBall.image.bottom), 0, 300, paint);
-	                        	mainBall.tick(); //Tell the ball it needs to move again
-	                        	parent.addScore(1);
 	                        }
 	                        else{
 	                        	c.drawText("Game Over",mainPaddle.screenwidth/2 , mainPaddle.screenheight/2, paint);
