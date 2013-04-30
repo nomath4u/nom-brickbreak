@@ -10,6 +10,9 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -29,6 +32,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public static final int rows = 4;
 	
 	
+	
 	public SurfacePanel(Context context){
 		super(context);
 		getHolder().addCallback(this);
@@ -37,6 +41,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		mainBall = new Ball(context);
 		parent = (MainActivity)context;
 		bricks = new ArrayList<Brick>();
+		
+	
 		
 		
 		/*Create the bricks*/

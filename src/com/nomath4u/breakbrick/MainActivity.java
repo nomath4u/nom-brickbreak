@@ -7,6 +7,9 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -31,6 +34,9 @@ public class MainActivity extends Activity {
 	private Sensor adcsensor;
 	public SurfacePanel panel;
 	public boolean over = false;
+	public SoundPool pool;
+	public int soundID;
+	boolean loaded = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,17 @@ public class MainActivity extends Activity {
 		lives = 5;
 		score = 0;
 		level = 1;
+		
+		/*Setup sounds */
+		pool = new SoundPool(10, AudioManager.STREAM_MUSIC, 0);
+        pool.setOnLoadCompleteListener(new OnLoadCompleteListener() {
+            @Override
+            public void onLoadComplete(SoundPool soundPool, int sampleId,
+                    int status) {
+                loaded = true;
+            }
+        });
+        soundID = pool.load(this, R.raw.blip1, 1);
 		
 		
 	}

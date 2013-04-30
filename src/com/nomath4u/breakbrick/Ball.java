@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.RectF;
+import android.media.AudioManager;
 import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -122,6 +123,17 @@ public class Ball {
 		/*Check for paddle collisions*/
 		if(image.intersect(parent.panel.mainPaddle.selfimage)){
 			rotateToAngle(parent.panel.mainPaddle.selfimage.centerX(), parent.panel.mainPaddle.paddlewidth);
+			   AudioManager audioManager = (AudioManager) parent.getSystemService(parent.AUDIO_SERVICE);
+	            float actualVolume = (float) audioManager
+	                    .getStreamVolume(AudioManager.STREAM_MUSIC);
+	            float maxVolume = (float) audioManager
+	                    .getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+	            float volume = actualVolume / maxVolume;
+	            // Is the sound loaded already?
+	            if (parent.loaded) {
+	                parent.pool.play(parent.soundID, volume, volume, 1, 0, 1f);
+	                Log.e("Test", "Played sound");
+	            }
 		}
 		
 		/*Check against screen edges*/
