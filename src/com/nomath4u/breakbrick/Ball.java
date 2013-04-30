@@ -155,6 +155,7 @@ public class Ball {
 		    {
 		      bricks.remove(brick);
 		      flipYSpeed();
+		      parent.addScore(500);
 		    }
 		
 		

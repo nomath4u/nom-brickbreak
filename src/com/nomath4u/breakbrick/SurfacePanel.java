@@ -26,6 +26,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public boolean over = false;
 	public List<Brick> bricks;
 	public boolean paused;
+	public static final int rows = 4;
 	
 	
 	public SurfacePanel(Context context){
@@ -105,9 +106,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     }
     
     private void createBricks(){
-    	int rows = 1;
 		for(int i = 0; i < (rows * 6); i++ ){
-			Brick tmpBrick = new Brick((i+1),mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
+			Brick tmpBrick = new Brick(i,mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
 			bricks.add(tmpBrick);
 		}
     }
@@ -175,8 +175,6 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        			nextLevel();
 	                        		}
 	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
-	                        		c.drawText("X: " + (mainBall.image.right - mainBall.image.left), 0, 200, paint);
-	                        		c.drawText("Y: " + (mainBall.image.top - mainBall.image.bottom), 0, 300, paint);
 	                        		mainBall.tick(); //Tell the ball it needs to move again
 	                        	}
 	                        	if(paused){
