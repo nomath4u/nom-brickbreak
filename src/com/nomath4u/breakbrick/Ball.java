@@ -168,6 +168,18 @@ public class Ball {
 		      bricks.remove(brick);
 		      flipYSpeed();
 		      parent.addScore(500);
+		      /*play sound*/
+		      AudioManager audioManager = (AudioManager) parent.getSystemService(parent.AUDIO_SERVICE);
+	            float actualVolume = (float) audioManager
+	                    .getStreamVolume(AudioManager.STREAM_MUSIC);
+	            float maxVolume = (float) audioManager
+	                    .getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+	            float volume = actualVolume / maxVolume;
+	            // Is the sound loaded already?
+	            if (parent.loaded) {
+	                parent.pool.play(parent.soundIDa, volume, volume, 1, 0, 1f);
+	                Log.e("Test", "Played sound");
+	            }
 		    }
 		
 		

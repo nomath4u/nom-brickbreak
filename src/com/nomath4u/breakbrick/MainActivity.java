@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
 	public boolean over = false;
 	public SoundPool pool;
 	public int soundID;
+	public int soundIDa;
 	boolean loaded = false;
 
 	@Override
@@ -60,6 +61,7 @@ public class MainActivity extends Activity {
             }
         });
         soundID = pool.load(this, R.raw.blip1, 1);
+        soundIDa= pool.load(this,R.raw.blip2, 0);
 		
 		
 	}
