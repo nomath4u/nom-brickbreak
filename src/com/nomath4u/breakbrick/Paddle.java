@@ -131,7 +131,7 @@ public class Paddle {
 	}
 	
 	private void setUnit(){
-		unit = (screenwidth / ( .66f *(mainA.maxval)));
+		unit = (screenwidth / ( .5f *(mainA.maxval)));
 	}
 	
 }

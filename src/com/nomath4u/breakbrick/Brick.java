@@ -12,7 +12,7 @@ public class Brick {
 	public List<Brick> bricklist;
 	private static float xmult = ((float)10/(float)540); //getting 0
 	private static float ymult = ((float)15/(float)912);
-	private static float brickXmult = ((float)70/(float)540);
+	private static float brickXmult = ((float)78/(float)540);
 	private static float brickYmult = ((float)15/(float)912);
 	
 	Brick(int number,int screenwidth, int screenheight){ 
