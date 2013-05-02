@@ -30,6 +30,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public List<Brick> bricks;
 	public boolean paused;
 	public static final int rows = 4;
+	public boolean playing = false;
 	
 	
 	
@@ -56,8 +57,11 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		if(paused){
 			unpause();
 		}
-		else{
+		else if(playing){
 			pause();
+		}
+		if(!playing){
+			playing = true;
 		}
 			
 			
@@ -122,6 +126,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	parent.level = parent.level+1;
     	mainBall.setBallCharacteristics(parent.level);
     	mainBall.spawn();
+    	playing = false;
     	createBricks();
     }
 	
@@ -165,7 +170,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        c.drawColor(Color.BLACK);
 	                        
 	                        if(parent.lives > 0){
-	                        
+	                        if(playing){
 	                        	if(!paused){
 	                        		c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        		c.drawRect(mainBall.image, mainBall.paint);
@@ -186,6 +191,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	if(paused){
 	                        		c.drawText("Game Paused (tap to unpause)", (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2), paint);
 	                        	}
+	                        }
+	                        else{
+	                        	c.drawText("Tap to begin playing Level" + parent.level, (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2),paint);
+	                        }
 	                        }
 	                        else{
 	                        	c.drawText("Game Over",mainPaddle.screenwidth/2 , mainPaddle.screenheight/2, paint);

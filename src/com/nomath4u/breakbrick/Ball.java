@@ -41,7 +41,7 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = 5;
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(speed + 5,135);
+			velocity = new PhysVector(speed + 5,-135);
 	}
 	
 	public void spawn(){
