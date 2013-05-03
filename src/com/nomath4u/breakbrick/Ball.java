@@ -180,6 +180,7 @@ public class Ball {
 	                parent.pool.play(parent.soundIDa, volume, volume, 1, 0, 1f);
 	                Log.e("Test", "Played sound");
 	            }
+	            parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top);
 		    }
 		
 		

@@ -31,6 +31,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public boolean paused;
 	public static final int rows = 4;
 	public boolean playing = false;
+	public ExtraLife eLife = null;
 	
 	
 	
@@ -42,6 +43,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		mainBall = new Ball(context);
 		parent = (MainActivity)context;
 		bricks = new ArrayList<Brick>();
+		
 		
 	
 		
@@ -154,6 +156,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	            brickPaint.setColor(Color.GREEN);
 	            brickPaint.setStrokeWidth(1);
 	            
+	            Paint lifePaint = new Paint();
+	            lifePaint.setColor(Color.MAGENTA);
+	            lifePaint.setStrokeWidth(1);
+	            
 	            
 	            
 	 
@@ -174,6 +180,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	if(!paused){
 	                        		c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        		c.drawRect(mainBall.image, mainBall.paint);
+	                        		if(eLife !=null)
+	                        			c.drawRect(eLife.image,lifePaint);
 	                        		/*Draw the Bricks*/
 	                        		if(bricks.size() != 0){
 	                        		
