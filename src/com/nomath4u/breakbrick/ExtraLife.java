@@ -7,8 +7,21 @@ public class ExtraLife {
 	public PhysVector velocity;
 	private static int width = 7;
 	private static int height = 7;
-	ExtraLife(int left, int top){
+	private SurfacePanel panel;
+	ExtraLife(int left, int top, SurfacePanel pan)
+	{
 		this.velocity = new PhysVector(2, 270);
 		this.image = new RectF(left, top, left + 7, top + 7);
+		this.panel = pan;
 	}
+	
+public void tick(){
+	image.offset(0, -(float)velocity.speedY());
+	if(image.intersect(panel.mainPaddle.selfimage)){
+		panel.parent.addLife(1);
+	}
+	
 }
+}
+	
+
