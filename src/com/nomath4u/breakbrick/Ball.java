@@ -2,6 +2,7 @@ package com.nomath4u.breakbrick;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 import java.util.Vector;
 
 import android.content.Context;
@@ -26,11 +27,13 @@ public class Ball {
 	public PhysVector velocity;
 	private MainActivity parent;
 	private static int maxAngle = 80;
+	private Random r;
 	Ball(Context context){
 		parent = (MainActivity) context;
 		setBallCharacteristics(1);
 		getDisplay(context);
 		spawn();
+		r = new Random();
 		
 	}
 	
@@ -180,7 +183,9 @@ public class Ball {
 	                parent.pool.play(parent.soundIDa, volume, volume, 1, 0, 1f);
 	                Log.e("Test", "Played sound");
 	            }
-	            parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top, parent.panel);
+	            if(parent.panel.eLife == null)
+	            	if(r.nextInt()%2 == 0)
+	            		parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top, parent.panel);
 		    }
 		
 		

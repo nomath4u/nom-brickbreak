@@ -19,6 +19,13 @@ public void tick(){
 	image.offset(0, -(float)velocity.speedY());
 	if(image.intersect(panel.mainPaddle.selfimage)){
 		panel.parent.addLife(1);
+		/*Remove self*/
+		panel.eLife = null;
+	}
+	
+	if(image.bottom > panel.mainPaddle.screenheight){
+		/*Remove self*/
+		panel.eLife = null;
 	}
 	
 }
