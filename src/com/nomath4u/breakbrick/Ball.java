@@ -184,7 +184,7 @@ public class Ball {
 	                Log.e("Test", "Played sound");
 	            }
 	            if(parent.panel.eLife == null)
-	            	if(r.nextInt()%2 == 0)
+	            	if(r.nextInt()%20 == 0)
 	            		parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top, parent.panel);
 		    }
 		

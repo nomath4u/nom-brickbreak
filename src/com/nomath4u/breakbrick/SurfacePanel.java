@@ -73,6 +73,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	
 	private void pause(){
 		paused = true;
+		parent.setContentView(R.layout.pause_screen);
 		
 	}
 	

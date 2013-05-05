@@ -19,6 +19,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 
@@ -182,6 +183,10 @@ public class MainActivity extends Activity {
 		 int highscore = manager.getInt("highScore", 0);
 		 return highscore;
 	 }
-		
+	
+	 public void backToGame(View view){
+		 panel.paused = false;
+		 setContentView(panel);
+	 }
 	
 }
