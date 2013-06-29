@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
 	public int soundID;
 	public int soundIDa;
 	boolean loaded = false;
+    private float vals[] = new float[] {0,0,0,0,0};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +64,8 @@ public class MainActivity extends Activity {
         });
         soundID = pool.load(this, R.raw.blip1, 1);
         soundIDa= pool.load(this,R.raw.blip2, 0);
+
+
 		
 		
 	}
@@ -93,7 +96,7 @@ public class MainActivity extends Activity {
 		adcListener = new SensorEventListener(){
 			@Override
 			public void onSensorChanged(SensorEvent event){
-				adcval = event.values[0];
+				avgAdc(event.values[0]);
 				
 			}
 			@Override
@@ -101,7 +104,7 @@ public class MainActivity extends Activity {
 			
 			}
 		};
-		mSensorManager.registerListener(adcListener,adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
+		mSensorManager.registerListener(adcListener,adcsensor, SensorManager.SENSOR_DELAY_GAME);
 		maxval = adcsensor.getMaximumRange();
     }
     
@@ -188,5 +191,13 @@ public class MainActivity extends Activity {
 		 panel.paused = false;
 		 setContentView(panel);
 	 }
-	
+
+    public void avgAdc(float mValues){
+        this.vals[0]= this.vals[1];
+        this.vals[1]= this.vals[2];
+        this.vals[2]= this.vals[3];
+        this.vals[3]= this.vals[4];
+        this.vals[4] = mValues;
+        this.adcval = ((vals[0] + vals[1] + vals[2] + vals[3] + vals[4])/5);
+    }
 }
