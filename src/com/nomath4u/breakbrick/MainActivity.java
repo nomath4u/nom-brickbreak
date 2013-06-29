@@ -77,13 +77,13 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume(){
     	super.onResume();
-    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
+    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
     }
     
     @Override
     protected void onRestart(){
     	super.onRestart();
-    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_NORMAL);
+    	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
 
     }
     
