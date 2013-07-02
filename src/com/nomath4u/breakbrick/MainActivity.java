@@ -39,7 +39,8 @@ public class MainActivity extends Activity {
 	public int soundID;
 	public int soundIDa;
 	boolean loaded = false;
-    private float vals[] = new float[] {0,0,0,0,0};
+    private float vals[] = new float[] {0,0,0,0,0,0,0,0,0,0};
+    public static final int AVGS = 10;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +98,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onSensorChanged(SensorEvent event){
 				avgAdc(event.values[0]);
-				
 			}
 			@Override
 			public void onAccuracyChanged(Sensor sensor, int accuracy){
@@ -193,11 +193,25 @@ public class MainActivity extends Activity {
 	 }
 
     public void avgAdc(float mValues){
-        this.vals[0]= this.vals[1];
+        float total = 0;
+
+
+        /*This loop handles entire reassignment except for the newly incoming one handled immediately after*/
+        for( int i = 0; i < (AVGS-1); i++){
+            this.vals[i] = this.vals[i+1];
+        }
+        //this.vals[AVGS] = mValues;
+
+
+        /*this.vals[0]= this.vals[1];
         this.vals[1]= this.vals[2];
         this.vals[2]= this.vals[3];
-        this.vals[3]= this.vals[4];
-        this.vals[4] = mValues;
-        this.adcval = ((vals[0] + vals[1] + vals[2] + vals[3] + vals[4])/5);
+        this.vals[3]= this.vals[4];*/
+        this.vals[AVGS-1] = mValues;
+       // this.adcval = ((this.vals[0] + this.vals[1] + this.vals[2] + this.vals [3] + this.vals [4])/5);
+        for(int j = 0; j < AVGS; j++){
+            total += this.vals[j];
+        }
+        this.adcval = (total/AVGS);
     }
 }
