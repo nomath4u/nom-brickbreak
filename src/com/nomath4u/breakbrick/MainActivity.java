@@ -48,8 +48,8 @@ public class MainActivity extends Activity {
 		createSensorManager();
 		//WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
 		getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON); //Get active wakelock
-		panel = new SurfacePanel(this);
-		setContentView(panel);
+		this.panel = new SurfacePanel(this);
+		setContentView(this.panel);
 		lives = 5;
 		score = 0;
 		level = 1;
@@ -187,9 +187,9 @@ public class MainActivity extends Activity {
 		 return highscore;
 	 }
 	
-	 public void backToGame(View view){
+	 public void backToGame(){
 		 panel.paused = false;
-		 setContentView(panel);
+		 setContentView(this.panel);
 	 }
 
     public void avgAdc(float mValues){

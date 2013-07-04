@@ -14,9 +14,13 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback {
 	public boolean _run;
@@ -32,6 +36,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public static final int rows = 4;
 	public boolean playing = false;
 	public ExtraLife eLife = null;
+    private LayoutInflater inflater;
+    private View pauseView;
+    private ViewGroup pauseViewGroup;
+    private boolean added = false;
 	
 	
 	
@@ -43,8 +51,13 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		mainBall = new Ball(context);
 		parent = (MainActivity)context;
 		bricks = new ArrayList<Brick>();
-		
-		
+        this.inflater = LayoutInflater.from(context);
+        this.pauseView = inflater.inflate(R.layout.pause_screen,null);
+		this.pauseViewGroup = (ViewGroup) findViewById(android.R.id.content);
+
+        /*Add the pause View on top of the surfaceview and make it invisible*/
+        //parent.addContentView(pauseView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+		//this.pauseView.setVisibility(pauseView.VISIBLE);
 	
 		
 		
@@ -73,12 +86,40 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	
 	private void pause(){
 		paused = true;
-		parent.setContentView(R.layout.pause_screen);
+
+        /*Show the pause view*/
+        //this.pauseView.setVisibility(pauseView.VISIBLE);
+
+        if(!added){
+            parent.addContentView(pauseView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            added = true;
+        }
+
+        else{
+             pauseView.setVisibility(VISIBLE);
+        }
+
 		
 	}
 	
 	private void unpause(){
-		paused = false;
+
+        /*Loop through Views to find and remove the pauseview if this is faster
+        for(int i = 0; i < this.pauseViewGroup.getChildCount(); i++){
+            if(this.pauseViewGroup.getChildAt(i) == this.pauseView){
+                this.pauseViewGroup.removeViewAt(i);
+                break;
+            }
+        }*/
+
+        //this.pauseView.setVisibility(pauseView.INVISIBLE);
+        //((LinearLayout)pauseView.getParent()).removeView(this.pauseView);
+
+
+        /*Start running the game again*/
+        //parent.backToGame();
+        pauseView.setVisibility(INVISIBLE);
+        paused = false;
 	}
 	
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,  int height) {
