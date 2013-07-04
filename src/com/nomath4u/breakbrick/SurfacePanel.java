@@ -69,10 +69,12 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	@Override
 	public boolean onTouchEvent(MotionEvent event){
 		/*We just care that there was one*/
-		if(paused){
+
+        /*Depricated with pause menu*/
+		/*if(paused){
 			unpause();
-		}
-		else if(playing){
+		}*/
+		/*else*/ if(playing){
 			pause();
 		}
 		if(!playing){
@@ -102,7 +104,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		
 	}
 	
-	private void unpause(){
+	public void unpause(){
 
         /*Loop through Views to find and remove the pauseview if this is faster
         for(int i = 0; i < this.pauseViewGroup.getChildCount(); i++){

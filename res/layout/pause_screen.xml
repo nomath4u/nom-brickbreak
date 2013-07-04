@@ -5,10 +5,33 @@
     android:orientation="vertical" >
 
     <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return to Game"
+            android:id="@+id/button3"
+            android:onClick="backToGame"
+            android:layout_gravity="center"/>
+
+    <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/test"
-        android:onClick="backToGame" />
+        android:text="New Game"
+        android:layout_gravity="center"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Highscore"
+            android:id="@+id/button"
+            android:layout_gravity="center"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/button2"
+            android:onClick="selfDestruct"
+            android:layout_gravity="center"/>
 
 </LinearLayout>

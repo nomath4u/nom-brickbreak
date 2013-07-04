@@ -187,9 +187,8 @@ public class MainActivity extends Activity {
 		 return highscore;
 	 }
 	
-	 public void backToGame(){
-		 panel.paused = false;
-		 setContentView(this.panel);
+	 public void backToGame(View view){
+		 panel.unpause();
 	 }
 
     public void avgAdc(float mValues){
@@ -213,5 +212,13 @@ public class MainActivity extends Activity {
             total += this.vals[j];
         }
         this.adcval = (total/AVGS);
+    }
+
+    public void selfDestruct(View view){
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        //moveTaskToBack(true);
     }
 }
