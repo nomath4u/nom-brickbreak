@@ -57,6 +57,15 @@ public class Paddle {
 		      
 
 		      switch (metrics.densityDpi) {
+                  case DisplayMetrics.DENSITY_XXXHIGH:
+                      Log.i("display", "XXXHIGH");
+                      screenheight = size.y - 128;
+                  case DisplayMetrics.DENSITY_XXHIGH:
+                      Log.i("display", "XXHIGH");
+                      screenheight = size.y - 96;
+                  case DisplayMetrics.DENSITY_XHIGH:
+                      Log.i("display", "XHIGH");
+                      screenheight = size.y - 64;
 		          case DisplayMetrics.DENSITY_HIGH:
 		              Log.i("display", "high");
 		              screenheight = size.y - 48;
