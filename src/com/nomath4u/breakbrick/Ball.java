@@ -12,6 +12,7 @@ import android.graphics.Point;
 import android.graphics.RectF;
 import android.media.AudioManager;
 import android.os.Build;
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -28,12 +29,23 @@ public class Ball {
 	private MainActivity parent;
 	private static int maxAngle = 80;
 	private Random r;
+    public double scalar;
+    private Handler timer;
+    private Runnable ballTick;
 	Ball(Context context){
 		parent = (MainActivity) context;
-		setBallCharacteristics(1);
 		getDisplay(context);
+        setBallCharacteristics(1);
 		spawn();
 		r = new Random();
+
+        /*timer = new Handler();
+        ballTick = new Runnable(){
+            public void run(){
+                tick(parent.panel.tickable);
+                timer.postDelayed(ballTick, (17)); //just slower than 60fps
+            }
+        };*/
 		
 	}
 	
@@ -42,9 +54,10 @@ public class Ball {
 	public void setBallCharacteristics(int speed){
 			paint = new Paint();
 			paint.setColor(Color.RED);
-			ballwidth = 5;
+			ballwidth = (int)(3.33);
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector(speed + 5,-135);
+			velocity = new PhysVector((int)((speed + 5)*(scalar)),-135);
+            Log.i("Speed","Speed is " + String.valueOf(velocity.mag));
 	}
 	
 	public void spawn(){
@@ -68,23 +81,32 @@ public class Ball {
                 case DisplayMetrics.DENSITY_XXXHIGH:
                     Log.i("display", "XXXHIGH");
                     screenheight = size.y - 128;
+                    scalar = 4;
+                    break;
                 case DisplayMetrics.DENSITY_XXHIGH:
                     Log.i("display", "XXHIGH");
                     screenheight = size.y - 96;
+                    scalar = 3;
+                    break;
                 case DisplayMetrics.DENSITY_XHIGH:
                     Log.i("display", "XHIGH");
                     screenheight = size.y - 64;
+                    scalar = 2;
+                    break;
                 case DisplayMetrics.DENSITY_HIGH:
                     Log.i("display", "high");
                     screenheight = size.y - 48;
+                    scalar = 1.5;
                     break;
                 case DisplayMetrics.DENSITY_MEDIUM:
                     Log.i("display", "medium/default");
                     screenheight = size.y - 32;
+                    scalar = 1;
                     break;
                 case DisplayMetrics.DENSITY_LOW:
                     Log.i("display", "low");
                     screenheight = size.y - 24;
+                    scalar = .75;
                     break;
                 default:
                     Log.i("display", "Unknown density");
@@ -100,14 +122,17 @@ public class Ball {
                 case DisplayMetrics.DENSITY_HIGH:
                     Log.i("display", "high");
                     screenheight = d.getHeight() - 48;
+                    scalar = 1.5;
                     break;
                 case DisplayMetrics.DENSITY_MEDIUM:
                     Log.i("display", "medium/default");
                     screenheight = d.getHeight() - 32;
+                    scalar = 1;
                     break;
                 case DisplayMetrics.DENSITY_LOW:
                     Log.i("display", "low");
                     screenheight = d.getHeight() - 24;
+                    scalar = .75;
                     break;
                 default:
                     Log.i("display", "Unknown density");
@@ -116,7 +141,8 @@ public class Ball {
 	}
 	
 	public void tick(){
-		image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
+
+        image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
 		
 		/*fix the size of the ball that sometimes gets messed up on collision*/ /*This is just a hack still need to find the real problem*/
 		if(image.bottom - image.top != 4){
@@ -197,7 +223,7 @@ public class Ball {
 	            		parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top, parent.panel);
 		    }
 		
-		
+
 
 	}
 	

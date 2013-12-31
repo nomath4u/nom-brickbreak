@@ -7,5 +7,6 @@
     <string name="game_over_title">Game Over!</string>
     <string name="game_over_message">Would you like to play again? Your score was</string>
     <string name="test">test</string>
+    <string name="pause">Game Paused</string>
 
 </resources>

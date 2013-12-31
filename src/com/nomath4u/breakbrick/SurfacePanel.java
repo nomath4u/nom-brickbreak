@@ -3,6 +3,7 @@ package com.nomath4u.breakbrick;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+
 public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback {
 	public boolean _run;
 	private Bitmap mBitmap;
@@ -40,20 +42,30 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     private View pauseView;
     private ViewGroup pauseViewGroup;
     private boolean added = false;
+    private Handler timer;
+    private Runnable ballTick;
+    public boolean tickable;
+    private LinearLayout layout;
 	
 	
 	
 	public SurfacePanel(Context context){
 		super(context);
 		getHolder().addCallback(this);
+
 		thread = new DrawThread(getHolder());
 		mainPaddle = new Paddle(context);
 		mainBall = new Ball(context);
+        //this.getHolder().setFixedSize(mainPaddle.screenwidth,mainPaddle.screenheight);
 		parent = (MainActivity)context;
 		bricks = new ArrayList<Brick>();
-        this.inflater = LayoutInflater.from(context);
-        this.pauseView = inflater.inflate(R.layout.pause_screen,null);
+        this.inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+
 		this.pauseViewGroup = (ViewGroup) findViewById(android.R.id.content);
+        this.pauseView = inflater.inflate(R.layout.pause_screen,pauseViewGroup);
+        //pauseView.setLayoutParams(new ViewGroup.LayoutParams(mainPaddle.screenwidth, mainPaddle.screenheight));
+        tickable = false;
 
         /*Add the pause View on top of the surfaceview and make it invisible*/
         //parent.addContentView(pauseView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -63,6 +75,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 		
 		/*Create the bricks*/
 		createBricks();
+
+
 		
 	}
 	
@@ -93,7 +107,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
         //this.pauseView.setVisibility(pauseView.VISIBLE);
 
         if(!added){
-            parent.addContentView(pauseView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            parent.addContentView(pauseView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             added = true;
         }
 
@@ -241,10 +255,12 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        		}
 	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
 	                        		mainBall.tick(); //Tell the ball it needs to move again
+                                    tickable = true;
 	                        		
 	                        	}
 	                        	if(paused){
-	                        		c.drawText("Game Paused (tap to unpause)", (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2), paint);
+	                        		//c.drawText("Game Paused (tap to unpause)", (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2), paint);
+                                    tickable = false;
 	                        	}
 	                        }
 	                        else{
@@ -256,6 +272,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	if(!over){
 	                        		parent.gameOver(parent);
 	                        		over = true;
+                                    tickable = false;
 	                        	
 	                        	}
 	                        }
