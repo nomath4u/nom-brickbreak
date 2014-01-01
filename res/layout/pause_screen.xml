@@ -36,7 +36,8 @@
             android:layout_height="wrap_content"
             android:text="View Highscore"
             android:id="@+id/button"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:onClick="viewHighScore"/>
 
     <Button
             android:layout_width="wrap_content"

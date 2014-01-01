@@ -23,6 +23,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.Window;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -85,13 +86,14 @@ public class MainActivity extends Activity {
     protected void onResume(){
     	super.onResume();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
+        panel._run = true;
     }
     
     @Override
     protected void onRestart(){
     	super.onRestart();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
-
+        panel._run = true;
     }
     
     private void createSensorManager(){
@@ -115,12 +117,14 @@ public class MainActivity extends Activity {
     protected void onPause(){
     	super.onPause();
     	mSensorManager.unregisterListener(adcListener);
+        panel._run = false;
     }
     
     @Override
     protected void onDestroy(){
     	super.onDestroy();
     	mSensorManager.unregisterListener(adcListener);
+        panel._run= false;
     }
 	
 	public void addScore(int add){
@@ -218,10 +222,17 @@ public class MainActivity extends Activity {
     }
 
     public void selfDestruct(View view){
+        panel._run = false;
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         //moveTaskToBack(true);
+    }
+    public void viewHighScore(View view){
+       int highscore = getHighScore();
+       int duration = Toast.LENGTH_LONG;
+       Toast toast = Toast.makeText(getApplicationContext(), String.valueOf(highscore), duration);
+       toast.show();
     }
 }
