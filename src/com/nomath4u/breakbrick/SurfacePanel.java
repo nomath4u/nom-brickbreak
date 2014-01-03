@@ -187,6 +187,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	mainBall.setBallCharacteristics(parent.level);
     	mainBall.spawn();
     	playing = false;
+        mainBall.spawned = false;
     	createBricks();
     }
 	
@@ -236,6 +237,9 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        if(parent.lives > 0){
 	                        if(playing){
 	                        	if(!paused){
+                                    if(!mainBall.spawned){
+                                        mainBall.spawn();
+                                    }
 	                        		c.drawRect(mainPaddle.selfimage, mainPaddle.selfstyle);
 	                        		c.drawRect(mainBall.image, mainBall.paint);
 	                        		if(eLife !=null){
@@ -251,13 +255,15 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        			}
 	                        		}
 	                        		else{
+
 	                        			nextLevel();
 	                        		}
 	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
 	                        		mainBall.tick(); //Tell the ball it needs to move again
                                     tickable = true;
 	                        		
-	                        	}
+
+                            }
 	                        	if(paused){
 	                        		//c.drawText("Game Paused (tap to unpause)", (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2), paint);
                                     tickable = false;

@@ -12,6 +12,7 @@ import android.graphics.Point;
 import android.graphics.RectF;
 import android.media.AudioManager;
 import android.os.Build;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -30,14 +31,31 @@ public class Ball {
 	private static int maxAngle = 80;
 	private Random r;
     public double scalar;
-    private Handler timer;
-    private Runnable ballTick;
-	Ball(Context context){
+    public boolean timing = true;
+	private CountDownTimer timey;
+    public boolean spawned = false;
+    Ball(Context context){
 		parent = (MainActivity) context;
 		getDisplay(context);
         setBallCharacteristics(1);
-		spawn();
+        image = new RectF(0,0,0,0);
+
 		r = new Random();
+        timey = new CountDownTimer(3000,1000) {
+            @Override
+            public void onTick(long l) {
+                /*Show stuff*/
+            }
+
+            @Override
+            public void onFinish() {
+                timing = false;
+                image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2));
+                //Spawn center of ball at center of screen
+            }
+        };
+
+
 
         /*timer = new Handler();
         ballTick = new Runnable(){
@@ -54,14 +72,16 @@ public class Ball {
 	public void setBallCharacteristics(int speed){
 			paint = new Paint();
 			paint.setColor(Color.RED);
-			ballwidth = (int)(3.33);
+			ballwidth = (int)(3.33 * scalar);
 			ballheight = ballwidth; //Because the ball should be square
 			velocity = new PhysVector((int)((speed + 5)*(scalar)),-135);
             Log.i("Speed","Speed is " + String.valueOf(velocity.mag));
 	}
 	
 	public void spawn(){
-		image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2)); //Spawn center of ball at center of screen
+        timing = true;
+        timey.start();
+        spawned = true;
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
@@ -141,18 +161,19 @@ public class Ball {
 	}
 	
 	public void tick(){
+        if(!timing){
 
         image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
 		
 		/*fix the size of the ball that sometimes gets messed up on collision*/ /*This is just a hack still need to find the real problem*/
-		if(image.bottom - image.top != 4){
-			float factor = (4 - (image.bottom - image.top))/2;
+		if(image.bottom - image.top != (int) (3.33 * scalar)){
+			float factor = ((int)(3.33 * scalar) - (image.bottom - image.top))/2;
 			image.bottom = image.bottom + factor;
 			image.top = image.top - factor;
 		}
 		
-		if(image.right - image.left != 4){
-			float factor = (4 - (image.right - image.left))/2;
+		if(image.right - image.left != (int) (3.33 * scalar)){
+			float factor = ((int) (3.33 * scalar) - (image.right - image.left))/2;
 			image.right = image.right + factor;
 			image.left = image.left - factor;
 		}
@@ -223,7 +244,7 @@ public class Ball {
 	            		parent.panel.eLife = new ExtraLife((int)brick.image.left,(int)brick.image.top, parent.panel);
 		    }
 		
-
+        }
 
 	}
 	

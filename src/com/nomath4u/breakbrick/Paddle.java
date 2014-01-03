@@ -138,8 +138,8 @@ public class Paddle {
 	public void move(){
 		
 		float top = screenheight - paddleheight;
-		float left = (mainA.adcval  * unit * -1) + (screenwidth/2) - (paddlewidth/2);
-		float right = (mainA.adcval * unit * -1)+ (screenwidth/2) + (paddlewidth/2);
+		float left = (mainA.adcval  * unit * -1) + (float)(screenwidth/2) - (paddlewidth/2);
+		float right = (mainA.adcval * unit * -1)+ (float)(screenwidth/2) + (paddlewidth/2);
 		float bottom = screenheight;
 		selfimage.set(left, top, right , bottom); 
 	}
@@ -153,7 +153,7 @@ public class Paddle {
 	}
 	
 	private void setUnit(){
-		unit = (screenwidth / ( .5f *(mainA.maxval)));
+		unit = (screenwidth / ( .3f *(mainA.maxval)));
 	}
 	
 }
