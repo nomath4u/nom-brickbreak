@@ -77,14 +77,15 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = (int)(3.33 * scalar);
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector((int)((speed + 5)*(scalar)),-135);
-            Log.i("Speed","Speed is " + String.valueOf(velocity.mag));
+			velocity = new PhysVector((int)((speed + 5)*(scalar)),-90);
 	}
 	
 	public void spawn(){
         timing = true;
         timey.start();
         spawned = true;
+        velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
+
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
