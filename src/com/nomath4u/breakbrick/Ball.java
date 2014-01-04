@@ -34,6 +34,7 @@ public class Ball {
     public boolean timing = true;
 	private CountDownTimer timey;
     public boolean spawned = false;
+    public int counter = 4;
     Ball(Context context){
 		parent = (MainActivity) context;
 		getDisplay(context);
@@ -41,10 +42,11 @@ public class Ball {
         image = new RectF(0,0,0,0);
 
 		r = new Random();
-        timey = new CountDownTimer(3000,1000) {
+        timey = new CountDownTimer(3100,1000) {
             @Override
             public void onTick(long l) {
                 /*Show stuff*/
+                counter--;
             }
 
             @Override
@@ -52,6 +54,7 @@ public class Ball {
                 timing = false;
                 image = new RectF((screenwidth/2) - (ballwidth/2), (screenheight/2)- (ballheight/2), (screenwidth/2) + (ballwidth/2), (screenheight/2) + (ballheight/2));
                 //Spawn center of ball at center of screen
+                counter = 4;
             }
         };
 
