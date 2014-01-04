@@ -57,17 +57,6 @@ public class Ball {
                 counter = 4;
             }
         };
-
-
-
-        /*timer = new Handler();
-        ballTick = new Runnable(){
-            public void run(){
-                tick(parent.panel.tickable);
-                timer.postDelayed(ballTick, (17)); //just slower than 60fps
-            }
-        };*/
-		
 	}
 	
 	
@@ -83,9 +72,10 @@ public class Ball {
 	public void spawn(){
         timing = true;
         timey.start();
+        image = new RectF(0,0,0,0); //So that there isn't one left behind when counting down
         spawned = true;
         velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
-
+        counter = 4;
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/

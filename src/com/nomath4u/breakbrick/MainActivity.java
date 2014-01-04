@@ -235,4 +235,9 @@ public class MainActivity extends Activity {
        Toast toast = Toast.makeText(getApplicationContext(), String.valueOf(highscore), duration);
        toast.show();
     }
+
+    /*To be able to access reset as a button*/
+    public void reset(View view){
+        panel.reset();
+    }
 }

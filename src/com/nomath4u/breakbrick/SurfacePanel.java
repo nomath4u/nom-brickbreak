@@ -39,7 +39,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	public boolean playing = false;
 	public ExtraLife eLife = null;
     private LayoutInflater inflater;
-    private View pauseView;
+    public View pauseView;
     private ViewGroup pauseViewGroup;
     private boolean added = false;
     private Handler timer;
@@ -164,6 +164,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     }
     
     public void reset(){
+        pauseView.setVisibility(INVISIBLE);
     	mainBall.setBallCharacteristics(parent.level);
     	mainBall.spawn();
     	parent.lives = 5;
@@ -173,6 +174,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	/*Remove and then re-add bricks*/
     	bricks.clear();
     	createBricks();
+        playing = false;
+        paused = false;
     }
     
     private void createBricks(){
@@ -273,7 +276,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	}
 	                        }
 	                        else{
-	                        	c.drawText("Tap to begin playing Level" + parent.level, (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2),paint);
+	                        	c.drawText("Tap to begin playing Level " + parent.level, (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2),paint);
 	                        }
 	                        }
 	                        else{
