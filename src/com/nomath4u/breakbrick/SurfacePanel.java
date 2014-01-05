@@ -188,7 +188,6 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     private void nextLevel(){
     	parent.level = parent.level+1;
     	mainBall.setBallCharacteristics(parent.level);
-    	mainBall.spawn();
     	playing = false;
         mainBall.spawned = false;
     	createBricks();

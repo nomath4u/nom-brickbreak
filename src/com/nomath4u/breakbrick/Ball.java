@@ -71,11 +71,12 @@ public class Ball {
 	
 	public void spawn(){
         timing = true;
+        counter = 4;
         timey.start();
         image = new RectF(0,0,0,0); //So that there isn't one left behind when counting down
         spawned = true;
         velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
-        counter = 4;
+
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
