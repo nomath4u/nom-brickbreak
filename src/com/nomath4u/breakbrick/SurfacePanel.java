@@ -22,6 +22,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback {
@@ -42,10 +43,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     public View pauseView;
     private ViewGroup pauseViewGroup;
     private boolean added = false;
-    private Handler timer;
-    private Runnable ballTick;
     public boolean tickable;
-    private LinearLayout layout;
+    public View scoreView;
 	
 	
 	
@@ -64,6 +63,8 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 
 		this.pauseViewGroup = (ViewGroup) findViewById(android.R.id.content);
         this.pauseView = inflater.inflate(R.layout.pause_screen,pauseViewGroup);
+        this.scoreView = inflater.inflate(R.layout.game_overlay,pauseViewGroup);
+        parent.addContentView(scoreView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         //pauseView.setLayoutParams(new ViewGroup.LayoutParams(mainPaddle.screenwidth, mainPaddle.screenheight));
         tickable = false;
 

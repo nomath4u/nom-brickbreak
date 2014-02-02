@@ -3,6 +3,7 @@ package com.nomath4u.breakbrick;
 
 
 
+import android.content.res.Configuration;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -19,6 +20,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
+import android.view.Surface;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
@@ -43,6 +45,7 @@ public class MainActivity extends Activity {
 	boolean loaded = false;
     private float vals[] = new float[] {0,0,0,0,0,0,0,0,0,0};
     public static final int AVGS = 10;
+    private int orientation;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +72,9 @@ public class MainActivity extends Activity {
         });
         soundID = pool.load(this, R.raw.blip1, 1);
         soundIDa= pool.load(this,R.raw.blip2, 0);
+
+        /*Default orientation*/
+        this.orientation = getDeviceDefaultOrientation();
 
 
 		
@@ -102,7 +108,14 @@ public class MainActivity extends Activity {
 		adcListener = new SensorEventListener(){
 			@Override
 			public void onSensorChanged(SensorEvent event){
-				avgAdc(event.values[0]);
+                /*Most devices are default portrait*/
+                if(orientation == Configuration.ORIENTATION_PORTRAIT){
+				    avgAdc(event.values[0]);
+                }
+                else{ //But not all of them
+                    avgAdc(event.values[1]);
+                }
+
 			}
 			@Override
 			public void onAccuracyChanged(Sensor sensor, int accuracy){
@@ -240,4 +253,22 @@ public class MainActivity extends Activity {
     public void reset(View view){
         panel.reset();
     }
+
+    public int getDeviceDefaultOrientation() {
+
+        WindowManager windowManager =  (WindowManager) getSystemService(WINDOW_SERVICE);
+
+        Configuration config = getResources().getConfiguration();
+
+        int rotation = windowManager.getDefaultDisplay().getRotation();
+
+        if ( ((rotation == Surface.ROTATION_0 || rotation == Surface.ROTATION_180) &&
+                config.orientation == Configuration.ORIENTATION_LANDSCAPE)
+                || ((rotation == Surface.ROTATION_90 || rotation == Surface.ROTATION_270) &&
+                config.orientation == Configuration.ORIENTATION_PORTRAIT)) {
+            return Configuration.ORIENTATION_LANDSCAPE;
+        }
+            else
+            return Configuration.ORIENTATION_PORTRAIT;
+        }
 }

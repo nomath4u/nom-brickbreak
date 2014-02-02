@@ -222,6 +222,7 @@ public class Ball {
 		      bricks.remove(brick);
 		      flipYSpeed();
 		      parent.addScore(500);
+              //parent.panel.scoreView.
 		      /*play sound*/
 		      AudioManager audioManager = (AudioManager) parent.getSystemService(parent.AUDIO_SERVICE);
 	            float actualVolume = (float) audioManager
