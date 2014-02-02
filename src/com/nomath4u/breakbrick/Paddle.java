@@ -117,8 +117,12 @@ public class Paddle {
 		              Log.i("display", "Unknown density");
 		      }
 		    }
-        paddlewidth = (int)(53 * scalar);
-        paddleheight = (int)(10* scalar);
+        //paddlewidth = (int)(53 * scalar);
+        //paddleheight = (int)(10* scalar);
+        float paddleXmult = ((float)78/(float)540);
+        float paddleYmult = ((float)15/(float)912);
+        paddlewidth = (int)(paddleXmult * screenwidth);
+        paddleheight = (int)(paddleYmult * screenheight);
 		setUnit();
 		
 		/*Set up moving self */
