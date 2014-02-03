@@ -35,6 +35,7 @@ public class Ball {
 	private CountDownTimer timey;
     public boolean spawned = false;
     public int counter = 4;
+    public double mult = .01;
     Ball(Context context){
 		parent = (MainActivity) context;
 		getDisplay(context);
@@ -64,7 +65,9 @@ public class Ball {
 	public void setBallCharacteristics(int speed){
 			paint = new Paint();
 			paint.setColor(Color.RED);
-			ballwidth = (int)(3.33 * scalar);
+			ballwidth = (int)((.01) * screenwidth); //(3.33 * scalar);
+            //ballwidth = 5;
+            Log.v("blah",String.valueOf(ballwidth));
 			ballheight = ballwidth; //Because the ball should be square
 			velocity = new PhysVector((int)((speed + 5)*(scalar)),-90);
 	}
@@ -161,14 +164,14 @@ public class Ball {
         image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
 		
 		/*fix the size of the ball that sometimes gets messed up on collision*/ /*This is just a hack still need to find the real problem*/
-		if(image.bottom - image.top != (int) (3.33 * scalar)){
-			float factor = ((int)(3.33 * scalar) - (image.bottom - image.top))/2;
+		if(image.bottom - image.top != (int) (mult * screenwidth)){
+			float factor = ((int)(mult * screenwidth) - (image.bottom - image.top))/2;
 			image.bottom = image.bottom + factor;
 			image.top = image.top - factor;
 		}
 		
-		if(image.right - image.left != (int) (3.33 * scalar)){
-			float factor = ((int) (3.33 * scalar) - (image.right - image.left))/2;
+		if(image.right - image.left != (int) (mult * screenwidth)){
+			float factor = ((int) (mult * screenwidth) - (image.right - image.left))/2;
 			image.right = image.right + factor;
 			image.left = image.left - factor;
 		}
