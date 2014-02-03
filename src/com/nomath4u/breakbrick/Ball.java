@@ -69,7 +69,7 @@ public class Ball {
             //ballwidth = 5;
             Log.v("blah",String.valueOf(ballwidth));
 			ballheight = ballwidth; //Because the ball should be square
-			velocity = new PhysVector((int)((speed + 5)*(scalar)),-90);
+        velocity = new PhysVector((int)((speed * .001 +.007 ) * screenheight),-90);
 	}
 	
 	public void spawn(){
@@ -78,8 +78,8 @@ public class Ball {
         timey.start();
         image = new RectF(0,0,0,0); //So that there isn't one left behind when counting down
         spawned = true;
-        velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
-
+        //velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
+        velocity = new PhysVector((int)((parent.level * .001 +.007 ) * screenheight),-90);
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
