@@ -56,8 +56,9 @@ public class MainActivity extends Activity {
 		//WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
 		getWindow().addFlags(LayoutParams.FLAG_KEEP_SCREEN_ON); //Get active wakelock
 		this.panel = new SurfacePanel(this);
-		setContentView(this.panel);
-		lives = 5;
+		//setContentView(this.panel);
+		setContentView(R.layout.main_menu);
+        lives = 5;
 		score = 0;
 		level = 1;
 		
@@ -210,6 +211,10 @@ public class MainActivity extends Activity {
 	 public void backToGame(View view){
 		 panel.unpause();
 	 }
+
+    public void startGame(View view){
+        setContentView(this.panel);
+    }
 
     public void avgAdc(float mValues){
         float total = 0;
