@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res" >
+            <file
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/strings.xml"
+                qualifiers="" >
+                <string name="pause" >Game Paused
+                </string>
+                <string name="test" >test
+                </string>
+                <string name="app_name" >Breakbrick
+                </string>
+                <string name="game_over_message" >Would you like to play again? Your score was
+                </string>
+                <string name="game_over_title" >Game Over!
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="menu_settings" >Settings
+                </string>
+            </file>
+            <file
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/color.xml"
+                qualifiers="" >
+                <color name="opaque_red" >#f00
+                </color>
+            </file>
+            <file
+                name="activity_main"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/menu/activity_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="blip2"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/raw/blip2.wav"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="blip1"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/raw/blip1.wav"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="ic_launcher"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="breakbrickicon"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/drawable-hdpi/breakbrickicon.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="game_overlay"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/game_overlay.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="pause_screen"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/pause_screen.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main_menu"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/main_menu.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="test2"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/test2.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+        </source>
+        <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/res/rs/debug" />
+        <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build-types/debug/res" />
+    </dataSet>
+
+</merger>
