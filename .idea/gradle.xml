@@ -3,6 +3,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -10,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/BaseGameUtils" />
+            <option value="$PROJECT_DIR$/nom-brickbreak" />
           </set>
         </option>
       </GradleProjectSettings>

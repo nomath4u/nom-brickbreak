@@ -1,1 +1,1 @@
-include ':libraries:BaseGameUtils'
+include ':nom-brickbreak', ':libraries:BaseGameUtils'

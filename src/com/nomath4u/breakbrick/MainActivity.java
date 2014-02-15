@@ -19,6 +19,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 import android.view.Menu;
 import android.view.Surface;
 import android.view.View;
@@ -26,10 +27,12 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.Window;
 import android.widget.Toast;
+import com.google.android.gms.common.api.*;
+import com.google.example.games.basegameutils.BaseGameActivity;
+import com.nomath4u.breakbrick.R;
 
 
-
-public class MainActivity extends Activity {
+public class MainActivity extends BaseGameActivity {
 	public int lives;
 	public int score;
 	public int level;
@@ -58,10 +61,12 @@ public class MainActivity extends Activity {
 
     Listener mListener = null;
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, LayoutParams.FLAG_FULLSCREEN);
 		createSensorManager();
 		//WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
@@ -72,7 +77,7 @@ public class MainActivity extends Activity {
         lives = 5;
 		score = 0;
 		level = 1;
-		
+
 		/*Setup sounds */
 		pool = new SoundPool(10, AudioManager.STREAM_MUSIC, 0);
         pool.setOnLoadCompleteListener(new OnLoadCompleteListener() {
@@ -89,8 +94,8 @@ public class MainActivity extends Activity {
         this.orientation = getDeviceDefaultOrientation();
 
 
-		
-		
+
+
 	}
 
 	@Override
@@ -99,21 +104,21 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-	
+
     @Override
     protected void onResume(){
     	super.onResume();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
         panel._run = true;
     }
-    
+
     @Override
     protected void onRestart(){
     	super.onRestart();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
         panel._run = true;
     }
-    
+
     private void createSensorManager(){
     	mSensorManager = (SensorManager) this.getSystemService(Context.SENSOR_SERVICE);
 		adcsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -131,36 +136,36 @@ public class MainActivity extends Activity {
 			}
 			@Override
 			public void onAccuracyChanged(Sensor sensor, int accuracy){
-			
+
 			}
 		};
 		mSensorManager.registerListener(adcListener,adcsensor, SensorManager.SENSOR_DELAY_GAME);
 		maxval = adcsensor.getMaximumRange();
     }
-    
+
     @Override
     protected void onPause(){
     	super.onPause();
     	mSensorManager.unregisterListener(adcListener);
         panel._run = false;
     }
-    
+
     @Override
     protected void onDestroy(){
     	super.onDestroy();
     	mSensorManager.unregisterListener(adcListener);
         panel._run= false;
     }
-	
+
 	public void addScore(int add){
 		score = score + add;
-		
+
 	}
-	
+
 	public void addLife(int add){
 		lives = lives + add;
 	}
-	
+
 	public void gameOver(final Context context){
 		final int highscore = getHighScore();
 		if(score > highscore){
@@ -175,7 +180,7 @@ public class MainActivity extends Activity {
 		        builder.setCancelable(true);
 		        builder.setInverseBackgroundForced(true);
 		        builder.setTitle(R.string.game_over_title);
-		        
+
 		        if(score > highscore){
 		        builder.setMessage("New High Score! Your score was: " + Integer.toString(score));
 		        }
@@ -188,7 +193,7 @@ public class MainActivity extends Activity {
 		                            int which) {
 		                    	panel.reset();
 		                		dialog.dismiss();
-		                        
+
 		                    }
 		                });
 		        builder.setNegativeButton("Exit",
@@ -203,22 +208,22 @@ public class MainActivity extends Activity {
 		                		intent.addCategory(Intent.CATEGORY_HOME);
 		                		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		                		startActivity(intent);
-		                        
+
 		                    }
 		                });
 		        AlertDialog alert = builder.create();
 		        alert.show();
 			}
-		});   
-	}		
-		
-	     
+		});
+	}
+
+
 	 private int getHighScore(){
 		 SharedPreferences manager = getPreferences(MODE_PRIVATE);
 		 int highscore = manager.getInt("highScore", 0);
 		 return highscore;
 	 }
-	
+
 	 public void backToGame(View view){
 		 panel.unpause();
 	 }
@@ -326,5 +331,17 @@ public class MainActivity extends Activity {
         //beginUserInitiatedSignIn();
         Toast toast = Toast.makeText(getApplicationContext(), "yay", Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+
+
+    @Override
+    public void onSignInFailed() {
+
+    }
+
+    @Override
+    public void onSignInSucceeded() {
+
     }
 }

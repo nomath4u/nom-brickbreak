@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar" >
+        <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/exploded-bundles/NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar/assets" />
+    </dataSet>
     <dataSet config="main" >
         <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/assets" />
     </dataSet>
