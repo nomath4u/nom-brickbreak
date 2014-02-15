@@ -28,6 +28,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 
+
 public class MainActivity extends Activity {
 	public int lives;
 	public int score;
@@ -46,6 +47,16 @@ public class MainActivity extends Activity {
     private float vals[] = new float[] {0,0,0,0,0,0,0,0,0,0};
     public static final int AVGS = 10;
     private int orientation;
+
+    public interface Listener {
+        public void onStartGameRequested(boolean hardMode);
+        public void onShowAchievementsRequested();
+        public void onShowLeaderboardsRequested();
+        public void onSignInButtonClicked();
+        public void onSignOutButtonClicked();
+    }
+
+    Listener mListener = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -276,4 +287,44 @@ public class MainActivity extends Activity {
             else
             return Configuration.ORIENTATION_PORTRAIT;
         }
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            /*case R.id.easy_mode_button:
+                mListener.onStartGameRequested(false);
+                break;
+            case R.id.hard_mode_button:
+                mListener.onStartGameRequested(true);
+                break;
+            case R.id.show_achievements_button:
+                mListener.onShowAchievementsRequested();
+                break;
+            case R.id.show_leaderboards_button:
+                mListener.onShowLeaderboardsRequested();
+                break;
+            case R.id.sign_in_button:
+                mListener.onSignInButtonClicked();
+                break;
+            case R.id.sign_out_button:
+                mListener.onSignOutButtonClicked();
+                break;*/
+            case R.id.sign_in_button:
+                mListener.onSignInButtonClicked();
+                break;
+        }
+    }
+    //@Override
+    public void onSignInButtonClicked(View view) {
+        // check if developer read the documentation!
+        // (Note: in a production application, this code should NOT exist)
+        /*if (!verifyPlaceholderIdsReplaced()) {
+            showAlert("Sample not set up correctly. See README.");
+            return;
+        }*/
+
+        // start the sign-in flow
+        //beginUserInitiatedSignIn();
+        Toast toast = Toast.makeText(getApplicationContext(), "yay", Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
