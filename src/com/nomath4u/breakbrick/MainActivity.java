@@ -50,6 +50,7 @@ public class MainActivity extends BaseGameActivity {
     private float vals[] = new float[] {0,0,0,0,0,0,0,0,0,0};
     public static final int AVGS = 10;
     private int orientation;
+    private boolean isSignedIn = false;
 
     public interface Listener {
         public void onStartGameRequested(boolean hardMode);
@@ -58,9 +59,24 @@ public class MainActivity extends BaseGameActivity {
         public void onSignInButtonClicked();
         public void onSignOutButtonClicked();
     }
+    class AccomplishmentsOutbox {
+        boolean mPrimeAchievement = false;
+        boolean mHumbleAchievement = false;
+        boolean mLeetAchievement = false;
+        boolean mArrogantAchievement = false;
+        int mBoredSteps = 0;
+        int mEasyModeScore = -1;
+        int mHardModeScore = -1;
 
+        boolean isEmpty() {
+            return !mPrimeAchievement && !mHumbleAchievement && !mLeetAchievement &&
+                    !mArrogantAchievement && mBoredSteps == 0 && mEasyModeScore < 0 &&
+                    mHardModeScore < 0;
+        }
+    }
     Listener mListener = null;
-
+    AccomplishmentsOutbox mOutbox = new AccomplishmentsOutbox();
+    final int RC_RESOLVE = 5000, RC_UNUSED = 5001;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -346,6 +362,51 @@ public class MainActivity extends BaseGameActivity {
 
     @Override
     public void onSignInSucceeded() {
-
+        this.isSignedIn = true;
     }
+
+    public void onShowLeaderboardsRequested(View view) {
+        if (isSignedIn()) {
+            startActivityForResult(getGamesClient().getAllLeaderboardsIntent(), RC_UNUSED);
+        } else {
+            showAlert(getString(R.string.leaderboards_not_available));
+        }
+    }
+
+    /*void pushAccomplishments() {
+
+        if (mOutbox.mPrimeAchievement) {
+            getGamesClient().unlockAchievement(getString(R.string.achievement_prime));
+            mOutbox.mPrimeAchievement = false;
+        }
+        if (mOutbox.mArrogantAchievement) {
+            getGamesClient().unlockAchievement(getString(R.string.achievement_arrogant));
+            mOutbox.mArrogantAchievement = false;
+        }
+        if (mOutbox.mHumbleAchievement) {
+            getGamesClient().unlockAchievement(getString(R.string.achievement_humble));
+            mOutbox.mHumbleAchievement = false;
+        }
+        if (mOutbox.mLeetAchievement) {
+            getGamesClient().unlockAchievement(getString(R.string.achievement_leet));
+            mOutbox.mLeetAchievement = false;
+        }
+        if (mOutbox.mBoredSteps > 0) {
+            getGamesClient().incrementAchievement(getString(R.string.achievement_really_bored),
+                    mOutbox.mBoredSteps);
+            getGamesClient().incrementAchievement(getString(R.string.achievement_bored),
+                    mOutbox.mBoredSteps);
+        }
+        if (mOutbox.mEasyModeScore >= 0) {
+            getGamesClient().submitScore(getString(R.string.leaderboard_easy),
+                    mOutbox.mEasyModeScore);
+            mOutbox.mEasyModeScore = -1;
+        }
+        if (mOutbox.mHardModeScore >= 0) {
+            getGamesClient().submitScore(getString(R.string.leaderboard_hard),
+                    mOutbox.mHardModeScore);
+            mOutbox.mHardModeScore = -1;
+        }
+        mOutbox.saveLocal(this);
+    }*/
 }

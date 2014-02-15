@@ -59,11 +59,12 @@ int drawable ic_plusone_small_off_client 0x7f02001b
 int drawable ic_plusone_standard_off_client 0x7f02001c
 int drawable ic_plusone_tall_off_client 0x7f02001d
 int id button 0x7f060006
-int id button1 0x7f06000c
+int id button1 0x7f06000d
 int id button2 0x7f060008
 int id button3 0x7f060007
 int id hybrid 0x7f060004
-int id menu_settings 0x7f06000d
+int id leaderboards 0x7f06000c
+int id menu_settings 0x7f06000e
 int id none 0x7f060000
 int id normal 0x7f060001
 int id satellite 0x7f060002
@@ -117,9 +118,10 @@ int string gamehelper_sign_in_failed 0x7f080020
 int string gamehelper_unknown_error 0x7f080021
 int string hello_world 0x7f080022
 int string leaderboard 0x7f080023
-int string menu_settings 0x7f080024
-int string pause 0x7f080025
-int string test 0x7f080026
+int string leaderboards_not_available 0x7f080024
+int string menu_settings 0x7f080025
+int string pause 0x7f080026
+int string test 0x7f080027
 int style AppBaseTheme 0x7f090000
 int style AppTheme 0x7f090001
 int[] styleable AdsAttrs { 0x7f010000, 0x7f010001, 0x7f010002 }

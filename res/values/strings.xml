@@ -8,5 +8,6 @@
     <string name="game_over_message">Would you like to play again? Your score was</string>
     <string name="test">test</string>
     <string name="pause">Game Paused</string>
+    <string name="leaderboards_not_available">Sign in to see leaderboards</string>
 
 </resources>
