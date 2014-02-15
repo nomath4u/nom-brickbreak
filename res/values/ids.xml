@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- TODO: Replace this by your app's app ID! -->
+
     <string name="app_id">159755127349</string>
+
+    <string name="leaderboard">CgkItZSXkdMEEAIQAA</string>
 
 </resources>

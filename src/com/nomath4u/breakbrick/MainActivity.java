@@ -319,7 +319,7 @@ public class MainActivity extends BaseGameActivity {
         }
     }
     //@Override
-    public void onSignInButtonClicked(View view) {
+    public void onSignInButtonClicked() {
         // check if developer read the documentation!
         // (Note: in a production application, this code should NOT exist)
         /*if (!verifyPlaceholderIdsReplaced()) {
@@ -331,6 +331,10 @@ public class MainActivity extends BaseGameActivity {
         //beginUserInitiatedSignIn();
         Toast toast = Toast.makeText(getApplicationContext(), "yay", Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    public void Test(View view){
+        beginUserInitiatedSignIn();
     }
 
 

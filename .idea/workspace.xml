@@ -27,388 +27,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="295f2263-24f9-4762-a1b6-7c86284ed603" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/ids.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/proguard.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/color/common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/color/common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-hdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-mdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable-xhdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable/common_signin_btn_icon_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable/common_signin_btn_icon_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable/common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/drawable/common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-af/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-am/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ar/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-be/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-bg/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ca/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-cs/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-da/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-de/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-el/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-en-rGB/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-es-rUS/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-es/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-et-rEE/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-et/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-fa/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-fi/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-fr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-hi/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-hr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-hu/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-in/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-it/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-iw/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ja/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ko/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-lt/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-lv/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ms-rMY/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ms/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-nb/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-nl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-pl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-pt-rBR/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-pt-rPT/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-pt/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ro/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-ru/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-sk/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-sl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-sr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-sv/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-sw/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-th/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-tl/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-tr/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-uk/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-vi/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-zh-rCN/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-zh-rTW/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values-zu/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values/maps_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3265.aar/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/-446b2df04b2d1c355836da20f5fd0cab0d14c645.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/AndroidManifest-247002551b6d22b865301469abb3cc1dbe822279.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/AndroidManifest-4e3789a0412fa181640f4f7529c37de5187005b0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/AndroidManifest-fb56a47b942841720e369cd9facdceaac1c1be9d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BaseGameActivity-787f47a318ca5129eb79f14a4834e40e61b83369.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BaseGameUtils-17e304ca5797f3ffe6a8f8f18306f761fb376e87.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BaseGameUtils-1c2593abba7ccf8126512962f64f01177a9bf859.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BaseGameUtils-debug-9e20328f802979ddc093d73be44e1c9bbdf8f4d8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BaseGameUtils-release-5b8ea5ced312d1861dc771c9e05ecbf482f9487c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BuildConfig-4f732277aff1cd430293452e571d4b41d8206386.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/BuildConfig-937decb83a71b6712e9a1b45bfa7f950cbf568a0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/GameHelper-3888519e1872ab0b99aa89b25bd67a6c15a1e23a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/Gradle__ComGoogleAndroidGmsPlayServices4132_aar-4ef58e87fd69f924556f79c1e363c1abf69730db.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/Gradle__support_v4_19_0_1-5a7cb63c66fd8a07aa143c4d6a6eb90aa8af19a6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/MANIFEST-5228b7b68919ddb8d401850b9d1cced7e0c1b25a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/R-1bc83c33008429bbbd8efd891e56f97ec1e02a75.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/R-57cc45de0576a5b15a2b7d83f66356f6b980c5f2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/R-5d57c8d4bcffc25adfd8e25158e98b5dbd8a07ef.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ads_attrs-be0766953bef7e0537aad70568c0176fc089a961.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/android-support-v4-4bdb4868890053e5e1c9a62be541b743608ca39d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/build-4890bb0d17f225859fd47cd53a9774da8bd1026c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/classes-35c9ed152d7c82ce2517106e3a0f9ff255bd51ae.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/classes-9e8139733b4de9279778d49b8de6dab8935882c0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/colors-5b9dd579a784e0bd04cdee64b92fee5afb80bb70.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_dark-61d4b8ca1d769092c3566435426d091569fa0526.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_dark-a050fccc8d4ea7d938865daf24ce5a896560bcfd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_dark.9-a2f9e75a10e9b98b6a7da745806b17f53d81ad0b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_dark.9-b71d607787a1426caa3003ba6f50bdd564b02fec.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_focus_dark.9-7e13171d2da7950fb79e840edf7c6363061d917f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_focus_light.9-66f34bcf2cad2c1ebbbb415800c40ad6a6067a13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_focus_light.9-89bbb9aa37657d0f474a7c1bb5e3338f372bf640.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_disabled_light.9-311ade1edcbd004c3a4e5c0bcdbeadf80c370ee4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_dark.9-8f8deed0c8c5947a3c1c9fa41e4409dc53045141.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_dark.9-c4e291369304ed82ffaf89683b0e7de23524c169.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_dark.9-da699fb44fa5ded12e8dfef5fb65bf082721e0f5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_light.9-7403606f3576c68f8af1c312b356f0cf6aad3161.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_light.9-8e250163416306f034fc273503d9a609b3e2554c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_focus_light.9-f2ce4b7f799f1f47dc07f7f999c714d252b72360.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_light-31ac5ab86e5c2bd05e81669ef47cd3d61aa63c9f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_light-6a5ab605b72acc0755ef55ad9718a7dfca387187.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_dark.9-3f463b927b72e37637e26822e781ed0d31f7e64d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_dark.9-64e887d8704033d5103bb1edde74e9f4e089b0e7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_dark.9-e85248b5e5b86070530d08c0740328c33901d866.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_light.9-0da0481e1ae22ac2b102f8260937a6618a930af7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_light.9-bb564fb1d253b1b5abc03d4a3bf7d9bc42086698.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_normal_light.9-bd1ba5189c6de369c8e3c18b688484243d7bafcc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_dark.9-4865195d25dd16f7daea97f81e5cdc9781b9a32f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_dark.9-69b8d6860e21220fa9549b633c862a7e6e2d4321.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_dark.9-d9368efa2e0ecb8df8fdae03d928fef3b6f09168.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_light.9-5de48f1a294b4ca3f9e6aecc267379c4d605f13e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_light.9-9720cd48d303ca8f42579a702727ff7682c418fd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_icon_pressed_light.9-c65a53465e1727979df9f78fe52e61fd166a9e46.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_dark-131752635c1dcbc2a486057a487094a61af839f1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_dark-46ca3d3d37bda6fa6e154e9e90511c164413556c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_dark-995a775fcbba099f05569bc6aa1329c13240153d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_dark-ae8b578e6285c74895bced4eb2c81cda9a9f06ef.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_focus_light.9-392d90b721806d495fdd4f65cfa467645cc64f52.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_focus_light.9-5f0c86b23bc093c6e0d716a5fe7887c100ebe078.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_focus_light.9-a5b873cbccac391e2bc30393ff935b376c4ee203.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_light.9-03cf012ac8441a7fad4d87974ce4e32cb209397b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_light.9-2dfb093333f47c498c150d0966dd9e2a33704525.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_disabled_light.9-ab03446af83207fbf988f95f381b2ce09324ff21.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_dark.9-155bf460eb75cabc9a50b646d5f19c2ad2d76063.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_dark.9-4222d273e19ddb598a386a6e55dcb269ebbb4fc5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_dark.9-7dc44729aa83516871a3e64824ce4b132e3a7739.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_light.9-26ad52982ab63a2a581470ea461644370636ce53.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_light.9-8431b4ca12254ab95c3bcfa4008ea3672bb4f94d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_focus_light.9-cda15c0d33bff6c82b7ecfcc70ed5558f72c7d23.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_light-b378daeb7fd9e3bc7fd76500a6f852b000fcbbf9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_light-ebbe7c4a6b3e10b8fe603e7bc4721e55e2cd9703.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_light-f8d1f787367ac0a77a9d91528f6638f097a05c77.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_light-fea7bee67ad959ad11738f86e792e0133e2a7cf8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_dark.9-569a25e0ea0f2cc47c3c0714a7746965d9a28a11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_dark.9-62b882ec531a3a5600cc344a67e36bcc7bd070a9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_dark.9-b377116b61f9fed29be3a4e278c542ed402808f6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_light.9-68231c4bf91719a26c1fca56e9d7d2ad299cda19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_light.9-bc9c1773539c91ac5d75f74f330f227c49955a2a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_normal_light.9-eadc2c5ea010f19e27e017f13612b7ebcedf05d1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_dark.9-19a3da40f25a0fac33a3ee9f9d8e0744f2215a82.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_dark.9-1acd0a133290cbfadca3f3ca26fd80b26bbc7672.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_dark.9-231bccde8dca42f432935a0a622c9c7761d7b131.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_light.9-19f3f42f40dfbdfa8474cc9f9338d668a55ad2a9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_light.9-31434ac345b9c8b007f7c59d1295452622d13cee.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/common_signin_btn_text_pressed_light.9-f60beada1c74fb43955544d31211a6acbea3fb89.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/compiler-343a75e16c29765541bfae3caca464db6bc62b2f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/dependency-21722b35ebee0f2a99226b66201682883bd0b0ef.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/encodings-7d991ab07ef3687e8efb53e7296cf6ea49e84057.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/gamehelper_strings-93d042499e1f55427eda69303e689403610ccf53.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/gradle-bc1ce8d15513bd2e8d8d0118dcfa40ed02c0f742.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_medium_off_client-134117b4053cc7c12c90d82649412bb9e1d66908.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_medium_off_client-80d05b7673bc6def9dfc10035c685601bb7ceb6d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_medium_off_client-b0fdf642fb15c2bb96c4a7eee77f875e15c49383.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_medium_off_client-d0cc0cac456d58320ae36b218b7430ec3306e91d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_small_off_client-2d1e85127e397afb58172f1735d93bdbe07dec84.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_small_off_client-36ce78596316f875b4c4a0b8a42f0dcc39dcd0e7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_small_off_client-36fc857086c7ec76c6d00088604bc5128c5a1d49.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_small_off_client-f05b4824ac0c8d13134b2fbcce2d10d0437a0e54.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_standard_off_client-11e71c913de30686c2a4fe98093eb84cc4c97d13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_standard_off_client-468cfed350acc675743ba10713bbafb4c093d437.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_standard_off_client-8ade2ed9bfc40233b1ce699910a360b85c009c92.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_standard_off_client-f8825cd5d54346d517634a1bfeb5440795fc9abe.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_tall_off_client-356bd09e541ddeb9e3265b1f06eac557ac555dae.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_tall_off_client-8f4795cc03793a08f58d7fa141d751736146f183.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_tall_off_client-e696d43c53fabf5ace27daea04b853ff36efcebd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/ic_plusone_tall_off_client-f81ef8a6065bf2cdc181ef63084db551f4ab4505.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/local-ef3adb8d62b84f7f38299b6326972f97f6f61189.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/maps_attrs-294c10b47453601bb28d9e90309118fcc9aaa210.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/merger-11ed4dc7318c9a27734e46a7dfc2e6e4a31a1cdc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/merger-33445d9759c21175e916997d0ce619486593e00c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/merger-660f8115a8f5f110c2ac38f27bd753aa2f511b1c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/merger-d00af3662982c4578bb22856ae3210fa62dd0045.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/merger-d1024a984ef6ae2a9336d5f5bbe01ee167975898.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/misc-0eed095e81ceb72576702f729f78f02317cfb850.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/modules-c884bb1f230ed98c8c902c00e7413c45e773ded8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/profiles_settings-b18047bedb9051747d009b1f443d61f3659c4077.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/proguard-555b0ec46389704e81f8fedf174d8691c194ac39.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/scope_settings-42873af8e2b047c4209c3771ed1652195c04ed0f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-021196c8021c997bedcdc8b8a247017ddf598774.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-02e55cdfd23a18a80b9b661064371049740c590a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-0a355f0ab23ba0cdd1e7f7bed34b276188912dd1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-0e9cd5757994cfac57515b68a7705930268b4668.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-11315cc10f0743acbf6b88dbde2ad4ad3018f389.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-115cfee4dcfe6bad819780a64546ae24374a23ae.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-145b63c0025b2ca8e7918ad7627affd7759b0933.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-15557eb63569ba260496a057ef25b509ba1f6a3d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-15b0eb685d7c4d13ed5afdd5a1a1f1613b0c107d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-1a3993b4836b8f6f1edf4932ebd21a68c5fc7d45.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-1ae63cf2308a329067100248cc031fff40d889ce.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-1dc61a37da972f52555c060fd26a85d0293f4682.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-1e41f015c50459e6ca19075534a6a7b959d49090.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-2114a73288616d3c0260c1eb99b9274f76cb2893.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-2e58b6e80e06125ed8860ecc4437659a04895e66.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-332a02d3aba6246a30f809786eaf30a5b4184e69.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-341a670b35e4c18f876f6a0338660492765e9cf7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-37ef32dfe613fa24d6742e00d1431275148cca15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-4380130a722684ddd99b4d3cad62c46f2e34ac1c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-4fd6efa33d64a656a6cc999467c7fa86f1f6b6a9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-5067178116964728975d72e3b39c846777273503.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-58831e7d863ec2444bca71586afa6357a7845e07.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-5a16a90f7d07b9ead4098c0ae9478351425805b3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-626d68ecf95843cb530f639beb862a29d09c7b15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-659a919f06d49f714577301aa346e11eb93e69a0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-7602605a6a24300f3d3b4ac7d83a581144b33f91.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-760a58019d5ecd2fb4eb6e1a56839a4b4832c667.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-7bc132476978de248086f6dfd3455bce575bc3fb.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-86798e68238e27c871b9f0947412d0ea6ba7a7a5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-9524a92a8f3b80fdd1f07c44f7e5783f55b4e6c1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-99770ae447c884486713fe895554b0ca3ffcff70.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-a145f19dfcb9e59de13640cd34f6d754e92e5b04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-a2f7c72b48ee151be57137bf99d8cfd9ee1ea0ee.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-a3baea0c7c77da5e90ca0afbbb7fa387e71596c2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-a3c5f24b3aa900f2a572e4752bc50f3f63b0f307.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-aac771998c1609427f0e4f6cd50ffc2138bcb3cd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-abc3be6f10bc7cbcd3d642f26ff238385a2e473f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-adc999cef62c70b4a00a1c50d32119fcaa2508fb.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-b4a2d6fbc2d9fb12aafba53f17909b50c3979dc0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-b4d4aff9a80b270c4d4683bfdbc1da275f0752ec.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-b56d10acba50c11a89f2a06a35b487dd181cfaab.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-bb5925e1cf6e1a3a15685ce6a716723c772f2e73.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-c80faa23a385ab92e068c2209b2067f346fdd96c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-c8f3ba7043b72e6b558afe1fc3609f52a1c6c714.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-c9e7e5d48faf1752c2a45817ee059dbe7baee05c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-cdfd64e7f40bb89e3b2136fafb760e7dee6dd26d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-d92d6c64e32a774c57014d756a62b9c934564bce.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-dae7e315175a758e960e801c1ab91675230945cf.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-e364b8e8eb62bd9d1fe8fcbd2283beddd1fafe7c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-eb10a977289d48f4d50b6cb980af5e7457f8b1c9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-ec47df9bd558d58455f916f8d255297857673cf7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-eea275f558e8b80571bf6587696feded476138fd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-f4171b9b1785bd78756732c5cbe5bd971cb6dda1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-f5f4216f275204091f999272e19ecf21953bb854.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/strings-f9e23aaf5357d8e67872c79b098a92c8396da49c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-0098a185da105fcb6bb57730232fcb54dd760a26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-011926bd8445d490b04b7ce8da73ecea89d9ece1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-05855355b9890a75d2a0c4a14fb33b8189cdbb6a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-0a58b82de6e9ba6093c777539845ca65af5403c2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-15ff19feeabfe2158c7023ce937ce22a7102633d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-1d66448e4b0ca00ce7de18c1246c281b253bf270.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-22c4a4d2bab182f21cd13d96508dd8f7a0029dbc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-28be7b1faae660bbb2c6c532ddec049d01c1188e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-3196628ce4fe5f50e93df7fcde463ca610c6544c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-3bfda35416025bfee957939a504403a40845d27f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-3e7b01224c67b9a9ba6bb69fa87ccc2ce9db4b13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-4a013a9d6cd7cf60e1cfd792319d1f4ec743abf5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-4cb8679c823cc7ab70e557c44425dfe7ced08691.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-4cbd096e85141c32f1c0e2284f2b167ce1898d8c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-4e616b0beb20ffcbeabccece9a5e899dfa6ec406.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-52225acfe27870c752a106b544d7f9b342b59ff4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-53cd3d6baae5a19252701f789666e4a43d2f71db.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-542689304e2d1012c6082961659bdc410584accf.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-5a521aed04e10b4c37cdf9b4134dde6923ee0ad9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-5d2efadeaf84275aed7e161fd02f0807646edf6c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-5e0bdc89a1cd419e221a51acd272fc31ed1115e9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-61ec04fb3e03f2784bf79de530ccd7b430f1cea6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-64aae798a82ca5927b2074d40b86a7aa63895a17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-6ad0c6ea3546d9d2bed7919bc01fbd1071bb7696.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-708e3f2fe9f3c27c55fa2435ea68712878cea217.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-791a134e4c7c8edb32d66cf4032ab5bf59fa6710.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-80c8d433dd95d0d70bee0462331f6cdef4b7d84c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-83bdf1b67532a2b64a75ed8978493713af0e82d7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-8b3b41a140e9e6457aebe6e25be5b4a27c233cea.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-8e80ebcf1e6578322c854be4e2c156c11c9c9c4e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-900c449648f76f7fcafb537e2899dfc5280362ac.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-9029d6575b5886d1ec853b0203938ac9a6d5010b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-90810ec80034f0f75ac4ac0ff108e06425fa0b3e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-94d6b47dcd29598df39fecc731e330767fa9fc9b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-963e5e1c4780b72e9560715f35522673a875ad8d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-999fa15c780c65b2a5c4c66bd250f323123a37a8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-a63ae024323c5067f46f70872ffaa402e5ce4afe.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-aeaea7224ffd53d12ebd32a8d94fd0449026516e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-b47992f1fdffbfa19ebb846005ef9b605a948730.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-b739fe5003ac06c321f4392cb179bf2d0b857dc8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c177a3be7e064b7fb40d2ad2a5624b53e1f0a315.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c2879582be57b05b7992491f2e19c46c5a02d2b9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c2c23f4dfa40adf9c4b15c26dab8150db2f925fa.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c5fefce766ef49233958f7951b569a10440bcc5e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c81f17b5cc2e549e097628ede3ba99ca7f46f157.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-c82ff20853f3a6903f9756a80b9b97c6d70f95dd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-cbd5d74f7420a286aaffa93cf82b8e5825726367.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-cc5fe95ce67610ad0bda6b245bd4fac2cf575d4d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-ce43b588bd5bb9c5620977bcc478d3b46abd444d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-d4ae643af4fb965c4cee9efa80224f1521f3a28d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-d8da40db7ef405086c087dbbf5f0b13be37e20c7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-e1404640feb5e2166b58c243d896e7152da3400a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-e2120aaa7add6358a5128183a469998396d30cbd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-e52797c1a913571542308efbc39f3fd270854993.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-e8064c2141d766a98dc3a852e1466e59d000c09e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-f88b01c47e4d106549ed5df851e61db57ddaf815.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-fcba61559e6af58ef04607d45d835f138f344c66.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/values-ffe7c4218bc59558dda5d7adf30c40beb0ebcaf6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/vcs-ca044688f6b966aab58c45bbd951e8dc98f757a2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/version-fc5303a17dee23697dbf4aab30e9c5a9e5d39ec7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/workspace-22b0210df3da00449419abe5c3f324f79be17ecc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/android-support-v4.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/classes-59f5c48258ab83cb088872b496a8f44da03e83c4.jar" afterPath="$PROJECT_DIR$/build/pre-dexed/debug/classes-59f5c48258ab83cb088872b496a8f44da03e83c4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/classes-650c6cc02187ab461a8fd12b04e3b20f3b72715a.jar" afterPath="$PROJECT_DIR$/build/pre-dexed/debug/classes-650c6cc02187ab461a8fd12b04e3b20f3b72715a.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exploded-bundles/NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar/classes.jar" afterPath="$PROJECT_DIR$/build/exploded-bundles/NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/exploded-bundles/NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/exploded-bundles/NomBrickbreakLibrariesBaseGameUtilsUnspecified.aar/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/support-v4-19.0.1-116d85f8a32084dd4864985be9819fce489f3d7c.jar" afterPath="$PROJECT_DIR$/build/pre-dexed/debug/support-v4-19.0.1-116d85f8a32084dd4864985be9819fce489f3d7c.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/BaseGameUtils/build.gradle" afterPath="$PROJECT_DIR$/libraries/BaseGameUtils/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nom-brickbreak.iml" afterPath="$PROJECT_DIR$/nom-brickbreak.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/ids.xml" afterPath="$PROJECT_DIR$/res/values/ids.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/res/layout/main_menu.xml" />
     </list>
     <ignored path="nom-brickbreak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -463,6 +90,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" line="315" class="com.nomath4u.breakbrick.MainActivity" package="com.nomath4u.breakbrick">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -475,7 +119,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="43" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5280">
+            <state line="336" column="35" selection-start="10767" selection-end="10767" vertical-scroll-proportion="0.0" vertical-offset="4692" max-vertical-offset="5340">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2602#2817#0" expanded="true" />
@@ -516,7 +160,7 @@
       <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="12" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="915">
+            <state line="52" column="37" selection-start="1841" selection-end="1841" vertical-scroll-proportion="-17.884615" vertical-offset="315" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -541,7 +185,7 @@
       <file leaf-file-name="ids.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="3" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -571,6 +215,11 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/ANDROID/apks/keystore_values" />
+    <option name="KEY_ALIAS" value="val" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1684,12 +1333,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/libraries/BaseGameUtils/build.gradle" />
-        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/ids.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/ids.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
+        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1834,6 +1483,10 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ANDROID/apks/keystore_values" />
+    <property name="ExportedModule" value="nom-brickbreak" />
+    <property name="ExportedApkPath" value="$USER_HOME$/ANDROID/apks/nom-brickbreak.apk" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.nom-brickbreak">
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -2034,11 +1687,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="0" width="1135" height="1055" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04162976" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2061,7 +1715,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.041710116" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2569,16 +2222,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="12" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/BaseGameUtils/src/main/java/com/google/example/games/basegameutils/BaseGameActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="22" selection-start="1937" selection-end="1937" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2715">
@@ -2612,9 +2255,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="37" selection-start="1841" selection-end="1841" vertical-scroll-proportion="-17.884615" vertical-offset="315" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="43" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5280">
+        <state line="336" column="35" selection-start="10767" selection-end="10767" vertical-scroll-proportion="0.0" vertical-offset="4692" max-vertical-offset="5340">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2602#2817#0" expanded="true" />
@@ -2632,7 +2285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="3" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
