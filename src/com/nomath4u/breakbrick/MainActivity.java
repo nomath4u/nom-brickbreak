@@ -221,11 +221,7 @@ public class MainActivity extends BaseGameActivity {
 		                            int which) {
 
 		                		dialog.dismiss();
-		                		panel._run = false; /*Stop the thread*/
-		                		Intent intent = new Intent(Intent.ACTION_MAIN);
-		                		intent.addCategory(Intent.CATEGORY_HOME);
-		                		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		                		startActivity(intent);
+		                		finish();
 
 		                    }
 		                });
@@ -284,12 +280,14 @@ public class MainActivity extends BaseGameActivity {
     }
 
     public void selfDestruct(View view){
-        panel._run = false;
+        /*panel._run = false;
+        panel = null;
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        startActivity(intent);*/
         //moveTaskToBack(true);
+        finish();
     }
     public void viewHighScore(View view){
        int highscore = getHighScore();
