@@ -51,6 +51,7 @@ public class MainActivity extends BaseGameActivity {
     public static final int AVGS = 10;
     private int orientation;
     private boolean isSignedIn = false;
+    private View.OnClickListener mlistener;
 
     public interface Listener {
         public void onStartGameRequested(boolean hardMode);
@@ -106,6 +107,38 @@ public class MainActivity extends BaseGameActivity {
 
         /*Default orientation*/
         this.orientation = getDeviceDefaultOrientation();
+
+        /*Get our button ready*/
+        mlistener = new View.OnClickListener(){
+            public void onClick(View view) {
+                switch (view.getId()) {
+            /*case R.id.easy_mode_button:
+                mListener.onStartGameRequested(false);
+                break;
+            case R.id.hard_mode_button:
+                mListener.onStartGameRequested(true);
+                break;
+            case R.id.show_achievements_button:
+                mListener.onShowAchievementsRequested();
+                break;
+            case R.id.show_leaderboards_button:
+                mListener.onShowLeaderboardsRequested();
+                break;
+            case R.id.sign_in_button:
+                mListener.onSignInButtonClicked();
+                break;
+            case R.id.sign_out_button:
+                mListener.onSignOutButtonClicked();
+                break;*/
+                    case R.id.sign_in_button:
+                        //mListener.onSignInButtonClicked();
+                        Test(view);
+                        break;
+                }
+            }
+
+        };
+        this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
 
 
 
@@ -317,31 +350,7 @@ public class MainActivity extends BaseGameActivity {
             return Configuration.ORIENTATION_PORTRAIT;
         }
 
-    public void onClick(View view) {
-        switch (view.getId()) {
-            /*case R.id.easy_mode_button:
-                mListener.onStartGameRequested(false);
-                break;
-            case R.id.hard_mode_button:
-                mListener.onStartGameRequested(true);
-                break;
-            case R.id.show_achievements_button:
-                mListener.onShowAchievementsRequested();
-                break;
-            case R.id.show_leaderboards_button:
-                mListener.onShowLeaderboardsRequested();
-                break;
-            case R.id.sign_in_button:
-                mListener.onSignInButtonClicked();
-                break;
-            case R.id.sign_out_button:
-                mListener.onSignOutButtonClicked();
-                break;*/
-            case R.id.sign_in_button:
-                mListener.onSignInButtonClicked();
-                break;
-        }
-    }
+
     //@Override
     public void onSignInButtonClicked() {
         // check if developer read the documentation!
