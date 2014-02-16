@@ -177,6 +177,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	createBricks();
         playing = false;
         paused = false;
+
     }
     
     private void createBricks(){

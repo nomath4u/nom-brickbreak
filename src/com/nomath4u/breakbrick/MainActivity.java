@@ -65,13 +65,11 @@ public class MainActivity extends BaseGameActivity {
         boolean mLeetAchievement = false;
         boolean mArrogantAchievement = false;
         int mBoredSteps = 0;
-        int mEasyModeScore = -1;
-        int mHardModeScore = -1;
+        int mScore = -1;
+
 
         boolean isEmpty() {
-            return !mPrimeAchievement && !mHumbleAchievement && !mLeetAchievement &&
-                    !mArrogantAchievement && mBoredSteps == 0 && mEasyModeScore < 0 &&
-                    mHardModeScore < 0;
+            return  mScore < 0;
         }
     }
     Listener mListener = null;
@@ -202,12 +200,16 @@ public class MainActivity extends BaseGameActivity {
 		        }
 		        else
 		        	 builder.setMessage("Your score was: " + Integer.toString(score) + "\n Current High Score: " + Integer.toString(highscore));
-		        builder.setPositiveButton("OK",
+		        builder.setPositiveButton("Main Menu",
 		                new DialogInterface.OnClickListener() {
 		                    @Override
 		                    public void onClick(DialogInterface dialog,
 		                            int which) {
+
 		                    	panel.reset();
+                                panel._run = false; //Have to turn it off so the canvas doesn't get mad
+                                setContentView(R.layout.main_menu);
+                                panel = null; //Setting to null so we can make a new one if we need to later
 		                		dialog.dismiss();
 
 		                    }
@@ -229,6 +231,13 @@ public class MainActivity extends BaseGameActivity {
 		                });
 		        AlertDialog alert = builder.create();
 		        alert.show();
+
+                if(isSignedIn){
+                    pushToLeader(score);
+                }
+                if(!mOutbox.isEmpty()){
+                    pushAccomplishments();
+                }
 			}
 		});
 	}
@@ -245,6 +254,9 @@ public class MainActivity extends BaseGameActivity {
 	 }
 
     public void startGame(View view){
+        if(this.panel == null){
+            this.panel = new SurfacePanel(this); // make a new one if there isn't one already
+        }
         setContentView(this.panel);
     }
 
@@ -373,9 +385,13 @@ public class MainActivity extends BaseGameActivity {
         }
     }
 
-    /*void pushAccomplishments() {
+    public void pushToLeader(int score){
+        mOutbox.mScore = score;
+    }
 
-        if (mOutbox.mPrimeAchievement) {
+    void pushAccomplishments() {
+
+        /*if (mOutbox.mPrimeAchievement) {
             getGamesClient().unlockAchievement(getString(R.string.achievement_prime));
             mOutbox.mPrimeAchievement = false;
         }
@@ -401,12 +417,12 @@ public class MainActivity extends BaseGameActivity {
             getGamesClient().submitScore(getString(R.string.leaderboard_easy),
                     mOutbox.mEasyModeScore);
             mOutbox.mEasyModeScore = -1;
+        }*/
+        if (mOutbox.mScore >= 0) {
+            getGamesClient().submitScore(getString(R.string.leaderboard),
+                    mOutbox.mScore);
+            mOutbox.mScore = -1;
         }
-        if (mOutbox.mHardModeScore >= 0) {
-            getGamesClient().submitScore(getString(R.string.leaderboard_hard),
-                    mOutbox.mHardModeScore);
-            mOutbox.mHardModeScore = -1;
-        }
-        mOutbox.saveLocal(this);
-    }*/
+
+    }
 }
