@@ -64,7 +64,8 @@ int id button2 0x7f060008
 int id button3 0x7f060007
 int id hybrid 0x7f060004
 int id leaderboards 0x7f06000c
-int id menu_settings 0x7f06000e
+int id menu_button 0x7f06000e
+int id menu_settings 0x7f06000f
 int id none 0x7f060000
 int id normal 0x7f060001
 int id satellite 0x7f060002

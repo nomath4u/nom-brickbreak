@@ -207,9 +207,7 @@ public class MainActivity extends BaseGameActivity {
 		                            int which) {
 
 		                    	panel.reset();
-                                panel._run = false; //Have to turn it off so the canvas doesn't get mad
-                                setContentView(R.layout.main_menu);
-                                panel = null; //Setting to null so we can make a new one if we need to later
+                                returnMenu();
 		                		dialog.dismiss();
 
 		                    }
@@ -422,5 +420,15 @@ public class MainActivity extends BaseGameActivity {
             mOutbox.mScore = -1;
         }
 
+    }
+    public void clickreturnMenu(View view){
+        returnMenu();
+    }
+
+    public void returnMenu(){
+        panel.reset();
+        panel._run = false; //Have to turn it off so the canvas doesn't get mad
+        setContentView(R.layout.main_menu);
+        panel = null; //Setting to null so we can make a new one if we need to later
     }
 }

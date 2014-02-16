@@ -217,7 +217,8 @@ containing a value of this type.
         public static final int button3=0x7f060007;
         public static final int hybrid=0x7f060004;
         public static final int leaderboards=0x7f06000c;
-        public static final int menu_settings=0x7f06000e;
+        public static final int menu_button=0x7f06000e;
+        public static final int menu_settings=0x7f06000f;
         public static final int none=0x7f060000;
         public static final int normal=0x7f060001;
         public static final int satellite=0x7f060002;

@@ -33,6 +33,14 @@
         android:layout_gravity="center"/>
 
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_button"
+        android:text="Main Menu"
+        android:onClick="clickreturnMenu"
+        android:layout_gravity="center"/>
+
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View Highscore"
