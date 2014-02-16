@@ -72,6 +72,14 @@
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/ids.xml -->
     <eat-comment />
 
+    <string name="achievement_5games">CgkItZSXkdMEEAIQAw</string>
+    <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="achievements_not_available">Sign in to see achievements</string>
+    <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/ids.xml -->
+    <eat-comment />
+
     <string name="app_id">159755127349</string>
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/strings.xml -->
     <eat-comment />

@@ -9,5 +9,6 @@
     <string name="test">test</string>
     <string name="pause">Game Paused</string>
     <string name="leaderboards_not_available">Sign in to see leaderboards</string>
+    <string name="achievements_not_available">Sign in to see achievements</string>
 
 </resources>

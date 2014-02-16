@@ -74,6 +74,12 @@
             android:text="Leaderboards"
             android:id="@+id/leaderboards"
             android:onClick="onShowLeaderboardsRequested" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:id="@+id/achievements"
+            android:onClick="onShowAchievementsRequested" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

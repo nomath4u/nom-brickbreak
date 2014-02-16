@@ -68,7 +68,7 @@ public class MainActivity extends BaseGameActivity {
         boolean mHumbleAchievement = false;
         boolean mLeetAchievement = false;
         boolean mArrogantAchievement = false;
-        int mBoredSteps = 0;
+        int mGameSteps = 0;
         int mScore = -1;
 
 
@@ -224,6 +224,7 @@ public class MainActivity extends BaseGameActivity {
 			edit.putInt("highScore", score);
 			edit.commit();
 		}
+        mOutbox.mGameSteps++;
 		runOnUiThread(new Runnable(){
 			public void run(){
 				AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -393,6 +394,14 @@ public class MainActivity extends BaseGameActivity {
         }
     }
 
+    public void onShowAchievementsRequested(View view) {
+        if (isSignedIn()) {
+            startActivityForResult(getGamesClient().getAchievementsIntent(), RC_UNUSED);
+        } else {
+            showAlert(getString(R.string.achievements_not_available));
+        }
+    }
+
     public void pushToLeader(int score){
         mOutbox.mScore = score;
     }
@@ -426,6 +435,10 @@ public class MainActivity extends BaseGameActivity {
                     mOutbox.mEasyModeScore);
             mOutbox.mEasyModeScore = -1;
         }*/
+        if (mOutbox.mGameSteps > 0) {
+            getGamesClient().incrementAchievement(getString(R.string.achievement_5games),
+                    mOutbox.mGameSteps);
+        }
         if (mOutbox.mScore >= 0) {
             getGamesClient().submitScore(getString(R.string.leaderboard),
                     mOutbox.mScore);
