@@ -26,7 +26,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.*;
 import com.google.example.games.basegameutils.BaseGameActivity;
 import com.nomath4u.breakbrick.R;

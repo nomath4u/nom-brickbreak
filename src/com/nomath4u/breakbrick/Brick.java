@@ -21,7 +21,7 @@ public class Brick {
 		brickWidth = brickXmult * screenwidth;
 		brickHeight = brickYmult * screenheight;
 
-		image = new RectF((xspace+(xspace+brickWidth)*(number % 6)), ((yspace+brickHeight)*(number /6)), (xspace+(xspace+brickWidth)*(number % 6))+brickWidth, ((yspace+brickHeight)*(number /6)+brickHeight));
+		image = new RectF((xspace+(xspace+brickWidth)*(number % 6)), (60+(yspace+brickHeight)*(number /6)), (xspace+(xspace+brickWidth)*(number % 6))+brickWidth, (60+(yspace+brickHeight)*(number /6)+brickHeight));
 		
 	}
 	

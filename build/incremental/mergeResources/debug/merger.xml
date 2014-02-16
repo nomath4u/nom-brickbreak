@@ -15,12 +15,12 @@
                     msgid="6006316683626838685" >"Posodobite storitve Google Play"
                 </string>
                 <string
-                    name="common_google_play_services_update_button"
-                    msgid="8932944190611227642" >"Posodobi"
-                </string>
-                <string
                     name="common_google_play_services_enable_text"
                     msgid="7627896071867667758" >"Aplikacija ne bo delovala, če ne omogočite storitev Google Play."
+                </string>
+                <string
+                    name="common_google_play_services_update_button"
+                    msgid="8932944190611227642" >"Posodobi"
                 </string>
                 <string
                     name="auth_client_needs_enabling_title"
@@ -42,12 +42,12 @@
                     msgid="3635065018897986478" >"Napaka storitev Google Play"
                 </string>
                 <string
-                    name="common_google_play_services_unsupported_date_text"
-                    msgid="4725396522367789365" >"Videti je, da je datum v napravi napačen. Preverite ga."
-                </string>
-                <string
                     name="common_google_play_services_unsupported_text"
                     msgid="3542578567569488671" >"Vaša naprava na podpira storitev Google Play, ki jih potrebujejo nekatere od vaših aplikacij. Za pomoč se obrnite na izdelovalca."
+                </string>
+                <string
+                    name="common_google_play_services_unsupported_date_text"
+                    msgid="4725396522367789365" >"Videti je, da je datum v napravi napačen. Preverite ga."
                 </string>
                 <string
                     name="common_google_play_services_unknown_issue"
@@ -94,12 +94,12 @@
                     msgid="1066672360770936753" >"Neveljaven račun"
                 </string>
                 <string
-                    name="auth_client_using_bad_version_title"
-                    msgid="2534454398764507874" >"Aplikacija je poskusila uporabiti napačno različico Storitev Google Play."
-                </string>
-                <string
                     name="common_google_play_services_network_error_title"
                     msgid="3827284619958211114" >"Omrežna napaka"
+                </string>
+                <string
+                    name="auth_client_using_bad_version_title"
+                    msgid="2534454398764507874" >"Aplikacija je poskusila uporabiti napačno različico Storitev Google Play."
                 </string>
                 <string
                     name="common_google_play_services_install_text_tablet"
@@ -494,20 +494,20 @@
                     msgid="448354684997260580" >"Du måste uppdatera Google Play Tjänster innan du kan köra den här appen."
                 </string>
                 <string
-                    name="common_google_play_services_enable_button"
-                    msgid="4181637455539816337" >"Aktivera Google Play Tjänster"
-                </string>
-                <string
                     name="common_google_play_services_invalid_account_title"
                     msgid="1066672360770936753" >"Ogiltigt konto"
                 </string>
                 <string
-                    name="common_google_play_services_update_button"
-                    msgid="8932944190611227642" >"Uppdatera"
+                    name="common_google_play_services_enable_button"
+                    msgid="4181637455539816337" >"Aktivera Google Play Tjänster"
                 </string>
                 <string
                     name="common_google_play_services_unsupported_date_text"
                     msgid="4725396522367789365" >"Datumet på enheten verkar inte vara rätt. Kontrollera datumet på enheten."
+                </string>
+                <string
+                    name="common_google_play_services_update_button"
+                    msgid="8932944190611227642" >"Uppdatera"
                 </string>
                 <string
                     name="auth_client_using_bad_version_title"
@@ -4253,24 +4253,24 @@
                 path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/exploded-bundles/ComGoogleAndroidGmsPlayServices4132.aar/res/values-zh-rHK/strings.xml"
                 qualifiers="zh-rHK" >
                 <string
-                    name="common_google_play_services_update_button"
-                    msgid="8932944190611227642" >"更新"
-                </string>
-                <string
                     name="common_google_play_services_install_title"
                     msgid="26645092511305524" >"取得 Google Play 服務"
+                </string>
+                <string
+                    name="common_google_play_services_update_button"
+                    msgid="8932944190611227642" >"更新"
                 </string>
                 <string
                     name="common_google_play_services_update_text"
                     msgid="448354684997260580" >"您必須更新 Google Play 服務，才能執行這個應用程式。"
                 </string>
                 <string
-                    name="common_google_play_services_unknown_issue"
-                    msgid="4762332809710093730" >"Google Play 服務出現不明問題。"
-                </string>
-                <string
                     name="common_google_play_services_enable_title"
                     msgid="529078775174559253" >"啟用 Google Play 服務"
+                </string>
+                <string
+                    name="common_google_play_services_unknown_issue"
+                    msgid="4762332809710093730" >"Google Play 服務出現不明問題。"
                 </string>
                 <string
                     name="auth_client_play_services_err_notification_msg"

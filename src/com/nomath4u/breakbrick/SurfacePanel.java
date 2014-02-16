@@ -213,7 +213,14 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	            Paint paint = new Paint();
 	            paint.setColor(Color.RED);
 	            paint.setStrokeWidth(1);
-	            paint.setTextSize(20);
+	            paint.setTextSize(60);
+                paint.setTextAlign(Paint.Align.CENTER);
+
+                Paint scorePaint = new Paint();
+                scorePaint.setColor(Color.RED);
+                scorePaint.setStrokeWidth(1);
+                scorePaint.setTextSize(60);
+                scorePaint.setTextAlign(Paint.Align.RIGHT);
 	            
 	            Paint brickPaint = new Paint();
 	            brickPaint.setColor(Color.GREEN);
@@ -262,7 +269,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 
 	                        			nextLevel();
 	                        		}
-	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, 0, 100, paint);
+	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, mainPaddle.screenwidth, 45, scorePaint);
 	                        		mainBall.tick(); //Tell the ball it needs to move again
                                     tickable = true;
                                     if(mainBall.timing){
@@ -277,7 +284,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        	}
 	                        }
 	                        else{
-	                        	c.drawText("Tap to begin playing Level " + parent.level, (mainPaddle.screenwidth/2) - 30, (mainPaddle.screenheight/2),paint);
+	                        	c.drawText("Tap to begin playing Level " + parent.level, mainPaddle.screenwidth/2, mainPaddle.screenheight/2 ,paint);
 	                        }
 	                        }
 	                        else{
