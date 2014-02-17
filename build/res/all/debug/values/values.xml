@@ -77,6 +77,10 @@
     <eat-comment />
 
     <string name="achievement_5games">CgkItZSXkdMEEAIQAw</string>
+    <string name="achievement_6score">CgkItZSXkdMEEAIQBQ</string>
+    <string name="achievement_brickicide">CgkItZSXkdMEEAIQBw</string>
+    <string name="achievement_life1">CgkItZSXkdMEEAIQBg</string>
+    <string name="achievement_lvl3">CgkItZSXkdMEEAIQBA</string>
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/strings.xml -->
     <eat-comment />
 
@@ -144,6 +148,7 @@
     <string name="leaderboards_not_available">Sign in to see leaderboards</string>
     <string name="menu_settings">Settings</string>
     <string name="pause">Game Paused</string>
+    <string name="sign_out">Sign Out</string>
     <string name="test">test</string>
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/styles.xml -->
     <eat-comment />

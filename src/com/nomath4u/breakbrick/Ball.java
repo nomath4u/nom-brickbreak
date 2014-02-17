@@ -223,7 +223,8 @@ public class Ball {
 		    if (intersected)
 		    {
 		      bricks.remove(brick);
-		      flipYSpeed();
+		      parent.mOutbox.mbrickAchievement++;
+              flipYSpeed();
 		      parent.addScore(500);
               //parent.panel.scoreView.
 		      /*play sound*/

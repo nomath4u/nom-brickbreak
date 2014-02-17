@@ -19,12 +19,17 @@ public void tick(){
 	image.offset(0, -(float)velocity.speedY());
 	if(image.intersect(panel.mainPaddle.selfimage)){
 		panel.parent.addLife(1);
+        panel.parent.rowlives++;
+        if(panel.parent.rowlives >= 5){
+            panel.parent.mOutbox.mlife1Achievement = true;
+        }
 		/*Remove self*/
 		panel.eLife = null;
 	}
 	
 	if(image.bottom > panel.mainPaddle.screenheight){
 		/*Remove self*/
+        panel.parent.rowlives = 0; //Missed one restart
 		panel.eLife = null;
 	}
 	

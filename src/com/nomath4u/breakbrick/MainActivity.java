@@ -39,6 +39,8 @@ public class MainActivity extends BaseGameActivity {
 	public int lives;
 	public int score;
 	public int level;
+    public int rowlives = 0;
+    //public int bricks_broken = 0;
 	public SensorManager mSensorManager;
 	public float adcval;
 	public float maxval;
@@ -55,6 +57,7 @@ public class MainActivity extends BaseGameActivity {
     private int orientation;
     private boolean isSignedIn = false;
     private View.OnClickListener mlistener;
+    public boolean mShowSignIn = true;
 
     public interface Listener {
         public void onStartGameRequested(boolean hardMode);
@@ -64,10 +67,11 @@ public class MainActivity extends BaseGameActivity {
         public void onSignOutButtonClicked();
     }
     class AccomplishmentsOutbox {
-        boolean mPrimeAchievement = false;
-        boolean mHumbleAchievement = false;
-        boolean mLeetAchievement = false;
-        boolean mArrogantAchievement = false;
+        boolean mlife1Achievement = false;
+        boolean m6scoreAchievement = false;
+        boolean mScoreAchievement = false;
+        boolean mlvl3Achievement = false;
+        int mbrickAchievement = 0;
         int mGameSteps = 0;
         int mScore = -1;
 
@@ -129,10 +133,10 @@ public class MainActivity extends BaseGameActivity {
                 break;
             case R.id.sign_in_button:
                 mListener.onSignInButtonClicked();
-                break;
-            case R.id.sign_out_button:
-                mListener.onSignOutButtonClicked();
                 break;*/
+            case R.id.sign_out_button:
+                onSignOutButtonClicked(view);
+                break;
                     case R.id.sign_in_button:
                         //mListener.onSignInButtonClicked();
                         Test(view);
@@ -142,8 +146,9 @@ public class MainActivity extends BaseGameActivity {
 
         };
         this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
+        this.findViewById(R.id.sign_out_button).setOnClickListener(mlistener);
 
-
+        updateBar();
 
 
 	}
@@ -233,6 +238,12 @@ public class MainActivity extends BaseGameActivity {
 			edit.commit();
 		}
         mOutbox.mGameSteps++;
+        if(level > 3){
+            mOutbox.mlvl3Achievement = true;
+        }
+        if(score > 100000){
+            mOutbox.mScoreAchievement = true;
+        }
 		runOnUiThread(new Runnable(){
 			public void run(){
 				AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -386,12 +397,16 @@ public class MainActivity extends BaseGameActivity {
 
     @Override
     public void onSignInFailed() {
-
+        mShowSignIn = true;
+        updateBar();
     }
 
     @Override
     public void onSignInSucceeded() {
         this.isSignedIn = true;
+        mShowSignIn = false;
+        updateBar();
+
     }
 
     public void onShowLeaderboardsRequested(View view) {
@@ -450,7 +465,22 @@ public class MainActivity extends BaseGameActivity {
         if (mOutbox.mScore >= 0) {
             getGamesClient().submitScore(getString(R.string.leaderboard),
                     mOutbox.mScore);
+        if (mOutbox.mlvl3Achievement){
+            getGamesClient().unlockAchievement(getString(R.string.achievement_lvl3));
+        }
+        if (mOutbox.m6scoreAchievement){
+            getGamesClient().unlockAchievement(getString(R.string.achievement_6score));
+        }
+        if (mOutbox.mlife1Achievement){
+            getGamesClient().unlockAchievement(getString(R.string.achievement_life1));
+        }
+        if (mOutbox.mbrickAchievement > 0){
+            getGamesClient().incrementAchievement(getString(R.string.achievement_brickicide),mOutbox.mbrickAchievement);
+        }
+
             mOutbox.mScore = -1;
+            mOutbox.mGameSteps = 0;
+            mOutbox.mbrickAchievement = 0;
         }
 
     }
@@ -479,10 +509,10 @@ public class MainActivity extends BaseGameActivity {
                 break;
             case R.id.sign_in_button:
                 mListener.onSignInButtonClicked();
-                break;
-            case R.id.sign_out_button:
-                mListener.onSignOutButtonClicked();
                 break;*/
+            case R.id.sign_out_button:
+                onSignOutButtonClicked(view);
+                break;
                     case R.id.sign_in_button:
                         //mListener.onSignInButtonClicked();
                         Test(view);
@@ -492,6 +522,21 @@ public class MainActivity extends BaseGameActivity {
 
         };
         this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
+        this.findViewById(R.id.sign_out_button).setOnClickListener(mlistener);
+
+        updateBar();
         panel = null; //Setting to null so we can make a new one if we need to later
+    }
+    public void updateBar(){
+        this.findViewById(R.id.sign_in_bar).setVisibility(mShowSignIn ?
+                View.VISIBLE : View.GONE);
+        this.findViewById(R.id.sign_out_bar).setVisibility(mShowSignIn ?
+                View.GONE : View.VISIBLE);
+    }
+
+    public void onSignOutButtonClicked(View view){
+        signOut();
+        mShowSignIn = true;
+        updateBar();
     }
 }

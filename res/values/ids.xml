@@ -6,5 +6,8 @@
 
     <string name="leaderboard">CgkItZSXkdMEEAIQAA</string>
     <string name="achievement_5games">CgkItZSXkdMEEAIQAw</string>
-
+    <string name="achievement_lvl3">CgkItZSXkdMEEAIQBA</string>
+    <string name="achievement_6score">CgkItZSXkdMEEAIQBQ</string>
+    <string name="achievement_life1">CgkItZSXkdMEEAIQBg</string>
+    <string name="achievement_brickicide">CgkItZSXkdMEEAIQBw</string>
 </resources>
