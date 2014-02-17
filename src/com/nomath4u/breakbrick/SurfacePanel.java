@@ -11,10 +11,12 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -185,6 +187,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     
     private void createBricks(){
 		for(int i = 0; i < (rows * 6); i++ ){
+            Log.v("TAG", "index=" + i);
 			Brick tmpBrick = new Brick(i,mainPaddle.screenwidth, mainPaddle.screenheight/*, bricks*/);
 			bricks.add(tmpBrick);
 		}
@@ -195,6 +198,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	mainBall.setBallCharacteristics(parent.level);
     	playing = false;
         mainBall.spawned = false;
+        mainBall.image = new RectF(0,0,0,0); //So the remaining ball can't hit the bricks about to spawn 
     	createBricks();
     }
 	
