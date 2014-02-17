@@ -20,13 +20,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.Surface;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.common.SignInButton;
@@ -116,39 +119,7 @@ public class MainActivity extends BaseGameActivity {
         this.orientation = getDeviceDefaultOrientation();
 
         /*Get our button ready*/
-        mlistener = new View.OnClickListener(){
-            public void onClick(View view) {
-                switch (view.getId()) {
-            /*case R.id.easy_mode_button:
-                mListener.onStartGameRequested(false);
-                break;
-            case R.id.hard_mode_button:
-                mListener.onStartGameRequested(true);
-                break;
-            case R.id.show_achievements_button:
-                mListener.onShowAchievementsRequested();
-                break;
-            case R.id.show_leaderboards_button:
-                mListener.onShowLeaderboardsRequested();
-                break;
-            case R.id.sign_in_button:
-                mListener.onSignInButtonClicked();
-                break;*/
-            case R.id.sign_out_button:
-                onSignOutButtonClicked(view);
-                break;
-                    case R.id.sign_in_button:
-                        //mListener.onSignInButtonClicked();
-                        Test(view);
-                        break;
-                }
-            }
-
-        };
-        this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
-        this.findViewById(R.id.sign_out_button).setOnClickListener(mlistener);
-
-        updateBar();
+        resetClickListeners();
 
 
 	}
@@ -492,6 +463,26 @@ public class MainActivity extends BaseGameActivity {
         panel.reset();
         panel._run = false; //Have to turn it off so the canvas doesn't get mad
         setContentView(R.layout.main_menu);
+        resetClickListeners();
+        panel = null; //Setting to null so we can make a new one if we need to later
+    }
+    public void updateBar(){
+        this.findViewById(R.id.sign_in_bar).setVisibility(mShowSignIn ?
+                View.VISIBLE : View.GONE);
+        this.findViewById(R.id.sign_out_bar).setVisibility(mShowSignIn ?
+                View.GONE : View.VISIBLE);
+        this.findViewById(R.id.button_group1).setVisibility(mShowSignIn ? View.VISIBLE : View.GONE);
+        this.findViewById(R.id.button_group2).setVisibility(mShowSignIn ? View.GONE : View.VISIBLE);
+
+    }
+
+    public void onSignOutButtonClicked(View view){
+        signOut();
+        mShowSignIn = true;
+        updateBar();
+    }
+
+    private void resetClickListeners(){
         mlistener = new View.OnClickListener(){
             public void onClick(View view) {
                 switch (view.getId()) {
@@ -510,9 +501,9 @@ public class MainActivity extends BaseGameActivity {
             case R.id.sign_in_button:
                 mListener.onSignInButtonClicked();
                 break;*/
-            case R.id.sign_out_button:
-                onSignOutButtonClicked(view);
-                break;
+                    case R.id.sign_out_button:
+                        onSignOutButtonClicked(view);
+                        break;
                     case R.id.sign_in_button:
                         //mListener.onSignInButtonClicked();
                         Test(view);
@@ -524,19 +515,6 @@ public class MainActivity extends BaseGameActivity {
         this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
         this.findViewById(R.id.sign_out_button).setOnClickListener(mlistener);
 
-        updateBar();
-        panel = null; //Setting to null so we can make a new one if we need to later
-    }
-    public void updateBar(){
-        this.findViewById(R.id.sign_in_bar).setVisibility(mShowSignIn ?
-                View.VISIBLE : View.GONE);
-        this.findViewById(R.id.sign_out_bar).setVisibility(mShowSignIn ?
-                View.GONE : View.VISIBLE);
-    }
-
-    public void onSignOutButtonClicked(View view){
-        signOut();
-        mShowSignIn = true;
         updateBar();
     }
 }

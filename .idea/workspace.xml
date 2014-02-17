@@ -28,14 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="295f2263-24f9-4762-a1b6-7c86284ed603" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/google/example/games/basegameutils/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/google/example/games/basegameutils/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/ids.xml" afterPath="$PROJECT_DIR$/res/values/ids.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/res/layout/main_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
     </list>
     <ignored path="nom-brickbreak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,43 +94,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="511" column="24" selection-start="16646" selection-end="16646" vertical-scroll-proportion="0.42696628" vertical-offset="6640" max-vertical-offset="7560">
+            <state line="474" column="44" selection-start="15318" selection-end="15318" vertical-scroll-proportion="0.0" vertical-offset="6338" max-vertical-offset="7620">
               <folding>
-                <element signature="e#3822#4866#0" expanded="true" />
-                <element signature="e#4854#4855#0" expanded="true" />
-                <element signature="e#7786#7810#0" expanded="true" />
-                <element signature="e#12868#12914#0" expanded="true" />
-                <element signature="e#13147#13193#0" expanded="true" />
-                <element signature="e#14704#14742#0" expanded="true" />
-                <element signature="e#14871#14902#0" expanded="true" />
-                <element signature="e#15027#15063#0" expanded="true" />
-                <element signature="e#15164#15202#0" expanded="true" />
-                <element signature="e#15302#15339#0" expanded="true" />
-                <element signature="e#15446#15488#0" expanded="true" />
-                <element signature="e#15927#16971#0" expanded="true" />
-                <element signature="e#16959#16960#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6670#6694#0" expanded="true" />
+                <element signature="e#11752#11798#0" expanded="true" />
+                <element signature="e#12031#12077#0" expanded="true" />
+                <element signature="e#13588#13626#0" expanded="true" />
+                <element signature="e#13755#13786#0" expanded="true" />
+                <element signature="e#13911#13947#0" expanded="true" />
+                <element signature="e#14048#14086#0" expanded="true" />
+                <element signature="e#14186#14223#0" expanded="true" />
+                <element signature="e#14330#14372#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ball.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="49" selection-start="7717" selection-end="7717" vertical-scroll-proportion="0.0" vertical-offset="2745" max-vertical-offset="3915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="37" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,18 +117,18 @@
       <file leaf-file-name="SurfacePanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="50" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="4455">
+            <state line="148" column="50" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="4815">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main_menu.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="19" selection-start="3266" selection-end="3266" vertical-scroll-proportion="-7.8461537" vertical-offset="1131" max-vertical-offset="1995">
+            <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.27713627" vertical-offset="540" max-vertical-offset="2775">
               <folding>
-                <element signature="e#3817#3835#0" expanded="true" />
+                <element signature="e#5882#5900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,7 +140,7 @@
       <file leaf-file-name="Paddle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Paddle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
+            <state line="20" column="13" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2625">
               <folding />
             </state>
           </provider>
@@ -175,7 +149,7 @@
       <file leaf-file-name="ExtraLife.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="3" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -184,7 +158,7 @@
       <file leaf-file-name="Brick.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Brick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="163" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="23" column="163" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -193,7 +167,7 @@
       <file leaf-file-name="ids.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="60" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="11" column="60" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -1334,8 +1308,8 @@
         <option value="$PROJECT_DIR$/res/values/ids.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
       </list>
     </option>
   </component>
@@ -1370,6 +1344,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1476,8 +1452,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1708,25 +1682,25 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.024504693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.011991658" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.018162394" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.020299146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29273504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.018162394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14337853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1770,19 +1744,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1801,7 +1772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1827,19 +1798,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1858,7 +1826,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1884,19 +1852,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1915,7 +1880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1941,19 +1906,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1972,7 +1934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="585">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1998,19 +1960,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2029,7 +1988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2055,19 +2014,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2086,7 +2042,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2098,19 +2054,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2129,7 +2082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="9" selection-start="1365" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="870">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2141,19 +2094,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="3945">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2162,19 +2112,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3945">
           <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2281,37 +2228,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="474" column="44" selection-start="15318" selection-end="15318" vertical-scroll-proportion="0.0" vertical-offset="6338" max-vertical-offset="7620">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6670#6694#0" expanded="true" />
+            <element signature="e#11752#11798#0" expanded="true" />
+            <element signature="e#12031#12077#0" expanded="true" />
+            <element signature="e#13588#13626#0" expanded="true" />
+            <element signature="e#13755#13786#0" expanded="true" />
+            <element signature="e#13911#13947#0" expanded="true" />
+            <element signature="e#14048#14086#0" expanded="true" />
+            <element signature="e#14186#14223#0" expanded="true" />
+            <element signature="e#14330#14372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="19" selection-start="3266" selection-end="3266" vertical-scroll-proportion="-7.8461537" vertical-offset="1131" max-vertical-offset="1995">
+        <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.27713627" vertical-offset="540" max-vertical-offset="2775">
           <folding>
-            <element signature="e#3817#3835#0" expanded="true" />
+            <element signature="e#5882#5900#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="511" column="24" selection-start="16646" selection-end="16646" vertical-scroll-proportion="0.42696628" vertical-offset="6640" max-vertical-offset="7560">
-          <folding>
-            <element signature="e#3822#4866#0" expanded="true" />
-            <element signature="e#4854#4855#0" expanded="true" />
-            <element signature="e#7786#7810#0" expanded="true" />
-            <element signature="e#12868#12914#0" expanded="true" />
-            <element signature="e#13147#13193#0" expanded="true" />
-            <element signature="e#14704#14742#0" expanded="true" />
-            <element signature="e#14871#14902#0" expanded="true" />
-            <element signature="e#15027#15063#0" expanded="true" />
-            <element signature="e#15164#15202#0" expanded="true" />
-            <element signature="e#15302#15339#0" expanded="true" />
-            <element signature="e#15446#15488#0" expanded="true" />
-            <element signature="e#15927#16971#0" expanded="true" />
-            <element signature="e#16959#16960#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>
