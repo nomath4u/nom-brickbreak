@@ -65,6 +65,10 @@
         <attr name="useViewLifecycle" format="boolean" />
         <attr name="zOrderOnTop" format="boolean" />
     </declare-styleable>
+    <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="text_size">20sp</dimen>
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/exploded-bundles/ComGoogleAndroidGmsPlayServices4132.aar/res/values/version.xml -->
     <eat-comment />
 

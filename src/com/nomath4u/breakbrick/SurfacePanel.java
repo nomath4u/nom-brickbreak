@@ -146,8 +146,10 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
  
     public void surfaceCreated(SurfaceHolder holder) {
         // Starts thread execution
-        thread.setRunning(true);
-        thread.start();
+        if(thread.getState() == Thread.State.NEW){
+            thread.setRunning(true);
+            thread.start();
+        }
     }
  
     public void surfaceDestroyed(SurfaceHolder holder) {
@@ -209,17 +211,19 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	        @Override
 	        public void run() {
 	            Canvas canvas = null;
+
+                float textSize = parent.getResources().getDimension(R.dimen.text_size);
 	 
 	            Paint paint = new Paint();
 	            paint.setColor(Color.RED);
 	            paint.setStrokeWidth(1);
-	            paint.setTextSize(60);
+	            paint.setTextSize(textSize);
                 paint.setTextAlign(Paint.Align.CENTER);
 
                 Paint scorePaint = new Paint();
                 scorePaint.setColor(Color.RED);
                 scorePaint.setStrokeWidth(1);
-                scorePaint.setTextSize(60);
+                scorePaint.setTextSize(textSize);
                 scorePaint.setTextAlign(Paint.Align.RIGHT);
 	            
 	            Paint brickPaint = new Paint();

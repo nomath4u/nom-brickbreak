@@ -159,14 +159,18 @@ public class MainActivity extends BaseGameActivity {
     protected void onResume(){
     	super.onResume();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
-        panel._run = true;
+        if(panel != null){
+            panel._run = true;
+        }
     }
 
     @Override
     protected void onRestart(){
     	super.onRestart();
     	mSensorManager.registerListener(adcListener, adcsensor, SensorManager.SENSOR_DELAY_GAME);
-        panel._run = true;
+        if(panel != null){
+            panel._run = true;
+        }
     }
 
     private void createSensorManager(){
@@ -197,16 +201,20 @@ public class MainActivity extends BaseGameActivity {
     protected void onPause(){
     	super.onPause();
     	mSensorManager.unregisterListener(adcListener);
-        panel._run = false;
-    }
+        if(panel != null){
+            panel._run = false;
 
+        }
+    }
     @Override
     protected void onDestroy(){
     	super.onDestroy();
     	mSensorManager.unregisterListener(adcListener);
-        panel._run= false;
-    }
+        if(panel != null){
+            panel._run= false;
 
+        }
+    }
 	public void addScore(int add){
 		score = score + add;
 
@@ -454,6 +462,36 @@ public class MainActivity extends BaseGameActivity {
         panel.reset();
         panel._run = false; //Have to turn it off so the canvas doesn't get mad
         setContentView(R.layout.main_menu);
+        mlistener = new View.OnClickListener(){
+            public void onClick(View view) {
+                switch (view.getId()) {
+            /*case R.id.easy_mode_button:
+                mListener.onStartGameRequested(false);
+                break;
+            case R.id.hard_mode_button:
+                mListener.onStartGameRequested(true);
+                break;
+            case R.id.show_achievements_button:
+                mListener.onShowAchievementsRequested();
+                break;
+            case R.id.show_leaderboards_button:
+                mListener.onShowLeaderboardsRequested();
+                break;
+            case R.id.sign_in_button:
+                mListener.onSignInButtonClicked();
+                break;
+            case R.id.sign_out_button:
+                mListener.onSignOutButtonClicked();
+                break;*/
+                    case R.id.sign_in_button:
+                        //mListener.onSignInButtonClicked();
+                        Test(view);
+                        break;
+                }
+            }
+
+        };
+        this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
         panel = null; //Setting to null so we can make a new one if we need to later
     }
 }

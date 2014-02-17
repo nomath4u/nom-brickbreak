@@ -178,6 +178,9 @@ containing a value of this type.
         public static final int common_signin_btn_text_light=0x7f05000c;
         public static final int opaque_red=0x7f05000a;
     }
+    public static final class dimen {
+        public static final int text_size=0x7f070000;
+    }
     public static final class drawable {
         public static final int breakbrickicon=0x7f020000;
         public static final int common_signin_btn_icon_dark=0x7f020001;
@@ -229,7 +232,7 @@ containing a value of this type.
         public static final int terrain=0x7f060003;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f070000;
+        public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -239,55 +242,55 @@ containing a value of this type.
         public static final int test2=0x7f030004;
     }
     public static final class menu {
-        public static final int activity_main=0x7f0a0000;
+        public static final int activity_main=0x7f0b0000;
     }
     public static final class raw {
         public static final int blip1=0x7f040000;
         public static final int blip2=0x7f040001;
     }
     public static final class string {
-        public static final int achievement_5games=0x7f080000;
-        public static final int achievements_not_available=0x7f080001;
-        public static final int app_id=0x7f080002;
-        public static final int app_name=0x7f080003;
-        public static final int auth_client_needs_enabling_title=0x7f080004;
-        public static final int auth_client_needs_installation_title=0x7f080005;
-        public static final int auth_client_needs_update_title=0x7f080006;
-        public static final int auth_client_play_services_err_notification_msg=0x7f080007;
-        public static final int auth_client_requested_by_msg=0x7f080008;
-        public static final int auth_client_using_bad_version_title=0x7f080009;
-        public static final int common_google_play_services_enable_button=0x7f08000a;
-        public static final int common_google_play_services_enable_text=0x7f08000b;
-        public static final int common_google_play_services_enable_title=0x7f08000c;
-        public static final int common_google_play_services_install_button=0x7f08000d;
-        public static final int common_google_play_services_install_text_phone=0x7f08000e;
-        public static final int common_google_play_services_install_text_tablet=0x7f08000f;
-        public static final int common_google_play_services_install_title=0x7f080010;
-        public static final int common_google_play_services_invalid_account_text=0x7f080011;
-        public static final int common_google_play_services_invalid_account_title=0x7f080012;
-        public static final int common_google_play_services_network_error_text=0x7f080013;
-        public static final int common_google_play_services_network_error_title=0x7f080014;
-        public static final int common_google_play_services_unknown_issue=0x7f080015;
-        public static final int common_google_play_services_unsupported_date_text=0x7f080016;
-        public static final int common_google_play_services_unsupported_text=0x7f080017;
-        public static final int common_google_play_services_unsupported_title=0x7f080018;
-        public static final int common_google_play_services_update_button=0x7f080019;
-        public static final int common_google_play_services_update_text=0x7f08001a;
-        public static final int common_google_play_services_update_title=0x7f08001b;
-        public static final int common_signin_button_text=0x7f08001c;
-        public static final int common_signin_button_text_long=0x7f08001d;
-        public static final int game_over_message=0x7f08001e;
-        public static final int game_over_title=0x7f08001f;
-        public static final int gamehelper_app_misconfigured=0x7f080020;
-        public static final int gamehelper_license_failed=0x7f080021;
-        public static final int gamehelper_sign_in_failed=0x7f080022;
-        public static final int gamehelper_unknown_error=0x7f080023;
-        public static final int hello_world=0x7f080024;
-        public static final int leaderboard=0x7f080025;
-        public static final int leaderboards_not_available=0x7f080026;
-        public static final int menu_settings=0x7f080027;
-        public static final int pause=0x7f080028;
-        public static final int test=0x7f080029;
+        public static final int achievement_5games=0x7f090000;
+        public static final int achievements_not_available=0x7f090001;
+        public static final int app_id=0x7f090002;
+        public static final int app_name=0x7f090003;
+        public static final int auth_client_needs_enabling_title=0x7f090004;
+        public static final int auth_client_needs_installation_title=0x7f090005;
+        public static final int auth_client_needs_update_title=0x7f090006;
+        public static final int auth_client_play_services_err_notification_msg=0x7f090007;
+        public static final int auth_client_requested_by_msg=0x7f090008;
+        public static final int auth_client_using_bad_version_title=0x7f090009;
+        public static final int common_google_play_services_enable_button=0x7f09000a;
+        public static final int common_google_play_services_enable_text=0x7f09000b;
+        public static final int common_google_play_services_enable_title=0x7f09000c;
+        public static final int common_google_play_services_install_button=0x7f09000d;
+        public static final int common_google_play_services_install_text_phone=0x7f09000e;
+        public static final int common_google_play_services_install_text_tablet=0x7f09000f;
+        public static final int common_google_play_services_install_title=0x7f090010;
+        public static final int common_google_play_services_invalid_account_text=0x7f090011;
+        public static final int common_google_play_services_invalid_account_title=0x7f090012;
+        public static final int common_google_play_services_network_error_text=0x7f090013;
+        public static final int common_google_play_services_network_error_title=0x7f090014;
+        public static final int common_google_play_services_unknown_issue=0x7f090015;
+        public static final int common_google_play_services_unsupported_date_text=0x7f090016;
+        public static final int common_google_play_services_unsupported_text=0x7f090017;
+        public static final int common_google_play_services_unsupported_title=0x7f090018;
+        public static final int common_google_play_services_update_button=0x7f090019;
+        public static final int common_google_play_services_update_text=0x7f09001a;
+        public static final int common_google_play_services_update_title=0x7f09001b;
+        public static final int common_signin_button_text=0x7f09001c;
+        public static final int common_signin_button_text_long=0x7f09001d;
+        public static final int game_over_message=0x7f09001e;
+        public static final int game_over_title=0x7f09001f;
+        public static final int gamehelper_app_misconfigured=0x7f090020;
+        public static final int gamehelper_license_failed=0x7f090021;
+        public static final int gamehelper_sign_in_failed=0x7f090022;
+        public static final int gamehelper_unknown_error=0x7f090023;
+        public static final int hello_world=0x7f090024;
+        public static final int leaderboard=0x7f090025;
+        public static final int leaderboards_not_available=0x7f090026;
+        public static final int menu_settings=0x7f090027;
+        public static final int pause=0x7f090028;
+        public static final int test=0x7f090029;
     }
     public static final class style {
         /** 
@@ -298,10 +301,10 @@ containing a value of this type.
  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090001;
+        public static final int AppTheme=0x7f0a0001;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
