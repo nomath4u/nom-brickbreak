@@ -173,6 +173,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
     	parent.lives = 5;
     	parent.score = 0;
     	parent.level = 1;
+        parent.rowlives = 0;
     	over = false;
     	/*Remove and then re-add bricks*/
     	bricks.clear();

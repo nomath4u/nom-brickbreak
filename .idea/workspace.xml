@@ -28,9 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="295f2263-24f9-4762-a1b6-7c86284ed603" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/res/layout/main_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java" />
     </list>
     <ignored path="nom-brickbreak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,39 +95,38 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="474" column="44" selection-start="15318" selection-end="15318" vertical-scroll-proportion="0.0" vertical-offset="6338" max-vertical-offset="7620">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6670#6694#0" expanded="true" />
-                <element signature="e#11752#11798#0" expanded="true" />
-                <element signature="e#12031#12077#0" expanded="true" />
-                <element signature="e#13588#13626#0" expanded="true" />
-                <element signature="e#13755#13786#0" expanded="true" />
-                <element signature="e#13911#13947#0" expanded="true" />
-                <element signature="e#14048#14086#0" expanded="true" />
-                <element signature="e#14186#14223#0" expanded="true" />
-                <element signature="e#14330#14372#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SurfacePanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="50" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="4815">
+            <state line="462" column="19" selection-start="14658" selection-end="14663" vertical-scroll-proportion="-10.666667" vertical-offset="5952" max-vertical-offset="7140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_menu.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SurfacePanel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="276" column="48" selection-start="8643" selection-end="8643" vertical-scroll-proportion="0.5017341" vertical-offset="3346" max-vertical-offset="4470">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pause_screen.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/pause_screen.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="44" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-16.576923" vertical-offset="109" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.27713627" vertical-offset="540" max-vertical-offset="2775">
-              <folding>
-                <element signature="e#5882#5900#0" expanded="true" />
-              </folding>
+            <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="43.423077" vertical-offset="1909" max-vertical-offset="2775">
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -1303,13 +1300,13 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Brick.java" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" />
         <option value="$PROJECT_DIR$/res/values/ids.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
+        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java" />
       </list>
     </option>
   </component>
@@ -1344,7 +1341,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1452,6 +1448,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1517,6 +1514,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1542,19 +1552,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1682,7 +1679,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.011991658" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.011991658" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1743,18 +1740,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1771,9 +1757,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1797,18 +1781,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1825,9 +1798,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1851,18 +1822,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1879,9 +1839,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1905,18 +1863,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1933,9 +1880,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="585">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1959,18 +1904,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1987,9 +1921,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2013,18 +1945,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2041,9 +1962,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2053,18 +1972,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4275">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2081,9 +1989,7 @@
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="9" selection-start="1365" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="870">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2093,36 +1999,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2730" selection-end="2730" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="3945">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3945">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2155,16 +2039,6 @@
         <state line="43" column="22" selection-start="1937" selection-end="1937" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2715" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/pause_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="44" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-16.5" vertical-offset="111" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="32" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -2175,13 +2049,6 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="40" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="50" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="1481" max-vertical-offset="4455">
           <folding />
         </state>
       </provider>
@@ -2228,34 +2095,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="474" column="44" selection-start="15318" selection-end="15318" vertical-scroll-proportion="0.0" vertical-offset="6338" max-vertical-offset="7620">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6670#6694#0" expanded="true" />
-            <element signature="e#11752#11798#0" expanded="true" />
-            <element signature="e#12031#12077#0" expanded="true" />
-            <element signature="e#13588#13626#0" expanded="true" />
-            <element signature="e#13755#13786#0" expanded="true" />
-            <element signature="e#13911#13947#0" expanded="true" />
-            <element signature="e#14048#14086#0" expanded="true" />
-            <element signature="e#14186#14223#0" expanded="true" />
-            <element signature="e#14330#14372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.27713627" vertical-offset="540" max-vertical-offset="2775">
-          <folding>
-            <element signature="e#5882#5900#0" expanded="true" />
-          </folding>
+        <state line="52" column="17" selection-start="1940" selection-end="1940" vertical-scroll-proportion="43.423077" vertical-offset="1909" max-vertical-offset="2775">
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/pause_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="44" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-16.576923" vertical-offset="109" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="462" column="19" selection-start="14658" selection-end="14663" vertical-scroll-proportion="-10.666667" vertical-offset="5952" max-vertical-offset="7140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="48" selection-start="8643" selection-end="8643" vertical-scroll-proportion="0.5017341" vertical-offset="3346" max-vertical-offset="4470">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
