@@ -219,7 +219,7 @@ public class MainActivity extends BaseGameActivity {
             mOutbox.mlvl3Achievement = true;
         }
         if(score > 100000){
-            mOutbox.mScoreAchievement = true;
+            mOutbox.m6scoreAchievement = true;
         }
 		runOnUiThread(new Runnable(){
 			public void run(){
@@ -538,7 +538,8 @@ public class MainActivity extends BaseGameActivity {
         layout.addView(adView);
 
         // Initiate a generic request.
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("99FD44068B989679BC9F90E4F803FDCE").build();
+
 
         // Load the adView with the ad request.
         adView.loadAd(adRequest);
