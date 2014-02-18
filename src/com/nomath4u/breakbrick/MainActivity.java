@@ -32,6 +32,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.*;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.*;
 import com.google.example.games.basegameutils.BaseGameActivity;
@@ -61,6 +62,7 @@ public class MainActivity extends BaseGameActivity {
     private boolean isSignedIn = false;
     private View.OnClickListener mlistener;
     public boolean mShowSignIn = true;
+    private AdView adView;
 
     public interface Listener {
         public void onStartGameRequested(boolean hardMode);
@@ -102,6 +104,25 @@ public class MainActivity extends BaseGameActivity {
         lives = 5;
 		score = 0;
 		level = 1;
+
+
+        // Create the adView.
+        adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-1748138738936707/4103907079");
+        adView.setAdSize(AdSize.BANNER);
+
+        // Lookup your LinearLayout assuming it's been given
+        // the attribute android:id="@+id/mainLayout".
+        RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_menu);
+
+        // Add the adView to it.
+        layout.addView(adView);
+
+        // Initiate a generic request.
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Load the adView with the ad request.
+        adView.loadAd(adRequest);
 
 		/*Setup sounds */
 		pool = new SoundPool(10, AudioManager.STREAM_MUSIC, 0);

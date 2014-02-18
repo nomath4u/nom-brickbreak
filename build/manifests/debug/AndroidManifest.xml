@@ -1,8 +1,13 @@
-<!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.nomath4u.breakbrick">
+<!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" package="com.nomath4u.breakbrick">
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <!--android:debuggable="false"-->
+
         <activity android:label="@string/app_name" android:name="com.nomath4u.breakbrick.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -12,7 +17,7 @@
         </activity>
         <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.android.gms.ads.AdActivity"/>
     </application>
 
 </manifest>
