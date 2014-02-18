@@ -107,22 +107,7 @@ public class MainActivity extends BaseGameActivity {
 
 
         // Create the adView.
-        adView = new AdView(this);
-        adView.setAdUnitId("ca-app-pub-1748138738936707/4103907079");
-        adView.setAdSize(AdSize.BANNER);
-
-        // Lookup your LinearLayout assuming it's been given
-        // the attribute android:id="@+id/mainLayout".
-        RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_menu);
-
-        // Add the adView to it.
-        layout.addView(adView);
-
-        // Initiate a generic request.
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        // Load the adView with the ad request.
-        adView.loadAd(adRequest);
+       setupAd();
 
 		/*Setup sounds */
 		pool = new SoundPool(10, AudioManager.STREAM_MUSIC, 0);
@@ -535,7 +520,27 @@ public class MainActivity extends BaseGameActivity {
         };
         this.findViewById(R.id.sign_in_button).setOnClickListener(mlistener);
         this.findViewById(R.id.sign_out_button).setOnClickListener(mlistener);
-
+        setupAd();
         updateBar();
+    }
+
+    private void setupAd(){
+        // Create the adView.
+        adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-1748138738936707/4103907079");
+        adView.setAdSize(AdSize.BANNER);
+
+        // Lookup your LinearLayout assuming it's been given
+        // the attribute android:id="@+id/mainLayout".
+        RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_menu);
+
+        // Add the adView to it.
+        layout.addView(adView);
+
+        // Initiate a generic request.
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Load the adView with the ad request.
+        adView.loadAd(adRequest);
     }
 }
