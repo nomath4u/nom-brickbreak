@@ -479,13 +479,19 @@ public class MainActivity extends BaseGameActivity {
         panel = null; //Setting to null so we can make a new one if we need to later
     }
     public void updateBar(){
-        this.findViewById(R.id.sign_in_bar).setVisibility(mShowSignIn ?
+        //Log.e("pointer_update",toString(R.id.sign_in_button));
+        if(this.findViewById(R.id.sign_in_bar) != null){ //If one is null they all will be
+            this.findViewById(R.id.sign_in_bar).setVisibility(mShowSignIn ?
                 View.VISIBLE : View.GONE);
-        this.findViewById(R.id.sign_out_bar).setVisibility(mShowSignIn ?
-                View.GONE : View.VISIBLE);
-        this.findViewById(R.id.button_group1).setVisibility(mShowSignIn ? View.VISIBLE : View.GONE);
-        this.findViewById(R.id.button_group2).setVisibility(mShowSignIn ? View.GONE : View.VISIBLE);
 
+            this.findViewById(R.id.sign_out_bar).setVisibility(mShowSignIn ?
+                View.GONE : View.VISIBLE);
+            this.findViewById(R.id.button_group1).setVisibility(mShowSignIn ? View.VISIBLE : View.GONE);
+            this.findViewById(R.id.button_group2).setVisibility(mShowSignIn ? View.GONE : View.VISIBLE);
+        }
+        else{//They are null, need to start over the game anyway
+            returnMenu();
+        }
     }
 
     public void onSignOutButtonClicked(View view){

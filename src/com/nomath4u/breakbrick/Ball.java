@@ -131,11 +131,11 @@ public class Ball {
             }
 
         }else{
-            wm.getDefaultDisplay().getSize(size);
-            screenwidth = size.x;
+
             Display d = wm.getDefaultDisplay();
             DisplayMetrics metrics = new DisplayMetrics();
             wm.getDefaultDisplay().getMetrics(metrics);
+            screenwidth = d.getWidth(); //Testing here
 
 
             switch (metrics.densityDpi) {

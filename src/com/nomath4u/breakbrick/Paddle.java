@@ -95,7 +95,7 @@ public class Paddle {
 		      Display d = wm.getDefaultDisplay(); 
 		      DisplayMetrics metrics = new DisplayMetrics();
 		      wm.getDefaultDisplay().getMetrics(metrics);
-		   
+              screenwidth = d.getWidth(); //Testing here
 
 		      switch (metrics.densityDpi) {
 		          case DisplayMetrics.DENSITY_HIGH:
