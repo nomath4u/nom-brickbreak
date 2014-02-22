@@ -36,6 +36,9 @@ public void tick(){
         if(panel.parent.rowlives >= 5){
             panel.parent.mOutbox.mlife1Achievement = true;
         }
+        if(panel.parent.lives >= 12){
+            panel.parent.mOutbox.mlife2Achievement = true;
+        }
 		/*Remove self*/
 		panel.eLife = null;
 	}

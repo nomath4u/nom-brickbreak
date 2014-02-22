@@ -77,6 +77,7 @@ public class MainActivity extends BaseGameActivity {
         boolean m6scoreAchievement = false;
         boolean mScoreAchievement = false;
         boolean mlvl3Achievement = false;
+        boolean mlife2Achievement = false;
         int mbrickAchievement = 0;
         int mGameSteps = 0;
         int mScore = -1;
@@ -455,6 +456,9 @@ public class MainActivity extends BaseGameActivity {
         }
         if (mOutbox.mbrickAchievement > 0){
             getGamesClient().incrementAchievement(getString(R.string.achievement_brickicide),mOutbox.mbrickAchievement);
+        }
+        if (mOutbox.mlife2Achievement){
+            getGamesClient().unlockAchievement(getString(R.string.achievement_life2));
         }
 
             mOutbox.mScore = -1;
