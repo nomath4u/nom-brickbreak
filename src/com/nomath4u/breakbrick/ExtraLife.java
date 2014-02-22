@@ -1,6 +1,8 @@
 package com.nomath4u.breakbrick;
 
 import android.graphics.RectF;
+import android.media.AudioManager;
+import android.util.Log;
 
 public class ExtraLife {
 	public RectF image;
@@ -20,6 +22,17 @@ public void tick(){
 	if(image.intersect(panel.mainPaddle.selfimage)){
 		panel.parent.addLife(1);
         panel.parent.rowlives++;
+        AudioManager audioManager = (AudioManager) panel.parent.getSystemService(panel.parent.AUDIO_SERVICE);
+        float actualVolume = (float) audioManager
+                .getStreamVolume(AudioManager.STREAM_MUSIC);
+        float maxVolume = (float) audioManager
+                .getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        float volume = actualVolume / maxVolume;
+        // Is the sound loaded already?
+        if (panel.parent.loaded) {
+            panel.parent.pool.play(panel.parent.soundIDb, volume, volume, 1, 0, 1f);
+            Log.e("Test", "Played sound");
+        }
         if(panel.parent.rowlives >= 5){
             panel.parent.mOutbox.mlife1Achievement = true;
         }

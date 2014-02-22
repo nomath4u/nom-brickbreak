@@ -255,6 +255,7 @@ containing a value of this type.
     public static final class raw {
         public static final int blip1=0x7f040000;
         public static final int blip2=0x7f040001;
+        public static final int life=0x7f040002;
     }
     public static final class string {
         public static final int achievement_5games=0x7f090000;

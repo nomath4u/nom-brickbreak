@@ -28,9 +28,10 @@
   <component name="ChangeListManager">
     <list default="true" id="295f2263-24f9-4762-a1b6-7c86284ed603" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/buildConfig/debug/com/nomath4u/breakbrick/BuildConfig.java" afterPath="$PROJECT_DIR$/build/source/buildConfig/debug/com/nomath4u/breakbrick/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" />
     </list>
     <ignored path="nom-brickbreak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,7 +98,38 @@
       <file leaf-file-name="SurfacePanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="37" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="4890">
+            <state line="304" column="32" selection-start="10268" selection-end="10268" vertical-scroll-proportion="0.0" vertical-offset="3156" max-vertical-offset="4500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtraLife.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="894">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ball.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="184" column="15" selection-start="6483" selection-end="7087" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="3945">
+              <folding>
+                <element signature="e#2695#2727#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhysVector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/PhysVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -106,33 +138,30 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="38" selection-start="6526" selection-end="6526" vertical-scroll-proportion="0.0" vertical-offset="2205" max-vertical-offset="7530">
+            <state line="57" column="24" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="7560">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="635" selection-end="635" vertical-scroll-proportion="0.30235162" vertical-offset="0" max-vertical-offset="893">
-              <folding>
-                <element signature="e#563#581#0" expanded="true" />
-                <element signature="e#1323#1362#0" expanded="true" />
-              </folding>
+            <state line="23" column="48" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="660">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="30" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2790">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1265,14 +1294,14 @@
         <option value="$PROJECT_DIR$/res/layout/pause_screen.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Brick.java" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" />
         <option value="$PROJECT_DIR$/res/values/ids.xml" />
-        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java" />
         <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
-        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
+        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java" />
       </list>
     </option>
   </component>
@@ -1307,7 +1336,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1390,6 +1418,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="raw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nom-brickbreak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nom-brickbreak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1415,6 +1461,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1440,6 +1487,7 @@
     <property name="ExportedApkPath" value="$USER_HOME$/ANDROID/apks/nom-brickbreak.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="508" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.nom-brickbreak">
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -1581,7 +1629,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1648,26 +1696,26 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.017094018" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.016025642" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29273504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.017094018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.016025642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14233577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.011482255" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1689,16 +1737,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="735">
@@ -1714,32 +1752,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="11" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1758,32 +1793,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="11" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1802,32 +1834,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="11" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1846,32 +1875,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1890,32 +1916,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1934,23 +1957,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="870">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
@@ -1961,23 +1984,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="9" selection-start="1365" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="870">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
@@ -1995,13 +2018,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/BaseGameUtils/src/main/java/com/google/example/games/basegameutils/BaseGameActivity.java">
@@ -2023,13 +2046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="37" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -2038,32 +2054,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/pause_screen.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="44" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Brick.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="163" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="8" selection-start="2239" selection-end="2266" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="4170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="37" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="4500">
           <folding />
         </state>
       </provider>
@@ -2090,28 +2092,57 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="38" selection-start="6526" selection-end="6526" vertical-scroll-proportion="0.0" vertical-offset="2205" max-vertical-offset="7530">
+        <state line="4" column="30" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="635" selection-end="635" vertical-scroll-proportion="0.30235162" vertical-offset="0" max-vertical-offset="893">
+        <state line="23" column="48" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/PhysVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="7560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="15" selection-start="6483" selection-end="7087" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="3945">
           <folding>
-            <element signature="e#563#581#0" expanded="true" />
-            <element signature="e#1323#1362#0" expanded="true" />
+            <element signature="e#2695#2727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/SurfacePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="304" column="32" selection-start="10268" selection-end="10268" vertical-scroll-proportion="0.0" vertical-offset="4560" max-vertical-offset="4890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/ExtraLife.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="466" selection-end="466" vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="894">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

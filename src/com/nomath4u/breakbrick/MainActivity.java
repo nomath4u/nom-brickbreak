@@ -55,6 +55,7 @@ public class MainActivity extends BaseGameActivity {
 	public SoundPool pool;
 	public int soundID;
 	public int soundIDa;
+    public int soundIDb;
 	boolean loaded = false;
     private float vals[] = new float[] {0,0,0,0,0,0,0,0,0,0};
     public static final int AVGS = 10;
@@ -120,6 +121,7 @@ public class MainActivity extends BaseGameActivity {
         });
         soundID = pool.load(this, R.raw.blip1, 1);
         soundIDa= pool.load(this,R.raw.blip2, 0);
+        soundIDb = pool.load(this,R.raw.life,2);
 
         /*Default orientation*/
         this.orientation = getDeviceDefaultOrientation();

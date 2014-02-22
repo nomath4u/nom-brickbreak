@@ -92,6 +92,7 @@ int layout test2 0x7f030004
 int menu activity_main 0x7f0b0000
 int raw blip1 0x7f040000
 int raw blip2 0x7f040001
+int raw life 0x7f040002
 int string achievement_5games 0x7f090000
 int string achievement_6score 0x7f090001
 int string achievement_brickicide 0x7f090002
