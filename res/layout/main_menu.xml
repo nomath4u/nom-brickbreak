@@ -102,7 +102,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/button4"
+                android:layout_below="@id/button5"
                 android:text="Tutorial"
                 android:id="@+id/tutorial1"
                 android:layout_gravity="center_horizontal"

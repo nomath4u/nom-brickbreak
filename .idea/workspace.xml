@@ -27,11 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="295f2263-24f9-4762-a1b6-7c86284ed603" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/buildConfig/debug/com/nomath4u/breakbrick/BuildConfig.java" afterPath="$PROJECT_DIR$/build/source/buildConfig/debug/com/nomath4u/breakbrick/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" afterPath="$PROJECT_DIR$/build/source/r/debug/com/nomath4u/breakbrick/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/tutorial_layout.xml" afterPath="$PROJECT_DIR$/res/layout/tutorial_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/res/layout/main_menu.xml" />
     </list>
     <ignored path="nom-brickbreak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -174,7 +170,7 @@
       <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="47" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3210">
+            <state line="104" column="49" selection-start="4121" selection-end="4121" vertical-scroll-proportion="-9.807693" vertical-offset="1305" max-vertical-offset="3210">
               <folding />
             </state>
           </provider>
@@ -1317,11 +1313,11 @@
         <option value="$PROJECT_DIR$/res/values/ids.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Ball.java" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/Paddle.java" />
-        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
         <option value="$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/tutorial_layout.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main_menu.xml" />
       </list>
     </option>
   </component>
@@ -2162,16 +2158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="47" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3210">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nomath4u/breakbrick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="559" column="10" selection-start="18214" selection-end="18214" vertical-scroll-proportion="0.0" vertical-offset="7254" max-vertical-offset="7770">
@@ -2200,6 +2186,16 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="49" selection-start="4121" selection-end="4121" vertical-scroll-proportion="-9.807693" vertical-offset="1305" max-vertical-offset="3210">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
