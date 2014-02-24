@@ -472,11 +472,14 @@ public class MainActivity extends BaseGameActivity {
     }
 
     public void returnMenu(){
-        panel.reset();
-        panel._run = false; //Have to turn it off so the canvas doesn't get mad
+        if(panel != null){
+            panel.reset();
+            panel._run = false; //Have to turn it off so the canvas doesn't get mad
+
+            panel = null; //Setting to null so we can make a new one if we need to later
+        }
         setContentView(R.layout.main_menu);
         resetClickListeners();
-        panel = null; //Setting to null so we can make a new one if we need to later
     }
     public void updateBar(){
         //Log.e("pointer_update",toString(R.id.sign_in_button));
