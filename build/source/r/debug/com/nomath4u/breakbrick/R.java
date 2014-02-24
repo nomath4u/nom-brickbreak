@@ -212,6 +212,7 @@ containing a value of this type.
         public static final int ic_plusone_small_off_client=0x7f02001b;
         public static final int ic_plusone_standard_off_client=0x7f02001c;
         public static final int ic_plusone_tall_off_client=0x7f02001d;
+        public static final int tutorial1=0x7f02001e;
     }
     public static final class id {
         public static final int achievements=0x7f060015;
@@ -225,24 +226,26 @@ containing a value of this type.
         public static final int button_group1=0x7f060007;
         public static final int button_group2=0x7f06000d;
         public static final int hybrid=0x7f060004;
+        public static final int imageView=0x7f06001d;
         public static final int leaderboards=0x7f060014;
         public static final int main_menu=0x7f060006;
         public static final int menu_button=0x7f060018;
-        public static final int menu_settings=0x7f06001e;
+        public static final int menu_settings=0x7f060020;
         public static final int none=0x7f060000;
         public static final int normal=0x7f060001;
         public static final int satellite=0x7f060002;
         public static final int score_view=0x7f060005;
+        public static final int scrollView=0x7f060019;
         public static final int sign_in_bar=0x7f060008;
         public static final int sign_in_button=0x7f060013;
         public static final int sign_out_bar=0x7f06000e;
         public static final int sign_out_button=0x7f060016;
         public static final int terrain=0x7f060003;
-        public static final int textView=0x7f060019;
-        public static final int textView2=0x7f06001a;
-        public static final int textView3=0x7f06001b;
-        public static final int textView4=0x7f06001c;
-        public static final int textView5=0x7f06001d;
+        public static final int textView=0x7f06001a;
+        public static final int textView2=0x7f06001b;
+        public static final int textView3=0x7f06001c;
+        public static final int textView4=0x7f06001e;
+        public static final int textView5=0x7f06001f;
         public static final int tutorial1=0x7f060011;
         public static final int tutorial2=0x7f06000b;
     }
