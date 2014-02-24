@@ -5232,16 +5232,16 @@
                     msgid="4181637455539816337" >"Habilitar servicios de Google Play"
                 </string>
                 <string
+                    name="common_google_play_services_unsupported_title"
+                    msgid="6334768798839376943" >"Servicios de Google Play"
+                </string>
+                <string
                     name="common_google_play_services_network_error_title"
                     msgid="3827284619958211114" >"Error de red"
                 </string>
                 <string
                     name="common_google_play_services_invalid_account_text"
                     msgid="4983316348021735578" >"La cuenta especificada no existe en este dispositivo. Selecciona otra cuenta."
-                </string>
-                <string
-                    name="common_google_play_services_unsupported_title"
-                    msgid="6334768798839376943" >"Servicios de Google Play"
                 </string>
                 <string
                     name="common_google_play_services_install_text_tablet"
@@ -6693,16 +6693,16 @@
                     msgid="2429381841831957106" >"Conectați-vă cu Google"
                 </string>
                 <string
+                    name="common_google_play_services_network_error_title"
+                    msgid="3827284619958211114" >"Eroare de reţea"
+                </string>
+                <string
                     name="auth_client_play_services_err_notification_msg"
                     msgid="3635065018897986478" >"Eroare Servicii Google Play"
                 </string>
                 <string
                     name="common_google_play_services_network_error_text"
                     msgid="9038847255613537209" >"Este necesară o conexiune de date pentru a vă conecta la serviciile Google Play."
-                </string>
-                <string
-                    name="common_google_play_services_network_error_title"
-                    msgid="3827284619958211114" >"Eroare de reţea"
                 </string>
                 <string
                     name="common_signin_button_text"
@@ -6985,7 +6985,9 @@
             <file
                 path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/strings.xml"
                 qualifiers="" >
-                <string name="pause" >Game Paused
+                <string name="tutorial5" >The pink objects are lives, catching them with your paddle will gain you an extra life\n
+                </string>
+                <string name="tutorial4" >Tapping the screen while playing will pause the game\n
                 </string>
                 <string name="leaderboards_not_available" >Sign in to see leaderboards
                 </string>
@@ -6993,13 +6995,25 @@
                 </string>
                 <string name="achievements_not_available" >Sign in to see achievements
                 </string>
-                <string name="app_name" >Breakbrick
+                <string name="game_over_title" >Game Over!
+                </string>
+                <string name="tutorial3" >Tilting the device left and right (as if turning a key) controls your paddle\n
+                </string>
+                <string name="main_menu" >Main Menu
+                </string>
+                <string name="tutorial2" >\nThe goal of the game is to break as many bricks as you can before losing all of your lives\n
+                </string>
+                <string name="tutorial1" >Welcome to BreakBrick!
+                </string>
+                <string name="pause" >Game Paused
+                </string>
+                <string name="main" >Return to main menu
                 </string>
                 <string name="sign_out" >Sign Out
                 </string>
-                <string name="game_over_message" >Would you like to play again? Your score was
+                <string name="app_name" >Breakbrick
                 </string>
-                <string name="game_over_title" >Game Over!
+                <string name="game_over_message" >Would you like to play again? Your score was
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
@@ -7121,6 +7135,11 @@
                 path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/raw/life.wav"
                 qualifiers=""
                 type="raw" />
+            <file
+                name="tutorial_layout"
+                path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/layout/tutorial_layout.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/res/rs/debug" />
         <source path="/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/build/res/generated/debug" />

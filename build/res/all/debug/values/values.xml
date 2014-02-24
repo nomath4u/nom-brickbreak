@@ -147,10 +147,17 @@
     <eat-comment />
 
     <string name="leaderboards_not_available">Sign in to see leaderboards</string>
+    <string name="main">Return to main menu</string>
+    <string name="main_menu">Main Menu</string>
     <string name="menu_settings">Settings</string>
     <string name="pause">Game Paused</string>
     <string name="sign_out">Sign Out</string>
     <string name="test">test</string>
+    <string name="tutorial1">Welcome to BreakBrick!</string>
+    <string name="tutorial2">\nThe goal of the game is to break as many bricks as you can before losing all of your lives\n</string>
+    <string name="tutorial3">Tilting the device left and right (as if turning a key) controls your paddle\n</string>
+    <string name="tutorial4">Tapping the screen while playing will pause the game\n</string>
+    <string name="tutorial5">The pink objects are lives, catching them with your paddle will gain you an extra life\n</string>
     <!-- From: file:/home/chris/AndroidStudioProjects/brickbreak/nom-brickbreak/res/values/styles.xml -->
     <eat-comment />
 

@@ -556,4 +556,8 @@ public class MainActivity extends BaseGameActivity {
         // Load the adView with the ad request.
         adView.loadAd(adRequest);
     }
+
+    public void loadTutorial(View view){
+        setContentView(R.layout.tutorial_layout);
+    }
 }
