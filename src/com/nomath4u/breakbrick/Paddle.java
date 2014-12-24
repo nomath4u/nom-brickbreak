@@ -143,16 +143,23 @@ public class Paddle {
 		
 		float top = screenheight - paddleheight;
 		float left = (mainA.adcval  * unit * -1) + (float)(screenwidth/2) - (paddlewidth/2);
-        if(left > screenwidth){
-             left = screenwidth;
+        float right = (mainA.adcval * unit * -1)+ (float)(screenwidth/2) + (paddlewidth/2);
+        
+        if(left < 0){
+             left = 0;
+             right = paddlewidth;
         }
-		float right = (mainA.adcval * unit * -1)+ (float)(screenwidth/2) + (paddlewidth/2);
-        if(right < 0){
-            right = 0;
+		
+        
+        if(right > screenwidth){
+            right = screenwidth;
+            left = screenwidth - paddlewidth;
         }
 		float bottom = screenheight;
-		selfimage.set(left, top, right , bottom); 
-	}
+		//selfimage.set(left, top, right , bottom);
+        selfimage.set(left ,top, right, bottom);
+        Log.d("TAG", Float.toString(left));
+    }
 	
 	public void startMoving(){
 		moveSelf.run();
