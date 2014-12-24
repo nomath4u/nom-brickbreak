@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_menu">
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/button_group1"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false"
+    android:layout_above="@+id/sign_in_bar"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical"
+    android:weightSum="1">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="startGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:text="High Score"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="false"
+        android:onClick="viewHighScore"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:text="Tutorial"
+        android:id="@+id/tutorial2"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="false"
+        android:onClick="loadTutorial"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tutorial2"
+        android:text="Exit"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="selfDestruct"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3" />
+
+
+</RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:id="@+id/button_group2"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/sign_out_bar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Game"
+                android:id="@+id/button4"
+                android:layout_gravity="center_horizontal"
+                android:onClick="startGame" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button4"
+                android:text="High Score"
+                android:id="@+id/button5"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:onClick="viewHighScore"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button5"
+                android:text="Tutorial"
+                android:id="@+id/tutorial1"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:onClick="loadTutorial"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignLeft="@+id/button5"
+                android:layout_alignRight="@+id/button5" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tutorial1"
+                android:text="Exit"
+                android:id="@+id/button6"
+                android:layout_gravity="center_horizontal"
+                android:onClick="selfDestruct"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignLeft="@+id/button5"
+                android:layout_alignRight="@+id/button5" />
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    <LinearLayout android:id="@+id/sign_in_bar"
+        android:layout_alignParentBottom = "true"
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:background="#f0f0f0"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnSignInButtonClicked"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboards"
+            android:id="@+id/leaderboards"
+            android:onClick="onShowLeaderboardsRequested" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:id="@+id/achievements"
+            android:onClick="onShowAchievementsRequested" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/sign_out_bar"
+        android:layout_alignParentBottom = "true"
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:background="#f0f0f0"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            android:textSize="12sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboards"
+            android:id="@+id/leaderboards"
+            android:onClick="onShowLeaderboardsRequested" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:id="@+id/achievements"
+            android:onClick="onShowAchievementsRequested" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:text=""/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!-- From: file:/home/chris/Android/projects/nom-brickbreak/res/layout/main_menu.xml -->

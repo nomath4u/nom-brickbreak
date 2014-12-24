@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nomath4u.breakbrick"
     android:versionCode="7"
-    android:versionName="1.1.5" >
+    android:versionName="1.1.5">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -12,11 +13,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
+        tools:replace="android:label"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:debuggable="false">
+        android:theme="@style/AppTheme">
+
 
         <activity
             android:name="com.nomath4u.breakbrick.MainActivity"

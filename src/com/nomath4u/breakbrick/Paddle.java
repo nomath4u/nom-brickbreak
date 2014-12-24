@@ -143,13 +143,13 @@ public class Paddle {
 		
 		float top = screenheight - paddleheight;
 		float left = (mainA.adcval  * unit * -1) + (float)(screenwidth/2) - (paddlewidth/2);
-        /*if(left > screenwidth){
-             left = 0;
-        }*/
+        if(left > screenwidth){
+             left = screenwidth;
+        }
 		float right = (mainA.adcval * unit * -1)+ (float)(screenwidth/2) + (paddlewidth/2);
-        /*if(right < 0){
-            right = screenwidth;
-        }*/
+        if(right < 0){
+            right = 0;
+        }
 		float bottom = screenheight;
 		selfimage.set(left, top, right , bottom); 
 	}

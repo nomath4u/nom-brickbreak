@@ -1,0 +1,6 @@
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/classes/debug
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b47f12ddcb68e181c4876bc18be973f0576de22a.jar
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/pre-dexed/debug/classes-932f9a06320e5e9b1eeccdee25b991129d01fe5a.jar
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-65bf52ff1195e52aa78d3784d4f4a60c44a5d45a.jar
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/pre-dexed/debug/classes-15ba572eb52508d6e756cc03e1224c21593c0854.jar
+/home/chris/Android/projects/nom-brickbreak/build/intermediates/pre-dexed/debug/classes-07c95998228264263f86be4122562aafb3adf8a7.jar
