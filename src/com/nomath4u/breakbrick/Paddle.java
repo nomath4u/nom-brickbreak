@@ -158,7 +158,7 @@ public class Paddle {
 		float bottom = screenheight;
 		//selfimage.set(left, top, right , bottom);
         selfimage.set(left ,top, right, bottom);
-        Log.d("TAG", Float.toString(left));
+
     }
 	
 	public void startMoving(){

@@ -31,7 +31,6 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import com.google.android.gms.ads.*;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.*;
@@ -386,6 +385,7 @@ public class MainActivity extends BaseGameActivity {
         this.isSignedIn = true;
         mShowSignIn = false;
         updateBar();
+        syncScore();
 
     }
 
@@ -562,5 +562,10 @@ public class MainActivity extends BaseGameActivity {
 
     public void loadTutorial(View view){
         setContentView(R.layout.tutorial_layout);
+    }
+
+    public void syncScore(){
+
+
     }
 }

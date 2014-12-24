@@ -3,6 +3,8 @@ package com.nomath4u.breakbrick;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.Vector;
 
 import android.content.Context;
@@ -58,8 +60,11 @@ public class Ball {
                 counter = 4;
             }
         };
+        Timer ticker = new Timer(true);
+        TickRunner task = new TickRunner();
+        task.setBall(this);
+        ticker.schedule(task, 0, 20);
 	}
-	
 	
 	
 	public void setBallCharacteristics(int speed){
@@ -161,7 +166,7 @@ public class Ball {
 	}
 	
 	public void tick(){
-        if(!timing){
+        if(!timing && !parent.panel.paused){ //Playing is necessary due to threaded tick
 
         image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
 		
@@ -272,3 +277,6 @@ public class Ball {
 		
 	}
 }
+
+    
+

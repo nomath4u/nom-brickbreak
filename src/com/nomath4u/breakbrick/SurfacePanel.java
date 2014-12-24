@@ -279,7 +279,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        			nextLevel();
 	                        		}
 	                        		c.drawText("Score:"+parent.score + "  Lives: " + parent.lives + " Level : " + parent.level, mainPaddle.screenwidth, 45, scorePaint);
-	                        		mainBall.tick(); //Tell the ball it needs to move again
+	                        		//mainBall.tick(); //Tell the ball it needs to move again
                                     tickable = true;
                                     if(mainBall.timing){
                                         c.drawText(String.valueOf(mainBall.counter),mainPaddle.screenwidth/2,mainPaddle.screenheight/2,paint);
