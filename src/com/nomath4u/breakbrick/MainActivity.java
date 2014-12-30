@@ -92,7 +92,9 @@ public class MainActivity extends BaseGameActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-
+        lives = 5;
+        score = 0;
+        level = 1;
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, LayoutParams.FLAG_FULLSCREEN);
@@ -102,9 +104,7 @@ public class MainActivity extends BaseGameActivity {
 		this.panel = new SurfacePanel(this);
 		//setContentView(this.panel);
 		setContentView(R.layout.main_menu);
-        lives = 5;
-		score = 0;
-		level = 1;
+
 
 
         // Create the adView.

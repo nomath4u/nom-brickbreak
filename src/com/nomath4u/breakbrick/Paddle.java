@@ -52,6 +52,7 @@ public class Paddle {
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
 		      wm.getDefaultDisplay().getSize(size);
 		      screenwidth = size.x;
+              screenheight = size.y;
 		      DisplayMetrics metrics = new DisplayMetrics();
 		      wm.getDefaultDisplay().getMetrics(metrics);
 		      

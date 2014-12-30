@@ -294,6 +294,7 @@ public class SurfacePanel extends SurfaceView implements SurfaceHolder.Callback 
 	                        }
 	                        else{
 	                        	c.drawText("Tap to begin playing Level " + parent.level, mainPaddle.screenwidth/2, mainPaddle.screenheight/2 ,paint);
+                                //Log.i("TAG", Integer.toString(mainPaddle.screenheight));
 	                        }
 	                        }
 	                        else{

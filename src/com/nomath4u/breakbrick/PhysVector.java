@@ -13,7 +13,7 @@ public class PhysVector {
 	}
 	
 	public double speedX(){
-		return mag * Math.cos(Math.toRadians(direction));
+		return this.mag * Math.cos(Math.toRadians(direction));
 	}
 	
 	public double speedY(){

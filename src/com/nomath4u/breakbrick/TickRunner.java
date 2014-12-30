@@ -14,7 +14,7 @@ public class TickRunner extends TimerTask {
 
     public void run(){
         ball.tick();
-        Log.d("TAG", "TICK");
+        //Log.d("TAG", "TICK" + Double.toString(ball.velocity.mag));
 
     }
 

@@ -41,7 +41,7 @@ public class Ball {
     Ball(Context context){
 		parent = (MainActivity) context;
 		getDisplay(context);
-        setBallCharacteristics(1);
+        setBallCharacteristics(parent.level);
         image = new RectF(0,0,0,0);
 
 		r = new Random();
@@ -63,7 +63,7 @@ public class Ball {
         Timer ticker = new Timer(true);
         TickRunner task = new TickRunner();
         task.setBall(this);
-        ticker.schedule(task, 0, 20);
+        ticker.schedule(task, 0, 1);
 	}
 	
 	
@@ -72,9 +72,9 @@ public class Ball {
 			paint.setColor(Color.RED);
 			ballwidth = (int)((.01) * screenwidth); //(3.33 * scalar);
             //ballwidth = 5;
-            Log.v("blah",String.valueOf(ballwidth));
+            //Log.v("blah",String.valueOf(ballwidth));
 			ballheight = ballwidth; //Because the ball should be square
-        velocity = new PhysVector((int)((speed * .001 +.007 ) * screenheight),-90);
+        velocity = new PhysVector((int)( (((speed-1) * .00005) + .0009) * screenheight),-90);
 	}
 	
 	public void spawn(){
@@ -84,7 +84,8 @@ public class Ball {
         image = new RectF(0,0,0,0); //So that there isn't one left behind when counting down
         spawned = true;
         //velocity = new PhysVector((int)((parent.level + 5)*(scalar)),-90);
-        velocity = new PhysVector((int)((parent.level * .001 +.007 ) * screenheight),-90);
+        //velocity = new PhysVector((int)((parent.level * .001 +.007 ) * screenheight),-90);
+        setBallCharacteristics(parent.level);
 	}
 
 	/*Gets the Display characteristics and does it the way it should regardless of android version they are running*/
@@ -96,6 +97,7 @@ public class Ball {
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
 		      wm.getDefaultDisplay().getSize(size);
 		      screenwidth = size.x;
+              screenheight = size.y; //For the people with unknown densities
 		      DisplayMetrics metrics = new DisplayMetrics();
 		      wm.getDefaultDisplay().getMetrics(metrics);
 
@@ -167,9 +169,9 @@ public class Ball {
 	
 	public void tick(){
         if(!timing && !parent.panel.paused){ //Playing is necessary due to threaded tick
-
+        //Log.i("TAG", image.toString());
         image.offset((float)velocity.speedX(), -1*(float)velocity.speedY());
-		
+//		Log.i("TAG", Double.toString(velocity.mag) + " " + Double.toString(velocity.direction));
 		/*fix the size of the ball that sometimes gets messed up on collision*/ /*This is just a hack still need to find the real problem*/
 		if(image.bottom - image.top != (int) (mult * screenwidth)){
 			float factor = ((int)(mult * screenwidth) - (image.bottom - image.top))/2;
@@ -186,7 +188,8 @@ public class Ball {
 		
 		/*Check for paddle collisions*/
 		if(image.intersect(parent.panel.mainPaddle.selfimage)){
-			rotateToAngle(parent.panel.mainPaddle.selfimage.centerX(), parent.panel.mainPaddle.paddlewidth);
+			rotateToAngle(parent.panel.mainPaddle.selfimage.centerX(), parent.panel.mainPaddle.paddlewidth);//Change the angle
+            image.offset(-5* (float)velocity.speedX(), -5*(float)velocity.speedY());//Put it back where it was so that it is no longer colliding
 			   AudioManager audioManager = (AudioManager) parent.getSystemService(parent.AUDIO_SERVICE);
 	            float actualVolume = (float) audioManager
 	                    .getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -196,7 +199,7 @@ public class Ball {
 	            // Is the sound loaded already?
 	            if (parent.loaded) {
 	                parent.pool.play(parent.soundID, volume, volume, 1, 0, 1f);
-	                Log.e("Test", "Played sound");
+	               // Log.e("Test", "Played sound");
 	            }
 		}
 		
@@ -244,7 +247,7 @@ public class Ball {
 	            // Is the sound loaded already?
 	            if (parent.loaded) {
 	                parent.pool.play(parent.soundIDa, volume, volume, 1, 0, 1f);
-	                Log.e("Test", "Played sound");
+	         //       Log.e("Test", "Played sound");
 	            }
 	            if(parent.panel.eLife == null)
 	            	if(r.nextInt()%20 == 0)
